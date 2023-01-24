@@ -1,0 +1,18 @@
+---
+title: "HUAT-RRR"
+---
+
+## Description
+
+`HUAT-RRR` (**h**appy **u**sing **a**nd **t**eaching `RRR`)[^1]  directs one to materials and resources for learning `Regression` analysis, `Research` methods, and `R` programming. To access this website offline, download the whole website from its [`r fontawesome::fa("github")` repository](https://github.com/yhpua/huatrrr).
+
+ 
+
+[^1]: huatRRR <https://en.wiktionary.org/wiki/huat_ah>
+
+
+
+
+
+
+

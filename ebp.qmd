@@ -1,0 +1,25 @@
+---
+listing:
+  contents: ebp/*/*.qmd
+  feed: true
+  sort-ui: true
+  sort: 
+    - "date desc"
+    - "title desc"
+  type: default
+  image-height: 150px
+  categories: true
+  date-format: "DD-MM-YYYY"
+  page-size: 9
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: false
+---
+
+
+
+
+# EBP Physiotherapy Workshop
+
+<br>

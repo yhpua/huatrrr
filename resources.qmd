@@ -1,0 +1,24 @@
+---
+title: Resources
+format:
+  html:
+    code-tools: true
+    code-fold: show
+---
+
+
+I did not so much create as assemble the materials for this website. 
+
+>**Any errors in this website, however, are mine.** 
+
+When preparing the workshop materials, 
+
+* I pilfered (and benefitted greatly) from Prof [Frank Harrell's](https://www.fharrell.com/) excellent [*Biostatistics for Biomedical Research*](http://hbiostat.org/doc/bbr.pdf). 
+
+* Josh Starmer's [Statquest](https://statquest.org/) is a also “must go to website” for people interested in gaining a working understanding of biostatistics. 
+
+* [Z Statistics](http://www.zstatistics.com/) is an excellent educational resource for University students and analysts of any stripe.
+
+* I belatedly discovered [Crash Course](https://thecrashcourse.com/courses/statistics) and I think it is a fantastic website. 
+
+

@@ -1,0 +1,30 @@
+---
+title: R
+---
+
+## Resources to learn R
+
+Under construction: I plan to include specific docs on the use of R...
+
+
+## Learning R 
+[R Weekly newsletter](https://rweekly.org/): e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R. 
+
+[#rstats](https://twitter.com/search?q=%23rstats): For twitter users 
+
+
+[StackOverflow](https://stackoverflow.com/): Q&A site with answers to all sorts of programming questions 
+
+
+[RStudio Community](https://community.rstudio.com/) a forum for Rstudio users 
+
+
+[**R for Data Science**](https://r4ds.had.co.nz/): A free online book for learning the basics of R and the tidyverse.  
+
+[**R and RStudio cheat sheets**](https://www.rstudio.com/resources/cheatsheets/): A large collection of simple cheat sheets for RStudio, **ggplot2**, and other R-related things.   
+
+[**CSE 631: Principles & Practice of Data Visualization**](http://cslu.ohsu.edu/~bedricks/courses/cs631/):  
+
+[Dr. Alison Presmanes Hill](https://twitter.com/apreshill) at RStudio. 
+
+ 

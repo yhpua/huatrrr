@@ -1,0 +1,84 @@
+---
+title: "Journal Club"
+description: |
+  Each journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.  
+date: 07-15-2020
+author:
+  - name: SGH PT Dept
+categories:
+ - p-values
+ - confidence interval
+ - RCT
+ - confounding
+image: 'jama.JPG'
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Session (31 Aug 2021) 
+> **Messier et al** Effect of High-Intensity Strength Training on Knee Pain and Knee Joint Compressive Forces Among Adults With Knee Osteoarthritis The START Randomized Clinical Trial. JAMA 2021 Feb 16;325(7):646-657
+
+Read the [abstract](https://jamanetwork.com/journals/jama/fullarticle/2776330)
+
+
+
+## Questions
+1. Is this a well-conducted study in terms of study design? (refer to [Pointers](#designlink))
+2. Would you conclude that there is no difference between high vs low-intensity strength training? (refer to [Pointers](#findingslink))
+    a. in terms of self-reported knee pain
+    b. in terms of knee extensor strength
+    c. in terms of hip abductor strength 
+    d. in terms of 6-minute walking distance 
+3. What are the mechanism of effects of high and low-intensity strength training? (read [Schoenfeld et al](https://www.mdpi.com/2075-4663/9/2/32))
+4. What are the implications for clinical practice? 
+5. How would you have done the study differently? (Open Question)   
+
+
+## Study Design {#designlink}
+Methods/procedures used by the researchers to reduce/minimize study bias
+
+### Recruitment 
+*Participants were not aware of the hypotheses tested*. What are the implications?
+
+### Randomization
+How does randomization reduce confounding? (**Confounding** Chapter)
+
+Why was randomization stratified by sex and baseline BMI?(**Confounding** Chapter)
+
+### Analysis
+Participants were analyzed according to their assigned randomization group *even if they were nonadherent to their assigned intervention* (**Confounding** Chapter)
+
+Analysis were *adjusted for sex, baseline BMI, and baseline outcome values*  (**Regression** Chapter on ANCOVA)
+
+
+
+## Findings {#findingslink}
+Interpret the RCT findings by quantifying the evidence for/against a treatment effect
+Association = Treatment Effect = Treatment Difference 
+
+::: l-body
+| Findings              | Interpretation                                    |
+|-----------------------|------------------------------------------------|
+| P<0.05  | Evidence of a (non-zero) treatment difference/effect                |
+| P>0.05  | Insufficient/No evidence of association (≠ evidence of no treatment difference)[^1]           |
+| (1) P<0.05; 95% CIs exclude trivial effects | Evidence of a clinically meaningful treatment difference|
+| (2) P<0.05; 95% CIs exclude meaningful effects | Evidence of a treatment diff; however, this difference is not clinically meaningful|
+| (3) P<0.05; 95% CIs include trivial + meaningful effects | Cannot exclude non-clinically meaningful treatment difference|
+| (4) P>0.05; 95% CIs exclude meaningful effects  | (Possibly) Evidence of no treatment difference       |
+| (5) P>0.05; 95% CI limits include meaningful effects  | CI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)           |
+| (6) P>0.05; 95% CI limits  include trivial + meaningful effects  | No evidence of treatment difference, however, we cannot exclude clinically important difference           |
+:::
+[^1]: Beware of making the "Absence of Evidence is NOT Evidence of Absence" fallacy
+
+
+We are assuming that the 95%CI represent the range of plausible values for the true (hidden) treatment effects. This is, strictly speaking, untrue[^2] (**General Overview** Chapter). 
+ 
+ 
+[^2]: More accurately, but less comprehensibly, the 95%CI is the range of values computed using a method such that over multiple study replications with a 95% CI computed in each  replication, 95% of the intervals would contain the true treatment effect. 
+
+
+

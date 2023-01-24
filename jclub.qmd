@@ -1,0 +1,26 @@
+---
+listing:
+  contents: jclub/*/*.qmd
+  feed: true
+  sort-ui: true
+  sort: 
+    - "date desc"
+    - "title desc"
+  type: grid
+  image-height: 120px
+  categories: true
+  date-format: "DD-MM-YYYY"
+  page-size: 9
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: false
+---
+
+
+
+
+
+# Journal Club, Inservice Presentation
+
+<br>

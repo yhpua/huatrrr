@@ -1,0 +1,230 @@
+---
+title: "Regression"
+description: |
+  Regression analysis is a statistical method that describes the relationship between a given predictor and outcome. In the case of multivariable regression, it describes that relationship after "controlling" for other variables. At the end of the session, you should be able to interpret the results from simple or multivariable regression (linear or logistic) analyses.
+date: 07-16-2020
+author:
+  - name: SGH PT Dept
+bibliography: 'bibliography.bib'
+categories:
+ - regression
+ - odds ratio
+ - beta
+image: 'images/ancova.png'
+editor: 
+  markdown: 
+    wrap: 120
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Definitions
+
+**linear regression model**: This is also called ordinary least squares (OLS) and refers to regression for a continuous
+dependent variable, and usually to the case where the residuals are assumed to be Gaussian.
+
+**multivariable model**: A model relating multiple predictor variables (risk factors, treatments, etc.) to a single
+response or dependent variable.
+
+**multivariate model**: A model that **simultaneously** predicts more than one dependent variable, e.g. a model to
+predict systolic and diastolic blood pressure or a model to predict systolic blood pressure 5 min. and 60 min. after
+drug administration.
+
+<aside>Taken from Frank Harrell's [glossary](http://hbiostat.org/doc/glossary.pdf)</aside>
+
+## Regression Model
+
+The choice of regression model depends on the nature of the outcome or dependent variable.
+
+-   Continuous outcome: linear regression model
+
+-   Binary outcome: binary logistic regression model
+
+-   Ordinal outcome: ordinal regression model
+
+-   Time to event outcome: Cox proportional hazards model[^1]
+
+[^1]: Not covered in this workshop
+
+Regression models are used for
+
+-   hypothesis testing
+
+-   estimation (with confounder adjustment to get adjusted estimates of effects)
+
+-   prediction
+
+### Notation
+
+$E(y|x) = \alpha + \beta x$ (simple regression)
+
+$E(y|x) = \alpha + \beta_1x_1 + \beta_2x_2$ (multiple regression)
+
+$y$: Response, dependent, or outcome variable
+
+$x$: Predictor or independent variable
+
+$E(y|x)$ : Expected value of $y$ conditioned on the value of $x$
+
+$\beta$: Slope of $y$ on $x$ ($\frac{\Delta{y}}{\Delta{x}}$)
+
+<!-- $e$: random error = residual = variation in $y$ when holding $x$ constant (e.g., variation in gait speed [$y$] between patients of the same age [$x$]) -->
+
+<aside>June says I have maxed out my quota for equations and symbols</aside>
+
+Watch this video which explains the notation of simple linear regression
+
+<aside>Use this [link](https://www.youtube.com/watch?v=KsVBBJRb9TE&list=PLvxOuBpazmsND0vmkP1ECjTloiVz-pXla) if the video
+doesn't play</aside>
+
+<iframe width="560" height="350" src="https://www.youtube.com/embed/KsVBBJRb9TE" frameborder="0" allowfullscreen>
+
+</iframe>
+
+### Interpretating $x$
+
+-   Generally speaking, $x$ is the predictor or independent variable - a variable that is associated with the outcome
+    ($y$)
+
+-   Depending on the study design, $x$ can also represent the explanatory variable, risk factor, confounder, covariate,
+    or covariable. With multiple $x$'s, they can be (i) multiple risk factors, (ii) treatment variable plus baseline
+    outcomes plus patient descriptors (age, gender), or (iii) different levels of a nominal (categorical) variable
+    (e.g., race)
+
+### Interpretating $\beta$
+
+-   slope
+
+-   regression coefficient
+
+-   effect size of a given predictor
+
+-   effect of increasing $x$ by one unit on the change in the mean of $y$, holding all other $x$'s constant
+
+-   with multiple $x$'s, the $\beta$s represent the *partial* effects of $x$s
+
+$E(y|x) = \alpha + \beta_1x_1 + \beta_2x_2 + \beta_3x_3$
+
+<aside>Note: By holding all other $x$'s (confounders) constant, we are minimizing the risk of confounding!</aside>
+
+$\beta_1$ interpretation: Holding $x_2$ and $x_3$ constant, how much does mean $y$ change when $x_1$ changes by 1 unit?
+
+$\beta_2$ interpretation: Holding $x_1$ and $x_3$ constant, how much does mean $y$ change when $x_2$ changes by 1 unit?
+
+$\beta_3$ interpretation: Holding $x_1$ and $x_2$ constant, how much does mean $y$ change when $x_3$ changes by 1 unit?
+
+IQR-$\beta$ = change in the mean of $y$ per one *IQR* increase in $x$
+
+Watch this video which explains the interpretation of $\beta$ from a simple linear regression model. Please note that
+$\beta_0$ in the video refers to $\alpha$ using our notation.
+
+<aside>Use this [link](https://www.youtube.com/watch?v=I8Dr1OGUdZQ&list=PLvxOuBpazmsND0vmkP1ECjTloiVz-pXla&index=3) if
+the video doesn't play</aside>
+
+<iframe width="560" height="350" src="https://www.youtube.com/embed/I8Dr1OGUdZQ" frameborder="0" allowfullscreen>
+
+</iframe>
+
+Watch this [video](https://www.youtube.com/watch?v=dQNpSa-bq4M) which explains the interpretation of $\beta$ from a
+multivariable linear regression model. Please note that $\beta_0$ in the video refers to $\alpha$ using our notation. To
+jump straight into $\beta$ interpretation, start from minute $14$ of the video.
+
+Logistic regression = exponentiating $\beta$ = [Odds Ratio](#lrm)
+
+Cox proportional hazards regression = exponentiating $\beta$ = Hazard Ratio (HR)
+
+## Linear Regression
+
+### Example 1
+
+Expected post-Rx disability = $24$ + $0.71\times$baseline score + $12.7\times$acupuncture
+
+-   Interpretation: **12.7** represents the difference between groups on mean change scores. Outcome score improved by
+    an estimated **12.7** points more on average in the acupuncture group than in the placebo group.
+
+<aside>In a research paper, the authors will report the $\beta$ for the `acupuncture` (*12.7*) term</aside>
+
+-   An analysis of covariance (ANCOVA) adjusts each patient's follow up score for his or her baseline
+    score[@vickers2001ancova]
+
+```{r, out.width='100%', fig.cap='The estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al [@vickers2001ancova]', fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('images/ancova.png')
+```
+
+<aside>Disclaimer: Don't freak out if you don't understand this. As mentioned, the most important result is *12.7* - the
+$\beta$ for acupuncture</aside>
+
+-   **ANCOVA**: Analysis of covariance is *just* multiple regression (i.e., a linear model ) where one variable is of
+    major interest and is categorical (e.g., treatment group). In classic ANCOVA there is a treatment variable and a
+    continuous covariate used to reduce unexplained variation in the dependent variable, thereby increasing power.
+
+<aside>Taken from Frank Harrell's [glossary](http://hbiostat.org/doc/glossary.pdf)</aside>
+
+### Example 2
+
+Table 2, taken from our JoSPT paper[@pua2017associations], describes how to interpret the output from a linear and
+(ordinal) logistic regression model.
+
+::: l-body
+| Number | Question                                                             |
+|--------|----------------------------------------------------------------------|
+| 1      | What is the study aim?                                               |
+| 2      | What are the predictor(s)-of-interest and outcomes?                  |
+| 3      | What are the confounders - and why?                                  |
+| 4      | Why did the authors use both linear and ordinal regression analyses? |
+:::
+
+```{r, out.width='1100px', fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('images/jospt_rfd_table.png')
+```
+
+<aside>Paper can be found in `Articles` section.</aside>
+
+### Example 3[^2]
+
+[^2]: Bonus Example. Don't freak out if you don't understand this
+
+Independent *t*-test is a special cases of simple linear regression
+
+$E(y|x) = \alpha + \beta x$
+
+$x$: Single binary predictor
+
+$\beta$: the slope of a binary predictor ($x$) is equivalent to the difference in mean $y$ between 2 groups
+
+When you replace the binary predictor ($x$) by a multi-group/categorical predictor, linear regression and multi-group
+ANOVA are identical. Hence, multi-group ANOVA is a special case of linear regression
+
+<aside>Because regression analysis generalizes many special tests (e.g., t-test, ANOVA, Wilcoxon Mann Whitney U test,
+Kruskal-Wallis test), this explains our focus on regression analysis</aside>
+
+## Logistic Regression {#lrm}
+
+### The Challenge
+
+-   Logistic regression is a regression technique that is used to analyse binary outcome. 
+
+-   Our response/outcome variable takes on 2 values, 0 or 1, and we convert them into the probability of a "one" response, given a set of predictors. 
+
+-   We cannot use linear regression to predict probabilities because it may predict probabilities \>1 or \<0
+
+### The Workaround
+
+::: {.column-margin}
+For the curious who wants to know why the exponentiated $\beta$ is an OR. But don't freak out if you don't understand this!
+:::
+
+
+
+$$
+\begin{split}
+\text{Probabilty = }\pi \in [0,1] \\
+\text{Odds = } \frac{\text{prob}}{1 - \text{prob}} = \frac {\pi}{(1-\pi)} \in [0, +\infty) \\
+\text{log (odds) = }  \text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right) = \text{log}\left(\frac {\pi}{(1-\pi)}\right) \in [-\infty, +\infty) \\
+\log(\text{odds}) = \log\left(\frac{\pi}{1-\pi}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p \\ 
+\beta_1 = \log(\text{odds}_{x+1}) - \log(\text{odds}_x) \\
+e^{\beta_1} = \frac{\text{odds}_{x+1}}{\text{odds}_x} = \text{odds ratio [OR]} 
+\end{split}
+$$
