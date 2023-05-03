@@ -217,6 +217,17 @@ Whilst we have evidence that two groups are different on the ODI and the observe
 [^1]: Beware of making the "Absence of Evidence is NOT Evidence of Absence" fallacy
 
 
+Hawkins and Samuels [JAMA article](https://jamanetwork.com/journals/jama/article-abstract/2786522) describes how to use 95%CIs to appraise non-significant results 
+<br> 
+![ci_ns](ci_ns.jpg){width=500}
+
+Interestingly, the authors wrote:
+
+> Although CIs can be used to enhance the interpretation of a study, they have a number of limitations. For example, a 95%CI does not have a 95% probability of containing the true value of interest (eg, the true treatment effect), **even though it is commonly described that way**. Creating an interval that does have a specified probability of containing the true value requires a Bayesian analysis  
+>
+> `r tufte::quote_footer('--- Hawkins and Samuels')`
+
+
 
 
 ## Bayesian Statistics
