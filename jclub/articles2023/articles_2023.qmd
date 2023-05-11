@@ -1,0 +1,41 @@
+---
+title: "Articles 2023"
+description: |
+  A discussion of the Articles provided by participants of the 2023 EBP workshop.  
+date: 07-15-2020
+author:
+  - name: SGH PT Dept
+categories:
+ - p-values
+ - confidence interval
+ - RCT
+ - confounding
+ - research design 
+image: 'a2023.JPG'
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## RCT paper
+### Plus Points
+- I like it that the authors adjusted for baseline SAS and previous history of falls  
+
+
+### Minus Points
+- Table 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that **unadjusted** difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is <0.05   
+- Separate regression analysis done at each timepoint: bias from non-random missing observations may creep into results [^1]  
+
+### Practice
+- Table 4: The authors sensibly provided adjusted difference. Try interpreting them.    
+
+### Interesting
+- If we have the time and energy, we could compute ORs by hand (or software)  
+
+[^1]: Certainly a forgivable sin given the limited availability of software to handle more complex models in 2007   
+
+
+ 

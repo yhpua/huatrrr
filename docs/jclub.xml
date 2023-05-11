@@ -9,7 +9,7 @@
 <link>https://.com/jclub.html</link>
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.2.262</generator>
+<generator>quarto-1.1.251</generator>
 <lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Journal Club</title>
@@ -178,6 +178,42 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
   <guid>https://.com/jclub/rx_eval/rx_eval.html</guid>
   <pubDate>Tue, 14 Jul 2020 16:00:00 GMT</pubDate>
   <media:content url="https://.com/jclub/rx_eval/rx1.png" medium="image" type="image/png" height="111" width="144"/>
+</item>
+<item>
+  <title>Articles 2023</title>
+  <dc:creator>SGH PT Dept</dc:creator>
+  <link>https://.com/jclub/articles2023/articles_2023.html</link>
+  <description><![CDATA[ <section id="rct-paper" class="level2"><h2 class="anchored" data-anchor-id="rct-paper">RCT paper</h2>
+<section id="plus-points" class="level3"><h3 class="anchored" data-anchor-id="plus-points">Plus Points</h3>
+<ul>
+<li>I like it that the authors adjusted for baseline SAS and previous history of falls</li>
+</ul></section><section id="minus-points" class="level3"><h3 class="anchored" data-anchor-id="minus-points">Minus Points</h3>
+<ul>
+<li>Table 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that <strong>unadjusted</strong> difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05<br>
+</li>
+<li>Separate regression analysis done at each timepoint: bias from non-random missing observations may creep into results <sup>1</sup>
+</li>
+</ul></section><section id="practice" class="level3"><h3 class="anchored" data-anchor-id="practice">Practice</h3>
+<ul>
+<li>Table 4: The authors sensibly provided adjusted difference. Try interpreting them.</li>
+</ul></section><section id="interesting" class="level3"><h3 class="anchored" data-anchor-id="interesting">Interesting</h3>
+<ul>
+<li>If we have the time and energy, we could compute ORs by hand (or software)</li>
+</ul>
+
+
+</section></section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<ol>
+<li id="fn1"><p>Certainly a forgivable sin given the limited availability of software to handle more complex models in 2007↩︎</p></li>
+</ol></section></div> ]]></description>
+  <category>p-values</category>
+  <category>confidence interval</category>
+  <category>RCT</category>
+  <category>confounding</category>
+  <category>research design</category>
+  <guid>https://.com/jclub/articles2023/articles_2023.html</guid>
+  <pubDate>Tue, 14 Jul 2020 16:00:00 GMT</pubDate>
+  <media:content url="https://.com/jclub/articles2023/a2023.JPG" medium="image"/>
 </item>
 </channel>
 </rss>

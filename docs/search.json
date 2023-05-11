@@ -186,7 +186,7 @@
     "href": "jclub.html",
     "title": "HUAT-RRR",
     "section": "",
-    "text": "Journal Club, Inservice Presentation\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nJournal Club\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\n\nEach journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntervention Evaluation\n\n\n\nconfounder\n\n\nregression\n\n\nBayesian\n\n\npropensity score\n\n\n\nThis article describes intervention evaluation using (i) propensity score adjustment and (ii) Bayesian analyses. At the end of the session, you should be able to appreciate…\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nJournal Club\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\n\nEach journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntervention Evaluation\n\n\n\nconfounder\n\n\nregression\n\n\nBayesian\n\n\npropensity score\n\n\n\nThis article describes intervention evaluation using (i) propensity score adjustment and (ii) Bayesian analyses. At the end of the session, you should be able to appreciate…\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArticles 2023\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\nresearch design\n\n\n\nA discussion of the Articles provided by participants of the 2023 EBP workshop.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "R.html",
@@ -208,5 +208,33 @@
     "title": "Resources",
     "section": "",
     "text": "I did not so much create as assemble the materials for this website.\n\nAny errors in this website, however, are mine.\n\nWhen preparing the workshop materials,\n\nI pilfered (and benefitted greatly) from Prof Frank Harrell’s excellent Biostatistics for Biomedical Research.\nJosh Starmer’s Statquest is a also “must go to website” for people interested in gaining a working understanding of biostatistics.\nZ Statistics is an excellent educational resource for University students and analysts of any stripe.\nI belatedly discovered Crash Course and I think it is a fantastic website."
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html",
+    "href": "jclub/articles2023/articles_2023.html",
+    "title": "Articles 2023",
+    "section": "",
+    "text": "Footnotes\n\nCertainly a forgivable sin given the limited availability of software to handle more complex models in 2007↩︎"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#questions",
+    "href": "jclub/articles2023/articles_2023.html#questions",
+    "title": "Articles 2023",
+    "section": "Questions",
+    "text": "Questions\n\nIs this a well-conducted study in terms of study design? (refer to Pointers)\nWould you conclude that there is no difference between high vs low-intensity strength training? (refer to Pointers)\n\nin terms of self-reported knee pain\nin terms of knee extensor strength\nin terms of hip abductor strength\nin terms of 6-minute walking distance\n\n\nWhat are the mechanism of effects of high and low-intensity strength training? (read Schoenfeld et al)\nWhat are the implications for clinical practice?\nHow would you have done the study differently? (Open Question)"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#designlink",
+    "href": "jclub/articles2023/articles_2023.html#designlink",
+    "title": "Articles 2023",
+    "section": "Study Design",
+    "text": "Study Design\nMethods/procedures used by the researchers to reduce/minimize study bias\nRecruitment\nParticipants were not aware of the hypotheses tested. What are the implications?\nRandomization\nHow does randomization reduce confounding? (Confounding Chapter)\nWhy was randomization stratified by sex and baseline BMI?(Confounding Chapter)\nAnalysis\nParticipants were analyzed according to their assigned randomization group even if they were nonadherent to their assigned intervention (Confounding Chapter)\nAnalysis were adjusted for sex, baseline BMI, and baseline outcome values (Regression Chapter on ANCOVA)"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#findingslink",
+    "href": "jclub/articles2023/articles_2023.html#findingslink",
+    "title": "Articles 2023",
+    "section": "Findings",
+    "text": "Findings\nInterpret the RCT findings by quantifying the evidence for/against a treatment effect Association = Treatment Effect = Treatment Difference\n\n\n\n\n\n\n\nFindings\nInterpretation\n\n\n\nP<0.05\nEvidence of a (non-zero) treatment difference/effect\n\n\nP>0.05\nInsufficient/No evidence of association (≠ evidence of no treatment difference)1\n\n\n\n(1) P<0.05; 95% CIs exclude trivial effects\nEvidence of a clinically meaningful treatment difference\n\n\n(2) P<0.05; 95% CIs exclude meaningful effects\nEvidence of a treatment diff; however, this difference is not clinically meaningful\n\n\n(3) P<0.05; 95% CIs include trivial + meaningful effects\nCannot exclude non-clinically meaningful treatment difference\n\n\n(4) P>0.05; 95% CIs exclude meaningful effects\n(Possibly) Evidence of no treatment difference\n\n\n(5) P>0.05; 95% CI limits include meaningful effects\nCI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)\n\n\n(6) P>0.05; 95% CI limits include trivial + meaningful effects\nNo evidence of treatment difference, however, we cannot exclude clinically important difference\n\n\n\n\nWe are assuming that the 95%CI represent the range of plausible values for the true (hidden) treatment effects. This is, strictly speaking, untrue2 (General Overview Chapter)."
   }
 ]
