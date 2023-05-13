@@ -214,7 +214,7 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
   <category>research design</category>
   <guid>https://.com/jclub/articles2023/articles_2023.html</guid>
   <pubDate>Tue, 14 Jul 2020 16:00:00 GMT</pubDate>
-  <media:content url="https://.com/jclub/articles2023/a2023.JPG" medium="image"/>
+  <media:content url="https://.com/jclub/articles2023/a2023.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

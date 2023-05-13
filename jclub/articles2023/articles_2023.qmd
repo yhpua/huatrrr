@@ -11,7 +11,7 @@ categories:
  - RCT
  - confounding
  - research design 
-image: 'a2023.JPG'
+image: 'a2023.jpg'
 ---
 
 
