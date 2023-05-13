@@ -9,7 +9,7 @@
 <link>https://.com/jclub.html</link>
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.1.251</generator>
+<generator>quarto-1.2.262</generator>
 <lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Journal Club</title>
@@ -184,9 +184,10 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
   <dc:creator>SGH PT Dept</dc:creator>
   <link>https://.com/jclub/articles2023/articles_2023.html</link>
   <description><![CDATA[ <section id="rct-paper" class="level2"><h2 class="anchored" data-anchor-id="rct-paper">RCT paper</h2>
+<p>The Group has chosen <a href="https://jnnp.bmj.com/content/78/7/678.long">JNNP 2007 Asburn et al</a></p>
 <section id="plus-points" class="level3"><h3 class="anchored" data-anchor-id="plus-points">Plus Points</h3>
 <ul>
-<li>I like it that the authors adjusted for baseline SAS and previous history of falls</li>
+<li>The authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)</li>
 </ul></section><section id="minus-points" class="level3"><h3 class="anchored" data-anchor-id="minus-points">Minus Points</h3>
 <ul>
 <li>Table 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that <strong>unadjusted</strong> difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05<br>

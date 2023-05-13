@@ -21,8 +21,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## RCT paper
+The Group has chosen [JNNP 2007 Asburn et al](https://jnnp.bmj.com/content/78/7/678.long)  
+
 ### Plus Points
-- I like it that the authors adjusted for baseline SAS and previous history of falls  
+- The authors adjusted for baseline SAS and previous history of falls  (to "level the playing field" for both groups)
 
 
 ### Minus Points
