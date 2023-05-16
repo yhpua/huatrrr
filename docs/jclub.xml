@@ -9,7 +9,7 @@
 <link>https://.com/jclub.html</link>
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.2.262</generator>
+<generator>quarto-1.1.251</generator>
 <lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Journal Club</title>
@@ -183,8 +183,8 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
   <title>Articles 2023</title>
   <dc:creator>SGH PT Dept</dc:creator>
   <link>https://.com/jclub/articles2023/articles_2023.html</link>
-  <description><![CDATA[ <section id="rct-paper" class="level2"><h2 class="anchored" data-anchor-id="rct-paper">RCT paper</h2>
-<p>The Group has chosen <a href="https://jnnp.bmj.com/content/78/7/678.long">JNNP 2007 Asburn et al</a></p>
+  <description><![CDATA[ <section id="group-rct" class="level2"><h2 class="anchored" data-anchor-id="group-rct">2-group RCT</h2>
+<p><a href="https://jnnp.bmj.com/content/78/7/678.long">JNNP 2007 Asburn et al</a></p>
 <section id="plus-points" class="level3"><h3 class="anchored" data-anchor-id="plus-points">Plus Points</h3>
 <ul>
 <li>The authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)</li>
@@ -200,12 +200,54 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
 </ul></section><section id="interesting" class="level3"><h3 class="anchored" data-anchor-id="interesting">Interesting</h3>
 <ul>
 <li>If we have the time and energy, we could compute ORs by hand (or software)</li>
+</ul></section></section><section id="cohort-study" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="cohort-study">Cohort Study</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/32389061/">CR 2020 Grimley et al</a></p>
+<section id="plus-points-1" class="level3"><h3 class="anchored" data-anchor-id="plus-points-1">Plus Points</h3>
+<ul>
+<li>Clear Writing and Description; Large Sample size<br>
+</li>
+<li>A prior definition of key confounders</li>
+</ul></section><section id="minus-points-1" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="minus-points-1">Minus Points</h3>
+<ul>
+<li>Why get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek’s papers that used (longitudinal) ordinal regression<br>
+</li>
+<li>Univariable Screening: Although a less stringent <img src="https://latex.codecogs.com/png.latex?P">-value criterion was used, I am unclear about the goal/rationale of the analysis<sup>2</sup>
+</li>
+</ul>
+<div class="cell page-columns page-full" data-fig-width="8">
+<div class="cell-output-display column-screen-inset-right">
+<div>
+<p>
+</p>
+<pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+A[Goals of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] &amp; I[Interpretation&lt;br&gt;Effects Estimation] &amp; Pred[Prediction]
+Pred --&gt; V[Validation]
+I --&gt; festimat[Point and interval&lt;br&gt;estimation of one&lt;br&gt;predictor's effect]
+test --&gt; ftest[Formal tests]
+
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+
+<p>Modified from <a href="https://hbiostat.org/rmsc/intro.html">rmsc book</a></p>
+</div>
+</div>
+</div>
+<ul>
+<li>The perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed<br>
+</li>
+<li>Pre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.</li>
+</ul></section><section id="interesting-1" class="level3"><h3 class="anchored" data-anchor-id="interesting-1">Interesting</h3>
+<ul>
+<li>Many ORs to interpret = Practice time</li>
 </ul>
 
 
 </section></section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 <ol>
 <li id="fn1"><p>Certainly a forgivable sin given the limited availability of software to handle more complex models in 2007↩︎</p></li>
+<li id="fn2"><p>I prefer pre-specifying as many confounders as the sample size would support↩︎</p></li>
 </ol></section></div> ]]></description>
   <category>p-values</category>
   <category>confidence interval</category>

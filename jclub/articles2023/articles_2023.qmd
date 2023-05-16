@@ -20,8 +20,8 @@ image: 'a2023.jpg'
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## RCT paper
-The Group has chosen [JNNP 2007 Asburn et al](https://jnnp.bmj.com/content/78/7/678.long)  
+## 2-group RCT
+[JNNP 2007 Asburn et al](https://jnnp.bmj.com/content/78/7/678.long)  
 
 ### Plus Points
 - The authors adjusted for baseline SAS and previous history of falls  (to "level the playing field" for both groups)
@@ -40,4 +40,39 @@ The Group has chosen [JNNP 2007 Asburn et al](https://jnnp.bmj.com/content/78/7/
 [^1]: Certainly a forgivable sin given the limited availability of software to handle more complex models in 2007   
 
 
+## Cohort Study    
+[CR 2020 Grimley et al](https://pubmed.ncbi.nlm.nih.gov/32389061/)   
+
+### Plus Points   
+- Clear Writing and Description; Large Sample size   
+- A prior definition of key confounders  
+
+### Minus Points  
+- Why get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek's papers that used (longitudinal) ordinal regression    
+- Univariable Screening: Although a less stringent $P$-value criterion was used, I am unclear about the goal/rationale of the analysis[^2]
+
+
+```{mermaid}
+%%| column: screen-inset-right
+%%| fig-width: 8
+%%| fig-cap: "Modified from [rmsc book](https://hbiostat.org/rmsc/intro.html)"
+flowchart LR
+A[Goals of <br>Analysis] --> test[Hypothesis testing] & I[Interpretation<br>Effects Estimation] & Pred[Prediction]
+Pred --> V[Validation]
+I --> festimat[Point and interval<br>estimation of one<br>predictor's effect]
+test --> ftest[Formal tests]
+
+```
+
+
+- The perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed      
+- Pre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.     
+
+
+
+### Interesting
+- Many ORs to interpret = Practice time   
+
+[^2]: I prefer pre-specifying as many confounders as the sample size would support    
  
+
