@@ -35,6 +35,26 @@ Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glos
 <li><p>estimation (with confounder adjustment to get adjusted estimates of effects)</p></li>
 <li><p>prediction</p></li>
 </ul>
+<div class="cell page-columns page-full" data-fig-width="8">
+<div class="cell-output-display column-screen-inset-right">
+<div>
+<p>
+</p>
+<pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+A[Goal of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] &amp; I[Interpretation&lt;br&gt;Effects Estimation] &amp; Pred[Prediction]
+Pred --&gt; V[Validation]
+I --&gt; festimat[Point and interval&lt;br&gt;estimation of &lt;br&gt;predictor's effect]
+test --&gt; ftest[Formal tests]
+
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+
+<p>Modified from Prof Harrell’s <a href="https://hbiostat.org/rmsc/intro.html">rmsc book</a></p>
+</div>
+</div>
+</div>
 <section id="notation" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="notation">Notation</h3>
 <p><img src="https://latex.codecogs.com/png.latex?E(y%7Cx)%20=%20%5Calpha%20+%20%5Cbeta%20x"> (simple regression)</p>
 <p><img src="https://latex.codecogs.com/png.latex?E(y%7Cx)%20=%20%5Calpha%20+%20%5Cbeta_1x_1%20+%20%5Cbeta_2x_2"> (multiple regression)</p>

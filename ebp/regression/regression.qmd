@@ -56,6 +56,21 @@ Regression models are used for
 
 -   prediction
 
+
+```{mermaid}
+%%| column: screen-inset-right
+%%| fig-width: 8
+%%| fig-cap: "Modified from Prof Harrell's [rmsc book](https://hbiostat.org/rmsc/intro.html)"
+flowchart LR
+A[Goal of <br>Analysis] --> test[Hypothesis testing] & I[Interpretation<br>Effects Estimation] & Pred[Prediction]
+Pred --> V[Validation]
+I --> festimat[Point and interval<br>estimation of <br>predictor's effect]
+test --> ftest[Formal tests]
+
+```
+
+
+
 ### Notation
 
 $E(y|x) = \alpha + \beta x$ (simple regression)
