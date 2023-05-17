@@ -9,7 +9,7 @@
 <link>https://.com/ebp.html</link>
 <atom:link href="https://.com/ebp.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.2.262</generator>
+<generator>quarto-1.1.251</generator>
 <lastBuildDate>Wed, 15 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Regression</title>
@@ -169,11 +169,139 @@ Because regression analysis generalizes many special tests (e.g., t-test, ANOVA,
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>For the curious who wants to know why the exponentiated <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is an OR. But don’t freak out if you don’t understand this!</p>
-</div></div><p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Ctext%7BProbabilty%20=%20%7D%5Cpi%20%5Cin%20%5B0,1%5D%20%5C%5C%0A%5Ctext%7BOdds%20=%20%7D%20%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%20=%20%5Cfrac%20%7B%5Cpi%7D%7B(1-%5Cpi)%7D%20%5Cin%20%5B0,%20+%5Cinfty)%20%5C%5C%0A%5Ctext%7Blog%20(odds)%20=%20%7D%20%20%5Ctext%7Blog%7D%5Cleft(%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%5Cright)%20=%20%5Ctext%7Blog%7D%5Cleft(%5Cfrac%20%7B%5Cpi%7D%7B(1-%5Cpi)%7D%5Cright)%20%5Cin%20%5B-%5Cinfty,%20+%5Cinfty)%20%5C%5C%0A%5Clog(%5Ctext%7Bodds%7D)%20=%20%5Clog%5Cleft(%5Cfrac%7B%5Cpi%7D%7B1-%5Cpi%7D%5Cright)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Ccdots%20+%20%5Cbeta_p%20X_p%20%5C%5C%0A%5Cbeta_1%20=%20%5Clog(%5Ctext%7Bodds%7D_%7Bx+1%7D)%20-%20%5Clog(%5Ctext%7Bodds%7D_x)%20%5C%5C%0Ae%5E%7B%5Cbeta_1%7D%20=%20%5Cfrac%7B%5Ctext%7Bodds%7D_%7Bx+1%7D%7D%7B%5Ctext%7Bodds%7D_x%7D%20=%20%5Ctext%7Bodds%20ratio%20%5BOR%5D%7D%0A%5Cend%7Bsplit%7D%0A"></p>
+</div></div><p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Barray%7D%7Bccc%7D%0A%5Ctext%7BProbabilty%20%7D%20&amp;=&amp;%5Cpi%20%5Cin%20%5B0,1%5D%20%5C%5C%0A%5Ctext%7BOdds%7D%20&amp;=&amp;%20%20%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%20&amp;=&amp;%20%5Cfrac%20%7B%5Cpi%7D%7B(1-%5Cpi)%7D%20%5Cin%20%5B0,%20+%5Cinfty)%20%5C%5C%0A%5Ctext%7Blog%20(odds)%7D%20%20&amp;=&amp;%20%5Ctext%7Blog%7D%5Cleft(%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%5Cright)%20&amp;=&amp;%20%5Ctext%7Blog%7D%5Cleft(%5Cfrac%20%7B%5Cpi%7D%7B(1-%5Cpi)%7D%5Cright)%20%5Cin%20%5B-%5Cinfty,%20+%5Cinfty)%20%5C%5C%0A%5Clog(%5Ctext%7Bodds%7D)%20&amp;=&amp;%20%5Clog%5Cleft(%5Cfrac%7B%5Cpi%7D%7B1-%5Cpi%7D%5Cright)%20&amp;=&amp;%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Ccdots%20+%20%5Cbeta_p%20X_p%20%5C%5C%0A%5Cbeta_1%20&amp;=&amp;%20%5Clog(%5Ctext%7Bodds%7D_%7Bx+1%7D)%20-%20%5Clog(%5Ctext%7Bodds%7D_x)%20%5C%5C%0Ae%5E%7B%5Cbeta_1%7D%20&amp;=&amp;%20%5Cfrac%7B%5Ctext%7Bodds%7D_%7Bx+1%7D%7D%7B%5Ctext%7Bodds%7D_x%7D%20&amp;=&amp;%20%5Ctext%7Bodds%20ratio%20%5BOR%5D%7D%0A%5Cend%7Barray%7D%0A"></p>
+</section><section id="interpreting-beta" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="interpreting-beta">Interpreting <img src="https://latex.codecogs.com/png.latex?%5Cbeta">
+</h3>
+<p>Focusing on the simple logistic regression model (1 predictor) <img src="https://latex.codecogs.com/png.latex?%0A%5Clog%7B%5Cleft(%20%5Cfrac%7Bprob%7D%7B1-prob%7D%20%5Cright)%7D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X%20%20%5C%5C%0A"></p>
+<p>The left-hand side of the logistic regression equation <img src="https://latex.codecogs.com/png.latex?%5Ctext%7Blog%7D%5Cleft(%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%5Cright)"> is the natural logarithm of the odds, also known as the “log-odds” or “logit”</p>
+<section id="what-is-similar" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="what-is-similar">What is similar?</h4>
+<ul>
+<li>Recall that in linear regression, <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is the difference in the outcome associated with a 1-unit difference in the predictor (X)<br>
+</li>
+<li>
+<strong>Similarly</strong>, in logistic regression, <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)</li>
+</ul>
+<aside>
+Adapted from Ramzi W. Nahhas’s <a href="https://bookdown.org/rwnahhas/RMPH/blr.html">online book</a>
+</aside><p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Barray%7D%7Bccc%7D%0A%5Cbeta_1%20&amp;=&amp;%20Y_%7Bx+1%7D%20-%20Y_x%20~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%5Ctext%7Blinear%20regression%7D%5C%5C%0A%5Cbeta_1%20&amp;=&amp;%20%5Clog(%5Ctext%7Bodds%7D_%7Bx+1%7D)%20-%20%5Clog(%5Ctext%7Bodds%7D_x)%20~~~~~~~~%5Ctext%7Blogistic%20regression%7D%5C%5C%0A%5Cend%7Barray%7D%0A"></p>
+</section><section id="what-is-different-and-potentially-confusing" class="level4"><h4 class="anchored" data-anchor-id="what-is-different-and-potentially-confusing">What is different and potentially confusing?</h4>
+<ul>
+<li>Because the logistic regression model is on the logged scale, when X is a continuous predictor, <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is the log of the odds ratio comparing individuals who differ in that predictor by one unit<br>
+</li>
+<li>Because the logistic regression model is on the logged scale, when X is a categorical predictor, <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.<br>
+</li>
+<li>Because <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> is the log of the odds ratio, we exponentiate <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> to compute an odds ratio (OR) for X</li>
+</ul>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Barray%7D%7Bccc%7D%0A%5Cbeta_1%20&amp;=&amp;%20%5Clog(%5Ctext%7Bodds%7D_%7Bx+1%7D)%20-%20%5Clog(%5Ctext%7Bodds%7D_x)%20&amp;=&amp;%20%5Clog%7B%5Cleft(%5Cfrac%7B%5Ctext%7Bodds%7D_%7Bx+1%7D%7D%7B%5Ctext%7Bodds%7D_x%7D%5Cright)%7D%20&amp;=&amp;%20%5Clog(OR)%20%5C%5C%20%20%0Ae%5E%7B%5Cbeta_1%7D%20&amp;=&amp;%20%5Cfrac%7B%5Ctext%7Bodds%7D_%7Bx+1%7D%7D%7B%5Ctext%7Bodds%7D_x%7D%20&amp;=&amp;%20%5Ctext%7Bodds%20ratio%20%5BOR%5D%7D%0A%5Cend%7Barray%7D%0A"></p>
+</section></section><section id="odds" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="odds">Odds</h3>
+<ul>
+<li><p>Odds = Probability that an event or outcome will occur divided by the probability that it will not occur</p></li>
+<li><p>If there probability of disability is 75% (<img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B3%7D%7B4%7D">), the odds of disability is <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B3/4%7D%7B1-3/4%7D%20=%203"></p></li>
+<li><p>If the odds of disability is 3, the probability of disability is <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B3%7D%7B1%20+%203%7D%20=%200.75%20%5Ctext%7B%20or%20%7D%2075%5C%25"></p></li>
+</ul>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Barray%7D%7Bccc%7D%0A%5Ctext%7BOdds%20=%20%7D%20%5Cfrac%7B%5Ctext%7Bprob%7D%7D%7B1%20-%20%5Ctext%7Bprob%7D%7D%20%5C%5C%0A%5Ctext%7BProb%20=%20%7D%20%5Cfrac%7B%5Ctext%7Bodds%7D%7D%7B1%20+%20%5Ctext%7Bodds%7D%7D%20%20%5C%5C%0A%5Cend%7Barray%7D%0A"></p>
+<iframe width="560" height="350" src="https://www.youtube.com//embed/ARfXDSkQf1Y" frameborder="0" allowfullscreen="">
+</iframe>
+<aside>
+I strongly recommend that you watch the <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw">Statquest</a> videos to gain a good basic understanding of biostatistics.
+</aside></section><section id="odds-ratio" class="level3"><h3 class="anchored" data-anchor-id="odds-ratio">Odds Ratio</h3>
+<p>Because OR is a ratio of odds of the outcome</p>
+<ul>
+<li><p>An OR of 1 implies no association between the predictor and the outcome.</p></li>
+<li><p>An OR &gt; 1 implies a positive association between the predictor and the outcome.</p></li>
+<li><p>An OR &lt; 1 implies a negative association between the predictor and the outcome.</p></li>
+</ul>
+<p>Example</p>
+<p>If patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B2.0%7D%7B0.5%7D"> = 4</p>
+<ul>
+<li><p>Patients with knee pain have 4 times the odds of disability compared with patients without knee pain.</p></li>
+<li><p>When we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B4%7D"> or 0.25 times the odds of disability compared with patients with knee pain</p></li>
+<li><p>Note: <strong>Odds</strong> is the ratio of probabilities whilst <strong>Odds Ratio</strong> is the ratio of the odds. Watch the first <strong>5</strong> minutes of this video <iframe width="560" height="350" src="https://www.youtube.com//embed/8nm0G-1uJzA" frameborder="0" allowfullscreen=""></iframe></p></li>
+</ul></section><section id="example-3" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
+<p>Table 2, taken from our Knee paper<span class="citation" data-cites="pua2017associations">(Pua et al. 2017)</span>, describes how to interpret the output from an ordinal logistic regression model.</p>
+<div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead><tr class="header">
+<th>Number</th>
+<th>Question</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>What is the study aim?</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>What are the predictor(s)-of-interest and outcomes?</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>What are the confounders - and why?</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Why did the authors use both linear and ordinal regression analyses?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://.com/ebp/regression/images/knee_iso_table.png" class="img-fluid figure-img" width="1100"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside>
+Paper can be found in <code>Articles</code> section.
+</aside></section></section><section id="a-paper-to-rule-em-all" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="a-paper-to-rule-em-all">A Paper to rule ’em all</h2>
+<p>Consider Dr.&nbsp;<a href="https://twitter.com/sthilarajah">Shamala Thilarajah’s</a> <a href="https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189">PTJ paper</a></p>
+<aside>
+Paper can be found in <code>Articles</code> section.
+</aside><div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead><tr class="header">
+<th>Number</th>
+<th>Question</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Table 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Table 2: Interpret all the statistics</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Table 3: Interpret all the statistics</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Table 3: Why did the authors use both linear and ordinal regression analyses?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section><section id="for-the-eager" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="for-the-eager">For the Eager</h2>
+<p><a href="https://www.ed.ac.uk/surgery/staff/profiles/ewen-harrison">Ewen Harrison</a>, consultant surgeon and data-scientist, has a nice <a href="https://argoshare.is.ed.ac.uk/healthyr_book/regression.html">online chapter</a> on linear regression for healthcare professionals</p>
+<aside>
+Check out his nice example of the association of systolic blood pressure with smoking status and coffee consumption
+</aside><p>Our team has also gone Bayesian in our analyses. See <a href="https://pubmed.ncbi.nlm.nih.gov/35151629/">here</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/36963864/">here</a>, and <a href="https://pubmed.ncbi.nlm.nih.gov/36940758/">here</a> for examples.</p>
 
 
 
-</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-pua2017associations" class="csl-entry">
 Pua, Yong-Hao, Benjamin F Mentiplay, Ross A Clark, and Jia-Ying Ho. 2017. <span>“Associations Among Quadriceps Strength and Rate of Torque Development 6 Weeks Post Anterior Cruciate Ligament Reconstruction and Future Hop and Vertical Jump Performance: A Prospective Cohort Study.”</span> <em>The Journal of Orthopaedic &amp; Sports Physical Therapy</em> 47 (11): 845–52. <a href="https://doi.org/10.2519/jospt.2017.7133">https://doi.org/10.2519/jospt.2017.7133</a>.
 </div>

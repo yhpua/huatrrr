@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.262">
+<meta name="generator" content="quarto-1.1.251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="SGH PT Dept">
 <meta name="dcterms.date" content="2020-07-16">
@@ -97,25 +97,19 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../../ebp.html">
- <span class="menu-text">Workshop</span></a>
+    <a class="nav-link" href="../../ebp.html">Workshop</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../jclub.html">
- <span class="menu-text">Journal Club</span></a>
+    <a class="nav-link" href="../../jclub.html">Journal Club</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../R.html">
- <span class="menu-text">R</span></a>
+    <a class="nav-link" href="../../R.html">R</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources.html">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="../../resources.html">Resources</a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Articles</span>
-    </a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articles</a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">
 <li>
     <a class="dropdown-item" href="../../articles/jospt_paper.pdf">
@@ -162,8 +156,14 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
   <ul class="collapse">
 <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
   <li><a href="#the-workaround" id="toc-the-workaround" class="nav-link" data-scroll-target="#the-workaround">The Workaround</a></li>
+  <li><a href="#interpreting-beta" id="toc-interpreting-beta" class="nav-link" data-scroll-target="#interpreting-beta">Interpreting <span class="math inline">\(\beta\)</span></a></li>
+  <li><a href="#odds" id="toc-odds" class="nav-link" data-scroll-target="#odds">Odds</a></li>
+  <li><a href="#odds-ratio" id="toc-odds-ratio" class="nav-link" data-scroll-target="#odds-ratio">Odds Ratio</a></li>
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3">Example 3</a></li>
   </ul>
 </li>
+  <li><a href="#a-paper-to-rule-em-all" id="toc-a-paper-to-rule-em-all" class="nav-link" data-scroll-target="#a-paper-to-rule-em-all">A Paper to rule ’em all</a></li>
+  <li><a href="#for-the-eager" id="toc-for-the-eager" class="nav-link" data-scroll-target="#for-the-eager">For the Eager</a></li>
   </ul></nav>
 </nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -199,7 +199,6 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
       <p class="date">July 16, 2020</p>
     </div>
   </div>
-  
     
   </div>
   
@@ -359,19 +358,164 @@ Because regression analysis generalizes many special tests (e.g., t-test, ANOVA,
 <div class="no-row-height column-margin column-container"><div class="">
 <p>For the curious who wants to know why the exponentiated <span class="math inline">\(\beta\)</span> is an OR. But don’t freak out if you don’t understand this!</p>
 </div></div><p><span class="math display">\[
-\begin{split}
-\text{Probabilty = }\pi \in [0,1] \\
-\text{Odds = } \frac{\text{prob}}{1 - \text{prob}} = \frac {\pi}{(1-\pi)} \in [0, +\infty) \\
-\text{log (odds) = }  \text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right) = \text{log}\left(\frac {\pi}{(1-\pi)}\right) \in [-\infty, +\infty) \\
-\log(\text{odds}) = \log\left(\frac{\pi}{1-\pi}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p \\
-\beta_1 = \log(\text{odds}_{x+1}) - \log(\text{odds}_x) \\
-e^{\beta_1} = \frac{\text{odds}_{x+1}}{\text{odds}_x} = \text{odds ratio [OR]}
-\end{split}
+\begin{array}{ccc}
+\text{Probabilty } &amp;=&amp;\pi \in [0,1] \\
+\text{Odds} &amp;=&amp;  \frac{\text{prob}}{1 - \text{prob}} &amp;=&amp; \frac {\pi}{(1-\pi)} \in [0, +\infty) \\
+\text{log (odds)}  &amp;=&amp; \text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right) &amp;=&amp; \text{log}\left(\frac {\pi}{(1-\pi)}\right) \in [-\infty, +\infty) \\
+\log(\text{odds}) &amp;=&amp; \log\left(\frac{\pi}{1-\pi}\right) &amp;=&amp; \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p \\
+\beta_1 &amp;=&amp; \log(\text{odds}_{x+1}) - \log(\text{odds}_x) \\
+e^{\beta_1} &amp;=&amp; \frac{\text{odds}_{x+1}}{\text{odds}_x} &amp;=&amp; \text{odds ratio [OR]}
+\end{array}
 \]</span></p>
+</section><section id="interpreting-beta" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="interpreting-beta">Interpreting <span class="math inline">\(\beta\)</span>
+</h3>
+<p>Focusing on the simple logistic regression model (1 predictor) <span class="math display">\[
+\log{\left( \frac{prob}{1-prob} \right)} = \beta_0 + \beta_1 X  \\
+\]</span></p>
+<p>The left-hand side of the logistic regression equation <span class="math inline">\(\text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right)\)</span> is the natural logarithm of the odds, also known as the “log-odds” or “logit”</p>
+<section id="what-is-similar" class="level4 page-columns page-full"><h4 class="anchored" data-anchor-id="what-is-similar">What is similar?</h4>
+<ul>
+<li>Recall that in linear regression, <span class="math inline">\(\beta\)</span> is the difference in the outcome associated with a 1-unit difference in the predictor (X)<br>
+</li>
+<li>
+<strong>Similarly</strong>, in logistic regression, <span class="math inline">\(\beta\)</span> is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)</li>
+</ul>
+<aside>
+Adapted from Ramzi W. Nahhas’s <a href="https://bookdown.org/rwnahhas/RMPH/blr.html">online book</a>
+</aside><p><span class="math display">\[
+\begin{array}{ccc}
+\beta_1 &amp;=&amp; Y_{x+1} - Y_x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\text{linear regression}\\
+\beta_1 &amp;=&amp; \log(\text{odds}_{x+1}) - \log(\text{odds}_x) ~~~~~~~~\text{logistic regression}\\
+\end{array}
+\]</span></p>
+</section><section id="what-is-different-and-potentially-confusing" class="level4"><h4 class="anchored" data-anchor-id="what-is-different-and-potentially-confusing">What is different and potentially confusing?</h4>
+<ul>
+<li>Because the logistic regression model is on the logged scale, when X is a continuous predictor, <span class="math inline">\(\beta\)</span> is the log of the odds ratio comparing individuals who differ in that predictor by one unit<br>
+</li>
+<li>Because the logistic regression model is on the logged scale, when X is a categorical predictor, <span class="math inline">\(\beta\)</span> is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.<br>
+</li>
+<li>Because <span class="math inline">\(\beta\)</span> is the log of the odds ratio, we exponentiate <span class="math inline">\(\beta\)</span> to compute an odds ratio (OR) for X</li>
+</ul>
+<p><span class="math display">\[
+\begin{array}{ccc}
+\beta_1 &amp;=&amp; \log(\text{odds}_{x+1}) - \log(\text{odds}_x) &amp;=&amp; \log{\left(\frac{\text{odds}_{x+1}}{\text{odds}_x}\right)} &amp;=&amp; \log(OR) \\  
+e^{\beta_1} &amp;=&amp; \frac{\text{odds}_{x+1}}{\text{odds}_x} &amp;=&amp; \text{odds ratio [OR]}
+\end{array}
+\]</span></p>
+</section></section><section id="odds" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="odds">Odds</h3>
+<ul>
+<li><p>Odds = Probability that an event or outcome will occur divided by the probability that it will not occur</p></li>
+<li><p>If there probability of disability is 75% (<span class="math inline">\(\frac{3}{4}\)</span>), the odds of disability is <span class="math inline">\(\frac{3/4}{1-3/4} = 3\)</span></p></li>
+<li><p>If the odds of disability is 3, the probability of disability is <span class="math inline">\(\frac{3}{1 + 3} = 0.75 \text{ or } 75\%\)</span></p></li>
+</ul>
+<p><span class="math display">\[
+\begin{array}{ccc}
+\text{Odds = } \frac{\text{prob}}{1 - \text{prob}} \\
+\text{Prob = } \frac{\text{odds}}{1 + \text{odds}}  \\
+\end{array}
+\]</span></p>
+<iframe width="560" height="350" src="https://www.youtube.com//embed/ARfXDSkQf1Y" frameborder="0" allowfullscreen="">
+</iframe>
+<aside>
+I strongly recommend that you watch the <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw">Statquest</a> videos to gain a good basic understanding of biostatistics.
+</aside></section><section id="odds-ratio" class="level3"><h3 class="anchored" data-anchor-id="odds-ratio">Odds Ratio</h3>
+<p>Because OR is a ratio of odds of the outcome</p>
+<ul>
+<li><p>An OR of 1 implies no association between the predictor and the outcome.</p></li>
+<li><p>An OR &gt; 1 implies a positive association between the predictor and the outcome.</p></li>
+<li><p>An OR &lt; 1 implies a negative association between the predictor and the outcome.</p></li>
+</ul>
+<p>Example</p>
+<p>If patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be <span class="math inline">\(\frac{2.0}{0.5}\)</span> = 4</p>
+<ul>
+<li><p>Patients with knee pain have 4 times the odds of disability compared with patients without knee pain.</p></li>
+<li><p>When we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have <span class="math inline">\(\frac{1}{4}\)</span> or 0.25 times the odds of disability compared with patients with knee pain</p></li>
+<li><p>Note: <strong>Odds</strong> is the ratio of probabilities whilst <strong>Odds Ratio</strong> is the ratio of the odds. Watch the first <strong>5</strong> minutes of this video <iframe width="560" height="350" src="https://www.youtube.com//embed/8nm0G-1uJzA" frameborder="0" allowfullscreen=""></iframe></p></li>
+</ul></section><section id="example-3" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
+<p>Table 2, taken from our Knee paper<span class="citation" data-cites="pua2017associations">(<a href="#ref-pua2017associations" role="doc-biblioref">Pua et al. 2017</a>)</span>, describes how to interpret the output from an ordinal logistic regression model.</p>
+<div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead><tr class="header">
+<th>Number</th>
+<th>Question</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>What is the study aim?</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>What are the predictor(s)-of-interest and outcomes?</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>What are the confounders - and why?</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Why did the authors use both linear and ordinal regression analyses?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/knee_iso_table.png" class="img-fluid figure-img" width="1100"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside>
+Paper can be found in <code>Articles</code> section.
+</aside></section></section><section id="a-paper-to-rule-em-all" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="a-paper-to-rule-em-all">A Paper to rule ’em all</h2>
+<p>Consider Dr.&nbsp;<a href="https://twitter.com/sthilarajah">Shamala Thilarajah’s</a> <a href="https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189">PTJ paper</a></p>
+<aside>
+Paper can be found in <code>Articles</code> section.
+</aside><div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead><tr class="header">
+<th>Number</th>
+<th>Question</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Table 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Table 2: Interpret all the statistics</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Table 3: Interpret all the statistics</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Table 3: Why did the authors use both linear and ordinal regression analyses?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section><section id="for-the-eager" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="for-the-eager">For the Eager</h2>
+<p><a href="https://www.ed.ac.uk/surgery/staff/profiles/ewen-harrison">Ewen Harrison</a>, consultant surgeon and data-scientist, has a nice <a href="https://argoshare.is.ed.ac.uk/healthyr_book/regression.html">online chapter</a> on linear regression for healthcare professionals</p>
+<aside>
+Check out his nice example of the association of systolic blood pressure with smoking status and coffee consumption
+</aside><p>Our team has also gone Bayesian in our analyses. See <a href="https://pubmed.ncbi.nlm.nih.gov/35151629/">here</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/36963864/">here</a>, and <a href="https://pubmed.ncbi.nlm.nih.gov/36940758/">here</a> for examples.</p>
 
 
 
-</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-pua2017associations" class="csl-entry" role="doc-biblioentry">
 Pua, Yong-Hao, Benjamin F Mentiplay, Ross A Clark, and Jia-Ying Ho. 2017. <span>“Associations Among Quadriceps Strength and Rate of Torque Development 6 Weeks Post Anterior Cruciate Ligament Reconstruction and Future Hop and Vertical Jump Performance: A Prospective Cohort Study.”</span> <em>The Journal of Orthopaedic &amp; Sports Physical Therapy</em> 47 (11): 845–52. <a href="https://doi.org/10.2519/jospt.2017.7133">https://doi.org/10.2519/jospt.2017.7133</a>.
 </div>
@@ -423,24 +567,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
     setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -476,42 +603,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
       });
-    }
+      return popup.innerHTML;
+    });
   }
 });
 </script>

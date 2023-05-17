@@ -219,12 +219,154 @@ For the curious who wants to know why the exponentiated $\beta$ is an OR. But do
 
 
 $$
-\begin{split}
-\text{Probabilty = }\pi \in [0,1] \\
-\text{Odds = } \frac{\text{prob}}{1 - \text{prob}} = \frac {\pi}{(1-\pi)} \in [0, +\infty) \\
-\text{log (odds) = }  \text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right) = \text{log}\left(\frac {\pi}{(1-\pi)}\right) \in [-\infty, +\infty) \\
-\log(\text{odds}) = \log\left(\frac{\pi}{1-\pi}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p \\ 
-\beta_1 = \log(\text{odds}_{x+1}) - \log(\text{odds}_x) \\
-e^{\beta_1} = \frac{\text{odds}_{x+1}}{\text{odds}_x} = \text{odds ratio [OR]} 
-\end{split}
+\begin{array}{ccc}
+\text{Probabilty } &=&\pi \in [0,1] \\
+\text{Odds} &=&  \frac{\text{prob}}{1 - \text{prob}} &=& \frac {\pi}{(1-\pi)} \in [0, +\infty) \\
+\text{log (odds)}  &=& \text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right) &=& \text{log}\left(\frac {\pi}{(1-\pi)}\right) \in [-\infty, +\infty) \\
+\log(\text{odds}) &=& \log\left(\frac{\pi}{1-\pi}\right) &=& \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p \\ 
+\beta_1 &=& \log(\text{odds}_{x+1}) - \log(\text{odds}_x) \\
+e^{\beta_1} &=& \frac{\text{odds}_{x+1}}{\text{odds}_x} &=& \text{odds ratio [OR]} 
+\end{array}
 $$
+ 
+
+### Interpreting $\beta$
+Focusing on the simple logistic regression model (1 predictor)
+$$
+\log{\left( \frac{prob}{1-prob} \right)} = \beta_0 + \beta_1 X  \\
+$$
+
+The left-hand side of the logistic regression equation  $\text{log}\left(\frac{\text{prob}}{1 - \text{prob}}\right)$  is the natural logarithm of the odds, also known as the “log-odds” or “logit”  
+
+#### What is similar?
+- Recall that in linear regression, $\beta$ is the difference in the outcome associated with a 1-unit difference in the predictor (X)   
+- **Similarly**, in logistic regression, $\beta$  is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)   
+
+<aside>
+Adapted from Ramzi W. Nahhas's [online book](https://bookdown.org/rwnahhas/RMPH/blr.html) 
+</aside>
+
+
+
+$$
+\begin{array}{ccc}
+\beta_1 &=& Y_{x+1} - Y_x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\text{linear regression}\\
+\beta_1 &=& \log(\text{odds}_{x+1}) - \log(\text{odds}_x) ~~~~~~~~\text{logistic regression}\\
+\end{array}
+$$
+
+
+#### What is different and potentially confusing?
+- Because the logistic regression model is on the logged scale, when X is a continuous predictor, $\beta$ is the log of the odds ratio comparing individuals who differ in that predictor by one unit      
+- Because the logistic regression model is on the logged scale, when X is a categorical predictor, $\beta$ is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.       
+- Because $\beta$ is the log of the odds ratio, we exponentiate $\beta$ to compute an odds ratio (OR) for X
+
+$$
+\begin{array}{ccc}
+\beta_1 &=& \log(\text{odds}_{x+1}) - \log(\text{odds}_x) &=& \log{\left(\frac{\text{odds}_{x+1}}{\text{odds}_x}\right)} &=& \log(OR) \\  
+e^{\beta_1} &=& \frac{\text{odds}_{x+1}}{\text{odds}_x} &=& \text{odds ratio [OR]}
+\end{array}
+$$
+
+ 
+
+
+### Odds 
+
+- Odds = Probability that an event or outcome will occur divided by the probability that it will not occur 
+
+- If there probability of disability is 75% ($\frac{3}{4}$), the odds of disability is $\frac{3/4}{1-3/4} = 3$  
+
+- If the odds of disability is 3, the probability of disability is $\frac{3}{1 + 3} = 0.75 \text{ or } 75\%$
+
+$$
+\begin{array}{ccc}
+\text{Odds = } \frac{\text{prob}}{1 - \text{prob}} \\
+\text{Prob = } \frac{\text{odds}}{1 + \text{odds}}  \\
+\end{array}
+$$
+
+<iframe width="560" height="350" src="https://www.youtube.com//embed/ARfXDSkQf1Y" frameborder="0" allowfullscreen></iframe>
+
+
+<aside>
+I strongly recommend that you watch the [Statquest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw) videos to gain a good basic understanding of biostatistics. 
+</aside>
+
+### Odds Ratio
+
+Because OR is a ratio of odds of the outcome    
+
+- An OR of 1 implies no association between the predictor and the outcome.  
+
+- An OR > 1 implies a positive association between the predictor and the outcome.       
+
+- An OR < 1 implies a negative association between the predictor and the outcome. 
+
+
+Example   
+
+If patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be $\frac{2.0}{0.5}$ = 4      
+
+- Patients with knee pain have 4 times the odds of disability compared with patients without knee pain. 
+
+- When we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have $\frac{1}{4}$ or 0.25 times the odds of disability compared with patients with knee pain        
+
+- Note: **Odds** is the ratio of probabilities whilst **Odds Ratio** is the ratio of the odds. Watch the first **5** minutes of this video
+<iframe width="560" height="350" src="https://www.youtube.com//embed/8nm0G-1uJzA" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+### Example 3
+
+Table 2, taken from our Knee paper[@pua2017associations], describes how to interpret the output from an ordinal logistic regression model.
+ 
+::: l-body
+| Number           | Question                                    |
+|------------------|------------------------------------------------|
+| 1     | What is the study aim?                |
+| 2      | What are the predictor(s)-of-interest and outcomes?  |
+| 3     | What are the confounders - and why? |
+| 4  | Why did the authors use both linear and ordinal regression analyses?          |
+:::
+
+
+
+
+```{r, out.width='1100px', fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('images/knee_iso_table.png')
+```
+
+<aside>
+Paper can be found in `Articles` section.
+</aside>
+
+
+## A Paper to rule 'em all
+Consider Dr. [Shamala Thilarajah's](https://twitter.com/sthilarajah) [PTJ paper](https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189)
+
+<aside>
+Paper can be found in `Articles` section.
+</aside>
+
+::: l-body
+| Number           | Question                                    |
+|------------------|------------------------------------------------|
+| 1     | Table 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?              |
+| 2      | Table 2: Interpret all the statistics|
+| 3     | Table 3: Interpret all the statistics|
+| 4  | Table 3: Why did the authors use both linear and ordinal regression analyses?          |
+:::
+
+
+## For the Eager
+[Ewen Harrison](https://www.ed.ac.uk/surgery/staff/profiles/ewen-harrison), consultant surgeon and data-scientist, has a nice [online chapter](https://argoshare.is.ed.ac.uk/healthyr_book/regression.html) on linear regression for healthcare professionals
+
+<aside>
+Check out his nice example of the association of systolic blood pressure with smoking status and coffee consumption   
+</aside>
+
+Our team has also gone Bayesian in our analyses. See [here](https://pubmed.ncbi.nlm.nih.gov/35151629/), [here](https://pubmed.ncbi.nlm.nih.gov/36963864/), and [here](https://pubmed.ncbi.nlm.nih.gov/36940758/) for examples.  
+ 
+

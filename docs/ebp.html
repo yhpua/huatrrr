@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.262">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -121,25 +121,19 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./ebp.html" aria-current="page">
- <span class="menu-text">Workshop</span></a>
+    <a class="nav-link active" href="./ebp.html" aria-current="page">Workshop</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jclub.html">
- <span class="menu-text">Journal Club</span></a>
+    <a class="nav-link" href="./jclub.html">Journal Club</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./R.html">
- <span class="menu-text">R</span></a>
+    <a class="nav-link" href="./R.html">R</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="./resources.html">Resources</a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Articles</span>
-    </a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articles</a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">    
         <li>
     <a class="dropdown-item" href="./articles/jospt_paper.pdf">
@@ -203,7 +197,7 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
   </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="regression,odds ratio,beta" data-listing-date-sort="1594828800000" data-listing-file-modified-sort="1674556069079" data-listing-reading-time-sort="6.445">
+<div class="quarto-post image-right" data-index="0" data-categories="regression,odds ratio,beta" data-listing-date-sort="1594828800000" data-listing-file-modified-sort="1684283887138" data-listing-reading-time-sort="11.08">
 <div class="thumbnail">
 <p><a href="./ebp/regression/regression.html"> <img src="./ebp/regression/images/ancova.png" class="thumnail-image" style="height: 150px;"> </a></p>
 </div>
@@ -372,24 +366,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
     setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -425,42 +402,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
       });
-    }
+      return popup.innerHTML;
+    });
   }
 });
 </script>
