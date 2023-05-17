@@ -13,7 +13,7 @@ I did not so much create as assemble the materials for this website.
 
 When preparing the workshop materials, 
 
-* I pilfered (and benefitted greatly) from Prof [Frank Harrell's](https://www.fharrell.com/) excellent [*Biostatistics for Biomedical Research*](http://hbiostat.org/doc/bbr.pdf). 
+* I pilfered (and benefitted greatly) from Prof [Frank Harrell's](https://www.fharrell.com/) excellent [*Biostatistics for Biomedical Research*](https://hbiostat.org/bbr/). 
 
 * Josh Starmer's [Statquest](https://statquest.org/) is a also “must go to website” for people interested in gaining a working understanding of biostatistics. 
 
