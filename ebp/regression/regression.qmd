@@ -318,7 +318,7 @@ If patients with knee pain have an odds of disability of 2.0 and patients withou
 
 
 
-### Example 3
+### Example 1
 
 Table 2, taken from our Knee paper[@pua2017associations], describes how to interpret the output from an ordinal logistic regression model.
  
@@ -343,8 +343,8 @@ Paper can be found in `Articles` section.
 </aside>
 
 
-## A Paper to rule 'em all
-Consider Dr. [Shamala Thilarajah's](https://twitter.com/sthilarajah) [PTJ paper](https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189)
+### Example 2
+Consider Assoc Prof. [Shamala Thilarajah's](https://twitter.com/sthilarajah) [PTJ paper](https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189)
 
 <aside>
 Paper can be found in `Articles` section.
@@ -365,7 +365,7 @@ Paper can be found in `Articles` section.
 
 <aside>
 Check out his nice example of the association of systolic blood pressure with smoking status and coffee consumption   
-</aside>
+</aside>  
 
 Our team has also gone Bayesian in our analyses. See [here](https://pubmed.ncbi.nlm.nih.gov/35151629/), [here](https://pubmed.ncbi.nlm.nih.gov/36963864/), and [here](https://pubmed.ncbi.nlm.nih.gov/36940758/) for examples.  
  

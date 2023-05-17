@@ -9,7 +9,7 @@
 <link>https://.com/ebp.html</link>
 <atom:link href="https://.com/ebp.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.1.251</generator>
+<generator>quarto-1.2.262</generator>
 <lastBuildDate>Wed, 15 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Regression</title>
@@ -217,7 +217,7 @@ I strongly recommend that you watch the <a href="https://www.youtube.com/channel
 <li><p>Patients with knee pain have 4 times the odds of disability compared with patients without knee pain.</p></li>
 <li><p>When we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B4%7D"> or 0.25 times the odds of disability compared with patients with knee pain</p></li>
 <li><p>Note: <strong>Odds</strong> is the ratio of probabilities whilst <strong>Odds Ratio</strong> is the ratio of the odds. Watch the first <strong>5</strong> minutes of this video <iframe width="560" height="350" src="https://www.youtube.com//embed/8nm0G-1uJzA" frameborder="0" allowfullscreen=""></iframe></p></li>
-</ul></section><section id="example-3" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
+</ul></section><section id="example-1-1" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-1-1">Example 1</h3>
 <p>Table 2, taken from our Knee paper<span class="citation" data-cites="pua2017associations">(Pua et al. 2017)</span>, describes how to interpret the output from an ordinal logistic regression model.</p>
 <div class="l-body">
 <table class="table">
@@ -259,8 +259,8 @@ I strongly recommend that you watch the <a href="https://www.youtube.com/channel
 </div>
 <aside>
 Paper can be found in <code>Articles</code> section.
-</aside></section></section><section id="a-paper-to-rule-em-all" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="a-paper-to-rule-em-all">A Paper to rule ’em all</h2>
-<p>Consider Dr.&nbsp;<a href="https://twitter.com/sthilarajah">Shamala Thilarajah’s</a> <a href="https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189">PTJ paper</a></p>
+</aside></section><section id="example-2-1" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-2-1">Example 2</h3>
+<p>Consider Assoc Prof.&nbsp;<a href="https://twitter.com/sthilarajah">Shamala Thilarajah’s</a> <a href="https://academic.oup.com/ptj/advance-article-abstract/doi/10.1093/ptj/pzab060/6134189">PTJ paper</a></p>
 <aside>
 Paper can be found in <code>Articles</code> section.
 </aside><div class="l-body">
@@ -293,7 +293,7 @@ Paper can be found in <code>Articles</code> section.
 </tbody>
 </table>
 </div>
-</section><section id="for-the-eager" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="for-the-eager">For the Eager</h2>
+</section></section><section id="for-the-eager" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="for-the-eager">For the Eager</h2>
 <p><a href="https://www.ed.ac.uk/surgery/staff/profiles/ewen-harrison">Ewen Harrison</a>, consultant surgeon and data-scientist, has a nice <a href="https://argoshare.is.ed.ac.uk/healthyr_book/regression.html">online chapter</a> on linear regression for healthcare professionals</p>
 <aside>
 Check out his nice example of the association of systolic blood pressure with smoking status and coffee consumption
