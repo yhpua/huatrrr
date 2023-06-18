@@ -51,7 +51,7 @@ v.	`rms`
 -   Go through the [Janitor vignette](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) 
 
 
-7.	Learn more `dplyr` verbs   
+7.	Learn more `dplyr` verbs and base R functions   
 -	`joining` (left_join), `group_by`, `summarise`    
 -  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR) [^3]     
 
