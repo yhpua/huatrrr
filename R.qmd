@@ -2,29 +2,82 @@
 title: R
 ---
 
-## Resources to learn R
 
-Under construction: I plan to include specific docs on the use of R...
 
 
 ## Learning R 
-[R Weekly newsletter](https://rweekly.org/): e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R. 
+ 
+Steps to follow    
 
-[#rstats](https://twitter.com/search?q=%23rstats): For twitter users 
+1.	Install `R studio` and `R` (and know the difference between them)   
+- `R` is both a software and programming language   
+- `Rstudio` provides a (nice) environment to run `R`   
+- This website provides a nice [explanation of key concepts](https://okanbulut.github.io/edpy507/learning-r.html)      
+
+2.	In `Rstudio`, perform these 2 basic chores: 
+- Install `R` packages  
+i.	`readxl`  
+ii.	`tidyverse`[^1]  
+iii.	`here`   
+iv.	`janitor`  
+v.	`rms`  
+
+[^1]: It is still crucial to learn base `R`!  
 
 
-[StackOverflow](https://stackoverflow.com/): Q&A site with answers to all sorts of programming questions 
+- Move console pane to the [right](https://okanbulut.github.io/edpy507/learning-r.html)  
 
 
-[RStudio Community](https://community.rstudio.com/) a forum for Rstudio users 
+3. Write and run some codes on the `source` panel[^2]   
+
+[^2]: Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.    
+
+- Go through lessons $1$ to $8$ of [fastR](https://github.com/matloff/fasteR)  
 
 
-[**R for Data Science**](https://r4ds.had.co.nz/): A free online book for learning the basics of R and the tidyverse.  
+4.	`tidyverse`   
+-  based on the built-in `mtcars`, learn how to use the pipe (%>%) operator + the following dplyr verbs: `filter`, `select`, `arrange`, `count`, `rename`, `case_when`, `mutate`
+-  [nice tutorial](https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/)
+-  [Andrew Heiss website](https://evalsp23.classes.andrewheiss.com/resource/style.html)     
+-  `recode()` and `relevel` factor levels using the `forcats::fct_relevel()`   
 
-[**R and RStudio cheat sheets**](https://www.rstudio.com/resources/cheatsheets/): A large collection of simple cheat sheets for RStudio, **ggplot2**, and other R-related things.   
+
+5.	Read an external file: use `here()` package to manage file-path
+-  create a R studio project    
+-  read a file using `readxl` + `here()`    
+
+
+6.	Data cleaning   
+-   Go through the [Janitor vignette](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) 
+
+
+7.	Learn more `dplyr` verbs   
+-	`joining` (left_join), `group_by`, `summarise`    
+-  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR) [^3]     
+
+[^3]: How does `tapply()` compare with `group_by` + `summarise` ?   
+
+
+
+ 
+
+
+## Resources to learn R
+[Harrell's R workflow](https://hbiostat.org/rflow/)   
+
+[R Weekly newsletter](https://rweekly.org/): e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.    
+
+[#rstats](https://twitter.com/search?q=%23rstats): For twitter users   
+
+[StackOverflow](https://stackoverflow.com/): Q&A site with answers to all sorts of programming questions    
+
+[RStudio Community](https://community.rstudio.com/) a forum for Rstudio users    
+
+[**R for Data Science**](https://r4ds.had.co.nz/): A free online book for learning the basics of R and the tidyverse.    
+
+[**R and RStudio cheat sheets**](https://www.rstudio.com/resources/cheatsheets/): A large collection of simple cheat sheets for RStudio, **ggplot2**, and other R-related things.     
 
 [**CSE 631: Principles & Practice of Data Visualization**](http://cslu.ohsu.edu/~bedricks/courses/cs631/):  
 
-[Dr. Alison Presmanes Hill](https://twitter.com/apreshill) at RStudio. 
 
  

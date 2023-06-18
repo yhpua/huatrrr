@@ -9,7 +9,7 @@
 <link>https://.com/jclub.html</link>
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.1.251</generator>
+<generator>quarto-1.2.262</generator>
 <lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Journal Club</title>
@@ -219,7 +219,7 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
 <div>
 <p>
 </p>
-<pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
 A[Goals of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] &amp; I[Interpretation&lt;br&gt;Effects Estimation] &amp; Pred[Prediction]
 Pred --&gt; V[Validation]
 I --&gt; festimat[Point and interval&lt;br&gt;estimation of one&lt;br&gt;predictor's effect]

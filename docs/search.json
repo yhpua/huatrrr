@@ -119,6 +119,13 @@
     "text": "Logistic Regression\nThe Challenge\n\nLogistic regression is a regression technique that is used to analyse binary outcome.\nOur response/outcome variable takes on 2 values, 0 or 1, and we convert them into the probability of a “one” response, given a set of predictors.\nWe cannot use linear regression to predict probabilities because it may predict probabilities >1 or <0\nThe Workaround\n\n\nFor the curious who wants to know why the exponentiated \\(\\beta\\) is an OR. But don’t freak out if you don’t understand this!\n\\[\n\\begin{array}{ccc}\n\\text{Probabilty } &=&\\pi \\in [0,1] \\\\\n\\text{Odds} &=&  \\frac{\\text{prob}}{1 - \\text{prob}} &=& \\frac {\\pi}{(1-\\pi)} \\in [0, +\\infty) \\\\\n\\text{log (odds)}  &=& \\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right) &=& \\text{log}\\left(\\frac {\\pi}{(1-\\pi)}\\right) \\in [-\\infty, +\\infty) \\\\\n\\log(\\text{odds}) &=& \\log\\left(\\frac{\\pi}{1-\\pi}\\right) &=& \\beta_0 + \\beta_1 X_1 + \\cdots + \\beta_p X_p \\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) \\\\\ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nInterpreting \\(\\beta\\)\n\nFocusing on the simple logistic regression model (1 predictor) \\[\n\\log{\\left( \\frac{prob}{1-prob} \\right)} = \\beta_0 + \\beta_1 X  \\\\\n\\]\nThe left-hand side of the logistic regression equation \\(\\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right)\\) is the natural logarithm of the odds, also known as the “log-odds” or “logit”\nWhat is similar?\n\nRecall that in linear regression, \\(\\beta\\) is the difference in the outcome associated with a 1-unit difference in the predictor (X)\n\n\nSimilarly, in logistic regression, \\(\\beta\\) is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)\n\n\nAdapted from Ramzi W. Nahhas’s online book\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& Y_{x+1} - Y_x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\text{linear regression}\\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) ~~~~~~~~\\text{logistic regression}\\\\\n\\end{array}\n\\]\nWhat is different and potentially confusing?\n\nBecause the logistic regression model is on the logged scale, when X is a continuous predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals who differ in that predictor by one unit\n\nBecause the logistic regression model is on the logged scale, when X is a categorical predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.\n\nBecause \\(\\beta\\) is the log of the odds ratio, we exponentiate \\(\\beta\\) to compute an odds ratio (OR) for X\n\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) &=& \\log{\\left(\\frac{\\text{odds}_{x+1}}{\\text{odds}_x}\\right)} &=& \\log(OR) \\\\  \ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nOdds\n\nOdds = Probability that an event or outcome will occur divided by the probability that it will not occur\nIf there probability of disability is 75% (\\(\\frac{3}{4}\\)), the odds of disability is \\(\\frac{3/4}{1-3/4} = 3\\)\nIf the odds of disability is 3, the probability of disability is \\(\\frac{3}{1 + 3} = 0.75 \\text{ or } 75\\%\\)\n\n\\[\n\\begin{array}{ccc}\n\\text{Odds = } \\frac{\\text{prob}}{1 - \\text{prob}} \\\\\n\\text{Prob = } \\frac{\\text{odds}}{1 + \\text{odds}}  \\\\\n\\end{array}\n\\]\n\n\n\nI strongly recommend that you watch the Statquest videos to gain a good basic understanding of biostatistics.\nOdds Ratio\nBecause OR is a ratio of odds of the outcome\n\nAn OR of 1 implies no association between the predictor and the outcome.\nAn OR > 1 implies a positive association between the predictor and the outcome.\nAn OR < 1 implies a negative association between the predictor and the outcome.\n\nExample\nIf patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be \\(\\frac{2.0}{0.5}\\) = 4\n\nPatients with knee pain have 4 times the odds of disability compared with patients without knee pain.\nWhen we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have \\(\\frac{1}{4}\\) or 0.25 times the odds of disability compared with patients with knee pain\nNote: Odds is the ratio of probabilities whilst Odds Ratio is the ratio of the odds. Watch the first 5 minutes of this video \nExample 1\nTable 2, taken from our Knee paper(Pua et al. 2017), describes how to interpret the output from an ordinal logistic regression model.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nWhat is the study aim?\n\n\n2\nWhat are the predictor(s)-of-interest and outcomes?\n\n\n3\nWhat are the confounders - and why?\n\n\n4\nWhy did the authors use both linear and ordinal regression analyses?\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper can be found in Articles section.\nExample 2\nConsider Assoc Prof. Shamala Thilarajah’s PTJ paper\n\nPaper can be found in Articles section.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nTable 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?\n\n\n2\nTable 2: Interpret all the statistics\n\n\n3\nTable 3: Interpret all the statistics\n\n\n4\nTable 3: Why did the authors use both linear and ordinal regression analyses?"
   },
   {
+    "objectID": "ebp/regression/regression.html#for-the-eager",
+    "href": "ebp/regression/regression.html#for-the-eager",
+    "title": "Regression",
+    "section": "For the Eager",
+    "text": "For the Eager\nEwen Harrison, consultant surgeon and data-scientist, has a nice online chapter on linear regression for healthcare professionals\n\nCheck out his nice example of the association of systolic blood pressure with smoking status and coffee consumption\nOur team has also gone Bayesian in our analyses. See here, here, and here for examples."
+  },
+  {
     "objectID": "ebp.html",
     "href": "ebp.html",
     "title": "HUAT-RRR",
@@ -131,6 +138,20 @@
     "title": "HUAT-RRR",
     "section": "",
     "text": "HUAT-RRR (happy using and teaching RRR)1 directs one to materials and resources for learning Regression analysis, Research methods, and R programming. To access this website offline, download the whole website from its  repository."
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html",
+    "href": "jclub/articles2023/articles_2023.html",
+    "title": "Articles 2023",
+    "section": "",
+    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is <0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#cohort-study",
+    "href": "jclub/articles2023/articles_2023.html#cohort-study",
+    "title": "Articles 2023",
+    "section": "Cohort Study",
+    "text": "Cohort Study\nCR 2020 Grimley et al\nPlus Points\n\nClear Writing and Description; Large Sample size\n\nA prior definition of key confounders\nMinus Points\n\nWhy get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek’s papers that used (longitudinal) ordinal regression\n\nUnivariable Screening: Although a less stringent \\(P\\)-value criterion was used, I am unclear about the goal/rationale of the analysis2\n\n\n\n\n\n\n\nflowchart LR\nA[Goals of <br>Analysis] --> test[Hypothesis testing] & I[Interpretation<br>Effects Estimation] & Pred[Prediction]\nPred --> V[Validation]\nI --> festimat[Point and interval<br>estimation of one<br>predictor's effect]\ntest --> ftest[Formal tests]\n\n\n\n\n\n\nModified from rmsc book\n\n\n\n\nThe perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed\n\nPre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.\nInteresting\n\nMany ORs to interpret = Practice time"
   },
   {
     "objectID": "jclub/journalclub/journalclub.html",
@@ -186,21 +207,21 @@
     "href": "jclub.html",
     "title": "HUAT-RRR",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nJournal Club\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\n\nEach journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntervention Evaluation\n\n\n\nconfounder\n\n\nregression\n\n\nBayesian\n\n\npropensity score\n\n\n\nThis article describes intervention evaluation using (i) propensity score adjustment and (ii) Bayesian analyses. At the end of the session, you should be able to appreciate…\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArticles 2023\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\nresearch design\n\n\n\nA discussion of the Articles provided by participants of the 2023 EBP workshop.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Journal Club, Inservice Presentation\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nJournal Club\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\n\nEach journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntervention Evaluation\n\n\n\nconfounder\n\n\nregression\n\n\nBayesian\n\n\npropensity score\n\n\n\nThis article describes intervention evaluation using (i) propensity score adjustment and (ii) Bayesian analyses. At the end of the session, you should be able to appreciate…\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArticles 2023\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\nresearch design\n\n\n\nA discussion of the Articles provided by participants of the 2023 EBP workshop.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "R.html",
     "href": "R.html",
     "title": "R",
     "section": "",
-    "text": "Under construction: I plan to include specific docs on the use of R…"
+    "text": "Steps to follow\n\nInstall R studio and R (and know the difference between them)\n\n\n\nR is both a software and programming language\n\nRstudio provides a (nice) environment to run R\n\nThis website provides a nice explanation of key concepts\n\n\nIn Rstudio, perform these 2 basic chores:\n\n\nInstall R packages\n\n\n\nreadxl\n\ntidyverse1\n\nhere\n\njanitor\n\nrms\n\n\nMove console pane to the right\n\n\nWrite and run some codes on the source panel2\n\n\nGo through lessons \\(1\\) to \\(8\\) of fastR\n\n\ntidyverse\n\n\n\nbased on the built-in mtcars, learn how to use the pipe (%>%) operator + the following dplyr verbs: filter, select, arrange, count, rename, case_when, mutate\nnice tutorial\nAndrew Heiss website\n\nrecode() and relevel factor levels using the forcats::fct_relevel()\n\n\nRead an external file: use here() package to manage file-path\n\n\ncreate a R studio project\n\nread a file using readxl + here()\n\n\nData cleaning\n\n\n\nGo through the Janitor vignette\n\n\nLearn more dplyr verbs\n\n\n\njoining (left_join), group_by, summarise\n\nGo through lessons \\(9\\) to \\(13\\) of fastR 3"
   },
   {
-    "objectID": "R.html#learning-r",
-    "href": "R.html#learning-r",
+    "objectID": "R.html#resources-to-learn-r",
+    "href": "R.html#resources-to-learn-r",
     "title": "R",
-    "section": "Learning R",
-    "text": "Learning R\nR Weekly newsletter: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.\n#rstats: For twitter users\nStackOverflow: Q&A site with answers to all sorts of programming questions\nRStudio Community a forum for Rstudio users\nR for Data Science: A free online book for learning the basics of R and the tidyverse.\nR and RStudio cheat sheets: A large collection of simple cheat sheets for RStudio, ggplot2, and other R-related things.\nCSE 631: Principles & Practice of Data Visualization:\nDr. Alison Presmanes Hill at RStudio."
+    "section": "Resources to learn R",
+    "text": "Resources to learn R\nHarrell’s R workflow\nR Weekly newsletter: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.\n#rstats: For twitter users\nStackOverflow: Q&A site with answers to all sorts of programming questions\nRStudio Community a forum for Rstudio users\nR for Data Science: A free online book for learning the basics of R and the tidyverse.\nR and RStudio cheat sheets: A large collection of simple cheat sheets for RStudio, ggplot2, and other R-related things.\nCSE 631: Principles & Practice of Data Visualization:"
   },
   {
     "objectID": "resources.html",
@@ -208,54 +229,5 @@
     "title": "Resources",
     "section": "",
     "text": "I did not so much create as assemble the materials for this website.\n\nAny errors in this website, however, are mine.\n\nWhen preparing the workshop materials,\n\nI pilfered (and benefitted greatly) from Prof Frank Harrell’s excellent Biostatistics for Biomedical Research.\nJosh Starmer’s Statquest is a also “must go to website” for people interested in gaining a working understanding of biostatistics.\nZ Statistics is an excellent educational resource for University students and analysts of any stripe.\nI belatedly discovered Crash Course and I think it is a fantastic website."
-  },
-  {
-    "objectID": "jclub/articles2023/articles_2023.html",
-    "href": "jclub/articles2023/articles_2023.html",
-    "title": "Articles 2023",
-    "section": "",
-    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is <0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
-  },
-  {
-    "objectID": "jclub/articles2023/articles_2023.html#questions",
-    "href": "jclub/articles2023/articles_2023.html#questions",
-    "title": "Articles 2023",
-    "section": "Questions",
-    "text": "Questions\n\nIs this a well-conducted study in terms of study design? (refer to Pointers)\nWould you conclude that there is no difference between high vs low-intensity strength training? (refer to Pointers)\n\nin terms of self-reported knee pain\nin terms of knee extensor strength\nin terms of hip abductor strength\nin terms of 6-minute walking distance\n\n\nWhat are the mechanism of effects of high and low-intensity strength training? (read Schoenfeld et al)\nWhat are the implications for clinical practice?\nHow would you have done the study differently? (Open Question)"
-  },
-  {
-    "objectID": "jclub/articles2023/articles_2023.html#designlink",
-    "href": "jclub/articles2023/articles_2023.html#designlink",
-    "title": "Articles 2023",
-    "section": "Study Design",
-    "text": "Study Design\nMethods/procedures used by the researchers to reduce/minimize study bias\nRecruitment\nParticipants were not aware of the hypotheses tested. What are the implications?\nRandomization\nHow does randomization reduce confounding? (Confounding Chapter)\nWhy was randomization stratified by sex and baseline BMI?(Confounding Chapter)\nAnalysis\nParticipants were analyzed according to their assigned randomization group even if they were nonadherent to their assigned intervention (Confounding Chapter)\nAnalysis were adjusted for sex, baseline BMI, and baseline outcome values (Regression Chapter on ANCOVA)"
-  },
-  {
-    "objectID": "jclub/articles2023/articles_2023.html#findingslink",
-    "href": "jclub/articles2023/articles_2023.html#findingslink",
-    "title": "Articles 2023",
-    "section": "Findings",
-    "text": "Findings\nInterpret the RCT findings by quantifying the evidence for/against a treatment effect Association = Treatment Effect = Treatment Difference\n\n\n\n\n\n\n\nFindings\nInterpretation\n\n\n\nP<0.05\nEvidence of a (non-zero) treatment difference/effect\n\n\nP>0.05\nInsufficient/No evidence of association (≠ evidence of no treatment difference)1\n\n\n\n(1) P<0.05; 95% CIs exclude trivial effects\nEvidence of a clinically meaningful treatment difference\n\n\n(2) P<0.05; 95% CIs exclude meaningful effects\nEvidence of a treatment diff; however, this difference is not clinically meaningful\n\n\n(3) P<0.05; 95% CIs include trivial + meaningful effects\nCannot exclude non-clinically meaningful treatment difference\n\n\n(4) P>0.05; 95% CIs exclude meaningful effects\n(Possibly) Evidence of no treatment difference\n\n\n(5) P>0.05; 95% CI limits include meaningful effects\nCI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)\n\n\n(6) P>0.05; 95% CI limits include trivial + meaningful effects\nNo evidence of treatment difference, however, we cannot exclude clinically important difference\n\n\n\n\nWe are assuming that the 95%CI represent the range of plausible values for the true (hidden) treatment effects. This is, strictly speaking, untrue2 (General Overview Chapter)."
-  },
-  {
-    "objectID": "jclub/articles2023/articles_2023.html#cohort-study",
-    "href": "jclub/articles2023/articles_2023.html#cohort-study",
-    "title": "Articles 2023",
-    "section": "Cohort Study",
-    "text": "Cohort Study\nCR 2020 Grimley et al\nPlus Points\n\nClear Writing and Description; Large Sample size\n\nA prior definition of key confounders\nMinus Points\n\nWhy get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek’s papers that used (longitudinal) ordinal regression\n\nUnivariable Screening: Although a less stringent \\(P\\)-value criterion was used, I am unclear about the goal/rationale of the analysis2\n\n\n\n\n\n\n\nflowchart LR\nA[Goals of <br>Analysis] --> test[Hypothesis testing] & I[Interpretation<br>Effects Estimation] & Pred[Prediction]\nPred --> V[Validation]\nI --> festimat[Point and interval<br>estimation of one<br>predictor's effect]\ntest --> ftest[Formal tests]\n\n\n\n\n\n\nModified from rmsc book\n\n\n\n\nThe perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed\n\nPre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.\nInteresting\n\nMany ORs to interpret = Practice time"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#a-paper-to-rule-em-all",
-    "href": "ebp/regression/regression.html#a-paper-to-rule-em-all",
-    "title": "Regression",
-    "section": "A Paper to rule ’em all",
-    "text": "A Paper to rule ’em all\nConsider Dr. Shamala Thilarajah’s PTJ paper\n\nPaper can be found in Articles section.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nTable 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?\n\n\n2\nTable 2: Interpret all the statistics\n\n\n3\nTable 3: Interpret all the statistics\n\n\n4\nTable 3: Why did the authors use both linear and ordinal regression analyses?"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#for-the-eager",
-    "href": "ebp/regression/regression.html#for-the-eager",
-    "title": "Regression",
-    "section": "For the Eager",
-    "text": "For the Eager\nEwen Harrison, consultant surgeon and data-scientist, has a nice online chapter on linear regression for healthcare professionals\n\nCheck out his nice example of the association of systolic blood pressure with smoking status and coffee consumption\nOur team has also gone Bayesian in our analyses. See here, here, and here for examples."
   }
 ]
