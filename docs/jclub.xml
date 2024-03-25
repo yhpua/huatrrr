@@ -9,7 +9,7 @@
 <link>https://.com/jclub.html</link>
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
-<generator>quarto-1.2.262</generator>
+<generator>quarto-1.3.450</generator>
 <lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Journal Club</title>
@@ -217,19 +217,15 @@ div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
 <div class="cell page-columns page-full" data-fig-width="8">
 <div class="cell-output-display column-screen-inset-right">
 <div>
-<p>
-</p>
-<pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
 A[Goals of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] &amp; I[Interpretation&lt;br&gt;Effects Estimation] &amp; Pred[Prediction]
 Pred --&gt; V[Validation]
 I --&gt; festimat[Point and interval&lt;br&gt;estimation of one&lt;br&gt;predictor's effect]
 test --&gt; ftest[Formal tests]
 
 </pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
 </div>
-
 <p>Modified from <a href="https://hbiostat.org/rmsc/intro.html">rmsc book</a></p>
 </div>
 </div>

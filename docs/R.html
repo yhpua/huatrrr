@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.262">
-
+<meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>HUAT-RRR - R</title>
 <style>
 code{white-space: pre-wrap;}
@@ -17,11 +14,44 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -38,8 +68,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -55,102 +84,110 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
-}</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P47K0XF3SM"></script>
-
-<script type="text/javascript">
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P47K0XF3SM"></script><script type="text/javascript">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
-</script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">HUAT-RRR</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./ebp.html">
+<li class="nav-item">
+    <a class="nav-link" href="./ebp.html" rel="" target="">
  <span class="menu-text">Workshop</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jclub.html">
+    <a class="nav-link" href="./jclub.html" rel="" target="">
  <span class="menu-text">Journal Club</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./R.html" aria-current="page">
+    <a class="nav-link active" href="./R.html" rel="" target="" aria-current="page">
  <span class="menu-text">R</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html">
+    <a class="nav-link" href="./resources.html" rel="" target="">
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Articles</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">    
-        <li>
-    <a class="dropdown-item" href="./articles/jospt_paper.pdf">
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">
+<li>
+    <a class="dropdown-item" href="./articles/jospt_paper.pdf" rel="" target="">
  <span class="dropdown-text">JOSPT RTD</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./articles/knee_paper.pdf">
+    <a class="dropdown-item" href="./articles/knee_paper.pdf" rel="" target="">
  <span class="dropdown-text">Knee Isokinetic</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./articles/ptj_steptest.pdf">
+    <a class="dropdown-item" href="./articles/ptj_steptest.pdf" rel="" target="">
  <span class="dropdown-text">PTJ Step Test</span></a>
   </li>  
     </ul>
-  </li>
+</li>
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+<div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-r" id="toc-learning-r" class="nav-link active" data-scroll-target="#learning-r">Learning R</a></li>
-  <li><a href="#resources-to-learn-r" id="toc-resources-to-learn-r" class="nav-link" data-scroll-target="#resources-to-learn-r">Resources to learn R</a></li>
+<li>
+<a href="#learning-r" id="toc-learning-r" class="nav-link active" data-scroll-target="#learning-r">Learning R</a>
+  <ul class="collapse">
+<li><a href="#contributors" id="toc-contributors" class="nav-link" data-scroll-target="#contributors">Contributors</a></li>
   </ul>
-</nav>
-</nav>
+</li>
+  <li><a href="#steps-to-follow" id="toc-steps-to-follow" class="nav-link" data-scroll-target="#steps-to-follow">Steps to follow</a></li>
+  <li><a href="#step-1-installing-rstudio" id="toc-step-1-installing-rstudio" class="nav-link" data-scroll-target="#step-1-installing-rstudio">Step 1: Installing RStudio</a></li>
+  <li>
+<a href="#step-2-installing-r-packages" id="toc-step-2-installing-r-packages" class="nav-link" data-scroll-target="#step-2-installing-r-packages">Step 2: Installing R Packages</a>
+  <ul class="collapse">
+<li><a href="#step-2.1-how-to-use-packages" id="toc-step-2.1-how-to-use-packages" class="nav-link" data-scroll-target="#step-2.1-how-to-use-packages">Step 2.1: How to use packages</a></li>
+  <li><a href="#step-2.2-moving-rstudio-panels" id="toc-step-2.2-moving-rstudio-panels" class="nav-link" data-scroll-target="#step-2.2-moving-rstudio-panels">Step 2.2: Moving Rstudio Panels</a></li>
+  </ul>
+</li>
+  <li><a href="#step-3-fastr-lesson" id="toc-step-3-fastr-lesson" class="nav-link" data-scroll-target="#step-3-fastr-lesson">Step 3: fastR lesson</a></li>
+  <li><a href="#step-4-learning-important-verbs" id="toc-step-4-learning-important-verbs" class="nav-link" data-scroll-target="#step-4-learning-important-verbs">Step 4: Learning important verbs</a></li>
+  <li>
+<a href="#step-5-read-excel-files" id="toc-step-5-read-excel-files" class="nav-link" data-scroll-target="#step-5-read-excel-files">Step 5: Read excel files</a>
+  <ul class="collapse">
+<li><a href="#step-5.1-alternative-method-to-read-excel-files" id="toc-step-5.1-alternative-method-to-read-excel-files" class="nav-link" data-scroll-target="#step-5.1-alternative-method-to-read-excel-files">Step 5.1: Alternative method to read excel files</a></li>
+  </ul>
+</li>
+  <li><a href="#step-6-data-cleaning" id="toc-step-6-data-cleaning" class="nav-link" data-scroll-target="#step-6-data-cleaning">Step 6: Data Cleaning</a></li>
+  <li><a href="#step-7-additional-lessons-and-more-verbs" id="toc-step-7-additional-lessons-and-more-verbs" class="nav-link" data-scroll-target="#step-7-additional-lessons-and-more-verbs">Step 7: Additional lessons and more verbs</a></li>
+  <li><a href="#resources-to-learn-r" id="toc-resources-to-learn-r" class="nav-link" data-scroll-target="#resources-to-learn-r">Resources to learn R</a></li>
+  </ul></nav>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">R</h1>
 </div>
 
@@ -164,87 +201,191 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
   </div>
   
 
-</header>
-
-<section id="learning-r" class="level2">
-<h2 class="anchored" data-anchor-id="learning-r">Learning R</h2>
-<p>Steps to follow</p>
+</header><section id="learning-r" class="level2"><h2 class="anchored" data-anchor-id="learning-r">Learning R</h2>
+<section id="contributors" class="level3"><h3 class="anchored" data-anchor-id="contributors">Contributors</h3>
+<ul>
+<li>Several colleagues/PhD students (2021-2023)<br>
+</li>
+<li>Ler Vin See (Jan 2024)</li>
+</ul></section></section><section id="steps-to-follow" class="level2"><h2 class="anchored" data-anchor-id="steps-to-follow">Steps to follow</h2>
+</section><section id="step-1-installing-rstudio" class="level2"><h2 class="anchored" data-anchor-id="step-1-installing-rstudio">Step 1: Installing RStudio</h2>
 <ol type="1">
-<li>Install <code>R studio</code> and <code>R</code> (and know the difference between them)<br>
+<li>Install <code>RStudio</code> and <code>R</code> (and know the difference between them)<br>
 </li>
 </ol>
 <ul>
-<li><code>R</code> is both a software and programming language<br>
+<li>You can install both using <a href="https://posit.co/download/rstudio-desktop/">this link</a>
 </li>
-<li><code>Rstudio</code> provides a (nice) environment to run <code>R</code><br>
+<li>
+<code>R</code> is both a software and programming language<br>
 </li>
-<li>This website provides a nice <a href="https://okanbulut.github.io/edpy507/learning-r.html">explanation of key concepts</a></li>
-</ul>
+<li>
+<code>Rstudio</code> provides a (nice) environment to run <code>R</code><br>
+</li>
+<li>This website provides a nice <a href="https://okanbulut.github.io/edpy507/learning-r.html">explanation of key concepts</a>
+</li>
+</ul></section><section id="step-2-installing-r-packages" class="level2"><h2 class="anchored" data-anchor-id="step-2-installing-r-packages">Step 2: Installing R Packages</h2>
 <ol start="2" type="1">
 <li>In <code>Rstudio</code>, perform these 2 basic chores:</li>
 </ol>
 <ul>
-<li>Install <code>R</code> packages<br>
+<li>Install <code>R</code> packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
 </li>
 </ul>
 <ol type="i">
-<li><code>readxl</code><br>
+<li>
+<code>readxl</code><br>
 </li>
-<li><code>tidyverse</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+<li>
+<code>tidyverse</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><br>
 </li>
-<li><code>here</code><br>
+<li>
+<code>here</code><br>
 </li>
-<li><code>janitor</code><br>
+<li>
+<code>janitor</code><br>
 </li>
 <li><code>rms</code></li>
 </ol>
-<ul>
-<li>Move console pane to the <a href="https://okanbulut.github.io/edpy507/learning-r.html">right</a></li>
+<section id="package-function-code-an-analogy" class="level4"><h4 class="anchored" data-anchor-id="package-function-code-an-analogy">Package, Function, Code: An Analogy</h4>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Package</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Function</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Codes</a></li>
 </ul>
-<ol start="3" type="1">
-<li>Write and run some codes on the <code>source</code> panel<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
-</ol>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>A <code>package</code> with its many <code>functions</code> can be seen as a book containing many pages. Just like how every page of a book tells a story, every R <code>function</code> in a <code>package</code> is based on accomplishing a task (e.g.&nbsp;tidying workspace or reading excel sheets)</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>A <code>function</code> can be seen as a page contained within a book (the <code>package</code>). This is the most important part of the 3 components mentioned here, as these <code>functions</code> are the ones you’ll be using when coding in <code>RStudio</code>. <code>Functions</code> will perform tasks for you so you don’t have to code something from scratch.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To access the available functions, you first have to “activate” the <code>package</code> that the function is found in. You can do this by using the <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do</p>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Codes can be seen as the letters found on a page (<code>function</code>). Each page has a different number of letters, which is similar to how some <code>functions</code> are more complicated than others, and as such contain more lines of code.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When you try downloading R packages, <code>RStudio</code> may prompt you to install <code>Rtools</code> . You can do so on this <a href="https://cran.rstudio.com/bin/windows/Rtools/">website</a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To learn about the functions available in a <code>package</code>, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do</p>
+</div>
+</div>
+</section><section id="step-2.1-how-to-use-packages" class="level3"><h3 class="anchored" data-anchor-id="step-2.1-how-to-use-packages">Step 2.1: How to use packages</h3>
 <ul>
-<li>Go through lessons <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a></li>
-</ul>
-<ol start="4" type="1">
-<li><code>tidyverse</code><br>
+<li>Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using <code>library(package you want to load/activate)</code>
 </li>
-</ol>
+</ul></section><section id="step-2.2-moving-rstudio-panels" class="level3"><h3 class="anchored" data-anchor-id="step-2.2-moving-rstudio-panels">Step 2.2: Moving Rstudio Panels</h3>
 <ul>
-<li>based on the built-in <code>mtcars</code>, learn how to use the pipe (%&gt;%) operator + the following dplyr verbs: <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>count</code>, <code>rename</code>, <code>case_when</code>, <code>mutate</code></li>
+<li>Move console pane to the <a href="https://okanbulut.github.io/edpy507/learning-r.html">right</a><br>
+</li>
+<li>Do this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right” <img src="hpics/panel_screenshot.PNG" class="img-fluid">
+</li>
+</ul></section></section><section id="step-3-fastr-lesson" class="level2"><h2 class="anchored" data-anchor-id="step-3-fastr-lesson">Step 3: fastR lesson</h2>
+<ul>
+<li>Write and run some codes on the <code>source</code> panel<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
+</li>
+</ul>
+<ul>
+<li>Go through lessons <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a>
+</li>
+</ul></section><section id="step-4-learning-important-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-4-learning-important-verbs">Step 4: Learning important verbs</h2>
+<ul>
+<li>Try searching up verbs in the <code>tidyverse</code> package</li>
+<li>based on the built-in <code>mtcars</code>, learn how to use the pipe (%&gt;%) operator + the following <code>dplyr</code><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> verbs: <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>count</code>, <code>rename</code>, <code>case_when</code>, <code>mutate</code>
+</li>
+<li>When searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package</li>
 <li><a href="https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/">nice tutorial</a></li>
-<li><a href="https://evalsp23.classes.andrewheiss.com/resource/style.html">Andrew Heiss website</a><br>
+<li>
+<a href="https://evalsp23.classes.andrewheiss.com/resource/style.html">Andrew Heiss website</a><br>
 </li>
-<li><code>recode()</code> and <code>relevel</code> factor levels using the <code>forcats::fct_relevel()</code></li>
-</ul>
-<ol start="5" type="1">
+<li>
+<code>recode()</code> and <code>relevel</code> factor levels using the <code><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">forcats::fct_relevel()</a></code>
+</li>
+</ul></section><section id="step-5-read-excel-files" class="level2"><h2 class="anchored" data-anchor-id="step-5-read-excel-files">Step 5: Read excel files</h2>
+<ul>
 <li>Read an external file: use <code>here()</code> package to manage file-path</li>
-</ol>
-<ul>
-<li>create a R studio project<br>
+<li>Create a <code>Rstudio</code> project. You may follow this <a href="https://www.youtube.com/watch?v=WyrJmJWgPiU">tutorial</a>.</li>
+<li>Read a file using <code>readxl</code> + <code>here()</code>
 </li>
-<li>read a file using <code>readxl</code> + <code>here()</code></li>
 </ul>
-<ol start="6" type="1">
-<li>Data cleaning<br>
-</li>
-</ol>
+<section id="step-5.1-alternative-method-to-read-excel-files" class="level3"><h3 class="anchored" data-anchor-id="step-5.1-alternative-method-to-read-excel-files">Step 5.1: Alternative method to read excel files</h3>
+<p>If you plan to use R studios for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files</p>
 <ul>
-<li>Go through the <a href="https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html">Janitor vignette</a></li>
-</ul>
-<ol start="7" type="1">
-<li>Learn more <code>dplyr</code> verbs<br>
+<li>Add the excel file you want to analyze in this folder</li>
+<li>On <code>Rstudio</code>, create a new project (refer to step 5) and shift this file into the same file with the excel sheet</li>
+<li>After this, using the <code><a href="https://rdrr.io/r/base/list.files.html">list.files()</a></code><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> function should bring up the other files in the same folder of this project, including the excel sheet</li>
+<li>You can isolate the file you want to open by using <code>list.files()[Assigned number of target file]</code>
 </li>
-</ol>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Creating a project is useful, as it allows you to access and manage your own files more conveniently using <code><a href="https://rdrr.io/r/base/list.files.html">list.files()</a></code> (more on this later)</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># list.files() in action!</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"panel_screenshot.png"</span> <span class="st">"R.html"</span>               <span class="st">"R.qmd"</span>               </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>] <span class="st">"R.rmarkdown"</span>          <span class="st">"R_files"</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section><section id="step-6-data-cleaning" class="level2"><h2 class="anchored" data-anchor-id="step-6-data-cleaning">Step 6: Data Cleaning</h2>
 <ul>
-<li><code>joining</code> (left_join), <code>group_by</code>, <code>summarise</code><br>
+<li>Go through the <a href="https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html">Janitor vignette</a>
 </li>
-<li>Go through lessons <span class="math inline">\(9\)</span> to <span class="math inline">\(13\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a> <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
-</ul>
-</section>
-<section id="resources-to-learn-r" class="level2">
-<h2 class="anchored" data-anchor-id="resources-to-learn-r">Resources to learn R</h2>
+</ul></section><section id="step-7-additional-lessons-and-more-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-7-additional-lessons-and-more-verbs">Step 7: Additional lessons and more verbs</h2>
+<ul>
+<li>Learn more <code>dplyr</code> verbs and base R functions<br>
+</li>
+<li>
+<code>joining</code> (left_join), <code>group_by</code>, <code>summarise</code><br>
+</li>
+<li>Go through lessons <span class="math inline">\(9\)</span> to <span class="math inline">\(13\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>
+</li>
+</ul></section><section id="resources-to-learn-r" class="level2"><h2 class="anchored" data-anchor-id="resources-to-learn-r">Resources to learn R</h2>
 <p><a href="https://hbiostat.org/rflow/">Harrell’s R workflow</a></p>
 <p><a href="https://rweekly.org/">R Weekly newsletter</a>: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.</p>
 <p><a href="https://twitter.com/search?q=%23rstats">#rstats</a>: For twitter users</p>
@@ -253,20 +394,18 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 <p><a href="https://r4ds.had.co.nz/"><strong>R for Data Science</strong></a>: A free online book for learning the basics of R and the tidyverse.</p>
 <p><a href="https://www.rstudio.com/resources/cheatsheets/"><strong>R and RStudio cheat sheets</strong></a>: A large collection of simple cheat sheets for RStudio, <strong>ggplot2</strong>, and other R-related things.</p>
 <p><a href="http://cslu.ohsu.edu/~bedricks/courses/cs631/"><strong>CSE 631: Principles &amp; Practice of Data Visualization</strong></a>:</p>
+<p><a href="https://www.geeksforgeeks.org/data-cleaning-in-r/"><strong>Data Cleaning</strong></a>: A few simple examples that go through the basics of cleaning data</p>
 
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 <ol>
-<li id="fn1"><p>It is still crucial to learn base <code>R</code>!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>How does <code>tapply()</code> compare with <code>group_by</code> + <code>summarise</code> ?<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<li id="fn1"><p>Packages that are downloaded contain many functions that can be used to accomplishes some tasks. Each <code>R</code> function is a set of statements organized together to perform a specific task.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><code>tidyverse</code> is different from the other packages, as it is a package that contains other packages. You can view the packages contained in <code>tidyverse</code> using <a href="https://www.tidyverse.org/">this link</a>. Note, however, that it is still crucial to learn base <code>R</code>!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><code>dplyr</code> is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a <code>package</code> contained within <code>tidyverse</code>. You can get more details from <a href="https://dplyr.tidyverse.org/">this link</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><code><a href="https://rdrr.io/r/base/list.files.html">list.files()</a></code> will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need(e.g.&nbsp;excel spreadsheets) in the same folder<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>How does <code><a href="https://rdrr.io/r/base/tapply.html">tapply()</a></code> compare with <code>group_by</code> + <code>summarise</code> ?<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -293,9 +432,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -360,6 +513,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -400,13 +639,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">Last Updated 23 Jan 2023</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">Website is built with <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
-
 
 
 </body></html>

@@ -1,61 +1,155 @@
 ---
 title: R
+format:
+  html:
+    toc: true
 ---
 
 
 
 
 ## Learning R 
- 
-Steps to follow    
 
-1.	Install `R studio` and `R` (and know the difference between them)   
+### Contributors  
+- Several colleagues/PhD students (2021-2023)  
+- Ler Vin See (Jan 2024)    
+
+
+
+ 
+## Steps to follow    
+
+## Step 1: Installing RStudio
+1.	Install `RStudio` and `R` (and know the difference between them)   
+-  You can install both using [this link](https://posit.co/download/rstudio-desktop/) 
 - `R` is both a software and programming language   
 - `Rstudio` provides a (nice) environment to run `R`   
 - This website provides a nice [explanation of key concepts](https://okanbulut.github.io/edpy507/learning-r.html)      
 
+## Step 2: Installing R Packages
 2.	In `Rstudio`, perform these 2 basic chores: 
-- Install `R` packages  
+- Install `R` packages[^1]   
 i.	`readxl`  
-ii.	`tidyverse`[^1]  
+ii.	`tidyverse`[^2]  
 iii.	`here`   
 iv.	`janitor`  
 v.	`rms`  
 
-[^1]: It is still crucial to learn base `R`!  
+[^1]: Packages that are downloaded contain many functions that can be used to accomplishes some tasks. Each `R` function is a set of statements organized together to perform a specific task.  
 
 
+#### Package, Function, Code: An Analogy
+::: {.panel-tabset}
+
+## Package
+A `package` with its many `functions` can be seen as a book containing many pages. Just like how every page of a book tells a story, every R `function` in a `package` is based on accomplishing a task (e.g. tidying workspace or reading excel sheets)
+
+## Function
+A `function` can be seen as a page contained within a book (the `package`). This is the most important part of the 3 components mentioned here, as these `functions` are the ones you'll be using when coding in `RStudio`. `Functions` will perform tasks for you so you don't have to code something from scratch.
+
+
+::: {.callout-note}
+To access the available functions, you first have to “activate” the `package` that the function is found in. You can do this by using the `library()` function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do
+:::
+
+## Codes
+Codes can be seen as the letters found on a page (`function`). Each page has a different number of letters, which is similar to how some `functions` are more complicated than others, and as such contain more lines of code. 
+:::
+
+
+[^2]: `tidyverse` is different from the other packages, as it is a package that contains other packages. You can view the packages contained in `tidyverse` using [this link](https://www.tidyverse.org/). Note, however, that it is still crucial to learn base `R`!  
+
+
+
+::: {.callout-note}
+When you try downloading R packages, `RStudio` may prompt you to install `Rtools`
+. You can do so on this [website](https://cran.rstudio.com/bin/windows/Rtools/)
+:::
+
+::: {.callout-tip}
+## Tip 
+To learn about the functions available in a `package`, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do
+
+:::
+
+
+
+### Step 2.1: How to use packages
+
+- Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using `library(package you want to load/activate)`
+
+
+
+
+### Step 2.2: Moving Rstudio Panels
 - Move console pane to the [right](https://okanbulut.github.io/edpy507/learning-r.html)  
+- Do this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”
+![](hpics/panel_screenshot.PNG)
 
+## Step 3: fastR lesson
+- Write and run some codes on the `source` panel[^3]   
 
-3. Write and run some codes on the `source` panel[^2]   
-
-[^2]: Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.    
+[^3]: Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.    
 
 - Go through lessons $1$ to $8$ of [fastR](https://github.com/matloff/fasteR)  
 
-
-4.	`tidyverse`   
--  based on the built-in `mtcars`, learn how to use the pipe (%>%) operator + the following dplyr verbs: `filter`, `select`, `arrange`, `count`, `rename`, `case_when`, `mutate`
+## Step 4: Learning important verbs
+-  Try searching up verbs in the `tidyverse` package 
+-  based on the built-in `mtcars`, learn how to use the pipe (%>%) operator + the following `dplyr`[^4] verbs: `filter`, `select`, `arrange`, `count`, `rename`, `case_when`, `mutate`
+-  When searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package
 -  [nice tutorial](https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/)
 -  [Andrew Heiss website](https://evalsp23.classes.andrewheiss.com/resource/style.html)     
 -  `recode()` and `relevel` factor levels using the `forcats::fct_relevel()`   
 
 
-5.	Read an external file: use `here()` package to manage file-path
--  create a R studio project    
--  read a file using `readxl` + `here()`    
+## Step 5: Read excel files
+-  Read an external file: use `here()` package to manage file-path
+-  Create a `Rstudio` project. You may follow this [tutorial](https://www.youtube.com/watch?v=WyrJmJWgPiU). 
+-  Read a file using `readxl` + `here()`    
+
+### Step 5.1: Alternative method to read excel files
+If you plan to use R studios for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files
+
+- Add the excel file you want to analyze in this folder
+-  On `Rstudio`, create a new project (refer to step 5) and shift this file into the same file with the excel sheet
+-  After this, using the `list.files()`[^6] function should bring up the other files in the same folder of this project, including the excel sheet
+-  You can isolate the file you want to open by using `list.files()[Assigned number of target file]`
+
+[^4]: `dplyr` is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a `package` contained within `tidyverse`. You can get more details from [this link](https://dplyr.tidyverse.org/)
 
 
-6.	Data cleaning   
+
+::: {.callout-tip}
+## Tip
+Creating a project is useful, as it allows you to access and manage your own files more conveniently using `list.files()` (more on this later)
+:::
+
+``` {r}
+#| echo: TRUE
+#| eval: FALSE
+# list.files() in action!
+list.files()
+
+[1] "panel_screenshot.png" "R.html"               "R.qmd"               
+[4] "R.rmarkdown"          "R_files"  
+     
+```
+
+
+
+
+
+
+## Step 6: Data Cleaning
+
 -   Go through the [Janitor vignette](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) 
 
-
-7.	Learn more `dplyr` verbs and base R functions   
+## Step 7: Additional lessons and more verbs
+-  Learn more `dplyr` verbs and base R functions   
 -	`joining` (left_join), `group_by`, `summarise`    
--  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR) [^3]     
+-  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR)[^7]     
 
-[^3]: How does `tapply()` compare with `group_by` + `summarise` ?   
+[^7]: How does `tapply()` compare with `group_by` + `summarise` ?   
 
 
 
@@ -79,5 +173,12 @@ v.	`rms`
 
 [**CSE 631: Principles & Practice of Data Visualization**](http://cslu.ohsu.edu/~bedricks/courses/cs631/):  
 
+[**Data Cleaning**](https://www.geeksforgeeks.org/data-cleaning-in-r/): A few simple examples that go through the basics of cleaning data
 
- 
+
+
+[^6]: `list.files()` will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need(e.g. excel spreadsheets) in the same folder
+
+
+
+
