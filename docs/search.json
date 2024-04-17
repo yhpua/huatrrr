@@ -355,5 +355,26 @@
     "title": "Resources",
     "section": "",
     "text": "I did not so much create as assemble the materials for this website.\n\nAny errors in this website, however, are mine.\n\nWhen preparing the workshop materials,\n\nI pilfered (and benefitted greatly) from Prof Frank Harrell’s excellent Biostatistics for Biomedical Research.\nJosh Starmer’s Statquest is a also “must go to website” for people interested in gaining a working understanding of biostatistics.\nZ Statistics is an excellent educational resource for University students and analysts of any stripe.\nI belatedly discovered Crash Course and I think it is a fantastic website."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HUAT-RRR",
+    "section": "",
+    "text": "HUAT-RRR (happy using and teaching RRR)1 directs one to materials and resources for learning Regression analysis, Research methods, and R programming. To access this website offline, download the whole website from its r fontawesome::fa(\"github\") repository."
+  },
+  {
+    "objectID": "index.html#description",
+    "href": "index.html#description",
+    "title": "HUAT-RRR",
+    "section": "",
+    "text": "HUAT-RRR (happy using and teaching RRR)1 directs one to materials and resources for learning Regression analysis, Research methods, and R programming. To access this website offline, download the whole website from its r fontawesome::fa(\"github\") repository."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "HUAT-RRR",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhuatRRR https://en.wiktionary.org/wiki/huat_ah↩︎"
   }
 ]
