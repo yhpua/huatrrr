@@ -10,7 +10,196 @@
 <atom:link href="https://.com/jclub.xml" rel="self" type="application/rss+xml"/>
 <description>RRR Resources</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 14 Jul 2020 16:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 17 Apr 2024 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>Scientific Writing</title>
+  <dc:creator>SGH PT Dept</dc:creator>
+  <link>https://.com/jclub/writing_2024/writing_2024.html</link>
+  <description><![CDATA[ <section id="disclaimer" class="level3"><h3 class="anchored" data-anchor-id="disclaimer">Disclaimer</h3>
+<ul>
+<li>Jacqueline provides the <em>tips</em>; Yonghao provides the <em>tricks</em>.<br>
+</li>
+<li>Take the tips seriously. Tricks, with a pinch of salt.</li>
+</ul></section><section id="overview" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Barray%7D%7Brl%7D%0A%5Ctext%7BGood%20Scientific%20Writing%7D%20&amp;=%20%5Ctext%7BGood%20Science%7D%20+%20%5Ctext%7BGood%20Writing%7D%20%5C%5C%0A%5Ctext%7BGood%20Writing%7D%20&amp;=%20%5Ctext%7BGood%20English%20Grammar,%20Usage,%20and%20Style%20%7D%20%5C%5C%0A%5Ctext%7BGood%20Writing%7D%20&amp;=%20%20%5Cbeta_0%20+%20%5Cbeta_1%5Ctext%7B%20Reading%20(See)%7D%20+%20%5Cbeta_2%5Ctext%7B%20Practice%20(Do)%7D%20+%20%5Cbeta_3%5Ctext%7B%20Criticism%20(Feedback)%7D%20%5Ctext%7B,%20%20where%7D%5C%5C%0A%5Cbeta_0%20&amp;=%20%20%5Ctext%20%7BBaseline%20level%20of%20writing%20skills%7D%20%5C%5C%0A%5Cend%7Barray%7D%0A"></p>
+<p><a href="https://www.scotthyoung.com/blog/2022/04/21/see-do-feedback/">See-Do-Feedback</a> are the components of effective practice</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>When a speaker prefers equations to essays, take his “advice” with a pinch of salt!</p>
+</div></div></section><section id="reading" class="level3"><h3 class="anchored" data-anchor-id="reading">Reading</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">Trick 1: Read widely</a></li>
+<li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">Trick 2: Seek widely</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>Elliott E, Baur L, Keena V. <a href="https://image.sciencenet.cn/olddata/kexue.com.cn/upload/blog/file/2010/11/2010111022210817101.pdf">Scientific Writing: Easy When You Know How</a>. BMJ Books, London. 2002.</li>
+<li>Gopen GD, Swan JA. <a href="https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing">The science of scientific writing</a>. Am. Sci. 1990; 78: 550–8.<br>
+</li>
+<li>Journals with (usually) very well-written articles
+<ul>
+<li><a href="https://www.acpjournals.org/journal/aim">Annals of Internal Medicine</a></li>
+<li>
+<a href="https://journals.lww.com/anesthesia-analgesia/pages/default.aspx">Anesthesia analgesia</a><br>
+</li>
+<li>
+<a href="https://www.bmj.com/content/383/bmj-2023-077143">BMJ</a><br>
+</li>
+<li>
+<a href="https://www.ahajournals.org/journal/circ">Circulation</a><br>
+</li>
+<li><a href="https://journal.chestnet.org/">Chest</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Analogous field thinking: seek solutions from subject areas that seem different on the surface but similar on a deep structural level<br>
+</li>
+<li>
+<a href="https://hbr.org/2014/11/sometimes-the-best-ideas-come-from-outside-your-industry">Sometimes the best ideas come from outside your industry</a> HBR 2014</li>
+<li>Example: <a href="https://www.arthroplastyjournal.org/article/S0883-5403(23)00264-4/abstract">Discordance Paper</a>
+<ul>
+<li>Discordance between self-reported and performance-based measures of physical disability in people with knee osteoarthritis<br>
+</li>
+<li>Discordance between total cholesterol to HDL ratio in comparison with LDL cholesterol and non-HDL cholesterol (Ref 20)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="practice" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="practice">Practice</h3>
+<div class="tabset-margin-container page-columns page-full"><div class="no-row-height column-margin column-container"><div class="tabset-margin-content tabset-2-1-tab-margin-content">
+<p>Table taken from <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1301372">Pandharipande et al</a></p>
+</div><div class="tabset-margin-content tabset-2-2-tab-margin-content collapse">
+<p>Figure taken from <a href="https://journals.lww.com/anesthesia-analgesia/fulltext/2015/04000/supervising_anesthesiologists_cannot_be.32.aspx">Wanderer et al</a></p>
+</div></div></div><div class="panel-tabset page-columns page-full">
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" aria-controls="tabset-2-1" aria-selected="true">Trick 3: Create standalone Tables</a></li>
+<li class="nav-item"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" aria-controls="tabset-2-2" aria-selected="false">Trick 4: Create standalone Figures</a></li>
+</ul>
+<div class="tab-content page-columns page-full">
+<div id="tabset-2-1" class="tab-pane active page-columns page-full" aria-labelledby="tabset-2-1-tab">
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p><img src="https://.com/jclub/writing_2024/cload.jpg" class="img-fluid figure-img" width="900"></p>
+<figcaption class="figure-caption margin-caption">Informative Table Caption</figcaption></figure>
+</div>
+</div>
+</div>
+
+</div>
+<div id="tabset-2-2" class="tab-pane page-columns page-full" aria-labelledby="tabset-2-2-tab">
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p><img src="https://.com/jclub/writing_2024/fig_cload.png" class="img-fluid figure-img" width="900"></p>
+<figcaption class="figure-caption margin-caption">Informative Figure Caption</figcaption></figure>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section><section id="criticism" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="criticism">Criticism</h3>
+<ul>
+<li>Feedback from fellow co-authors can sometimes be too soft and congratulatory to cut deep at what works and what doesn’t work in your writing.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Trick 5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pluck up your courage and email authors whom you admire<sup>1</sup>!</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset page-columns page-full">
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" aria-controls="tabset-3-1" aria-selected="true">Author 1</a></li>
+<li class="nav-item"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" aria-controls="tabset-3-2" aria-selected="false">Author 2</a></li>
+</ul>
+<div class="tab-content page-columns page-full">
+<div id="tabset-3-1" class="tab-pane active" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li>(the late) <a href="https://www.surgeons.org/en/about-racs/about-the-college-of-surgeons/in-memoriam/obituaries/john-ludbrook">Professor John Ludbrook</a>
+<ul>
+<li>
+<a href="https://pubmed.ncbi.nlm.nih.gov/17439423/">Writing intelligible English prose for biomedical journals</a> Clin Exp Pharmacol Physiol . 2007 May-Jun;34(5-6):508-14.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane page-columns page-full" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li><a href="https://researchinformation.amsterdamumc.org/en/persons/berend-terluin">Dr.&nbsp;Berend Terluin</a></li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-page page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p><img src="https://.com/jclub/writing_2024/terluin.png" class="img-fluid figure-img" width="900"></p>
+<figcaption class="figure-caption margin-caption">Writing Tips</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="summary" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<ul>
+<li>The rhetoric of research is often about fun and creativity but the reality is that research (including scientific writing) can be taxing and uncomfortable.</li>
+</ul>
+<div class="column-page callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Trick 6
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>The trick is not minding that the process is hard.</p>
+</blockquote>
+<p>Taken from <a href="https://www.scotthyoung.com/blog/2023/09/26/10x-rule-ambitious-goals/">Scott Young</a></p>
+<p>In a scene in Lawrence of Arabia, the titular T. E. Lawrence lights a cigarette and puts out the match by rubbing it between his fingers. Shortly after, another man attempts the same trick:</p>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
+</style>
+<div class="blue">
+<p>Man: Oh! [burning his fingers] It damn well hurts!</p>
+<p>Lawrence: Certainly it does.</p>
+<p>Man: Well what’s the trick then?</p>
+<p>Lawrence: The trick, William Potter, is not minding that it hurts.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<ol>
+<li id="fn1"><p>Be <a href="https://www.linkedin.com/pulse/how-thicker-can-give-you-advantage-lifes-battles-larae-quy/">thick-skinned</a> and don’t be <code>Paiseh</code>↩︎</p></li>
+</ol></section></div> ]]></description>
+  <category>research</category>
+  <category>writing</category>
+  <guid>https://.com/jclub/writing_2024/writing_2024.html</guid>
+  <pubDate>Wed, 17 Apr 2024 16:00:00 GMT</pubDate>
+  <media:content url="https://.com/jclub/writing_2024/write.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Journal Club</title>
   <dc:creator>SGH PT Dept</dc:creator>
