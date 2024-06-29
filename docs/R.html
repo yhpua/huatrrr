@@ -170,16 +170,18 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
   <li><a href="#step-2.2-moving-rstudio-panels" id="toc-step-2.2-moving-rstudio-panels" class="nav-link" data-scroll-target="#step-2.2-moving-rstudio-panels">Step 2.2: Moving Rstudio Panels</a></li>
   </ul>
 </li>
-  <li><a href="#step-3-fastr-lesson" id="toc-step-3-fastr-lesson" class="nav-link" data-scroll-target="#step-3-fastr-lesson">Step 3: fastR lesson</a></li>
-  <li><a href="#step-4-learning-important-verbs" id="toc-step-4-learning-important-verbs" class="nav-link" data-scroll-target="#step-4-learning-important-verbs">Step 4: Learning important verbs</a></li>
+  <li><a href="#step-3-creating-a-project-folder" id="toc-step-3-creating-a-project-folder" class="nav-link" data-scroll-target="#step-3-creating-a-project-folder">Step 3: Creating a Project Folder</a></li>
+  <li><a href="#step-4-fastr-lesson" id="toc-step-4-fastr-lesson" class="nav-link" data-scroll-target="#step-4-fastr-lesson">Step 4: fastR lesson</a></li>
+  <li><a href="#step-5-learning-important-verbs" id="toc-step-5-learning-important-verbs" class="nav-link" data-scroll-target="#step-5-learning-important-verbs">Step 5: Learning important verbs</a></li>
   <li>
-<a href="#step-5-read-excel-files" id="toc-step-5-read-excel-files" class="nav-link" data-scroll-target="#step-5-read-excel-files">Step 5: Read excel files</a>
+<a href="#step-6-read-excel-files" id="toc-step-6-read-excel-files" class="nav-link" data-scroll-target="#step-6-read-excel-files">Step 6: Read excel files</a>
   <ul class="collapse">
-<li><a href="#step-5.1-alternative-method-to-read-excel-files" id="toc-step-5.1-alternative-method-to-read-excel-files" class="nav-link" data-scroll-target="#step-5.1-alternative-method-to-read-excel-files">Step 5.1: Alternative method to read excel files</a></li>
+<li><a href="#step-6.1-alternative-method-to-read-excel-files" id="toc-step-6.1-alternative-method-to-read-excel-files" class="nav-link" data-scroll-target="#step-6.1-alternative-method-to-read-excel-files">Step 6.1: Alternative method to read excel files</a></li>
   </ul>
 </li>
-  <li><a href="#step-6-data-cleaning" id="toc-step-6-data-cleaning" class="nav-link" data-scroll-target="#step-6-data-cleaning">Step 6: Data Cleaning</a></li>
-  <li><a href="#step-7-additional-lessons-and-more-verbs" id="toc-step-7-additional-lessons-and-more-verbs" class="nav-link" data-scroll-target="#step-7-additional-lessons-and-more-verbs">Step 7: Additional lessons and more verbs</a></li>
+  <li><a href="#step-7-data-cleaning" id="toc-step-7-data-cleaning" class="nav-link" data-scroll-target="#step-7-data-cleaning">Step 7: Data Cleaning</a></li>
+  <li><a href="#step-8-additional-lessons-and-more-verbs" id="toc-step-8-additional-lessons-and-more-verbs" class="nav-link" data-scroll-target="#step-8-additional-lessons-and-more-verbs">Step 8: Additional lessons and more verbs</a></li>
+  <li><a href="#step-9-tidy-your-r-script" id="toc-step-9-tidy-your-r-script" class="nav-link" data-scroll-target="#step-9-tidy-your-r-script">Step 9: Tidy your R script</a></li>
   <li><a href="#resources-to-learn-r" id="toc-resources-to-learn-r" class="nav-link" data-scroll-target="#resources-to-learn-r">Resources to learn R</a></li>
   </ul></nav>
 </nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
@@ -204,49 +206,23 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </header><section id="learning-r" class="level2"><h2 class="anchored" data-anchor-id="learning-r">Learning R</h2>
 <section id="contributors" class="level3"><h3 class="anchored" data-anchor-id="contributors">Contributors</h3>
 <ul>
-<li>Several colleagues/PhD students (2021-2023)<br>
-</li>
+<li>Several colleagues/PhD students (2021-2023)</li>
 <li>Ler Vin See (Jan 2024)</li>
+<li>Sarah Lim (July 2024)</li>
 </ul></section></section><section id="steps-to-follow" class="level2"><h2 class="anchored" data-anchor-id="steps-to-follow">Steps to follow</h2>
 </section><section id="step-1-installing-rstudio" class="level2"><h2 class="anchored" data-anchor-id="step-1-installing-rstudio">Step 1: Installing RStudio</h2>
-<ol type="1">
-<li>Install <code>RStudio</code> and <code>R</code> (and know the difference between them)<br>
-</li>
-</ol>
-<ul>
-<li>You can install both using <a href="https://posit.co/download/rstudio-desktop/">this link</a>
-</li>
-<li>
-<code>R</code> is both a software and programming language<br>
-</li>
-<li>
-<code>Rstudio</code> provides a (nice) environment to run <code>R</code><br>
-</li>
-<li>This website provides a nice <a href="https://okanbulut.github.io/edpy507/learning-r.html">explanation of key concepts</a>
-</li>
-</ul></section><section id="step-2-installing-r-packages" class="level2"><h2 class="anchored" data-anchor-id="step-2-installing-r-packages">Step 2: Installing R Packages</h2>
-<ol start="2" type="1">
-<li>In <code>Rstudio</code>, perform these 2 basic chores:</li>
-</ol>
-<ul>
-<li>Install <code>R</code> packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
-</li>
-</ul>
-<ol type="i">
-<li>
-<code>readxl</code><br>
-</li>
-<li>
-<code>tidyverse</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><br>
-</li>
-<li>
-<code>here</code><br>
-</li>
-<li>
-<code>janitor</code><br>
-</li>
-<li><code>rms</code></li>
-</ol>
+<p>Install <code>RStudio</code> and <code>R</code> (and know the difference between them)<br>
+- You can install both using <a href="https://posit.co/download/rstudio-desktop/">this link</a> - <code>R</code> is both a software and programming language<br>
+- <code>Rstudio</code> provides a (nice) environment to run <code>R</code><br>
+- This website provides a nice <a href="https://okanbulut.github.io/edpy507/learning-r.html">explanation of key concepts</a></p>
+</section><section id="step-2-installing-r-packages" class="level2"><h2 class="anchored" data-anchor-id="step-2-installing-r-packages">Step 2: Installing R Packages</h2>
+<p>In <code>Rstudio</code>, perform these 2 basic chores:<br>
+- Install <code>R</code> packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+i. <code>readxl</code><br>
+ii. <code>tidyverse</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><br>
+iii. <code>here</code><br>
+iv. <code>janitor</code><br>
+v. <code>rms</code></p>
 <section id="package-function-code-an-analogy" class="level4"><h4 class="anchored" data-anchor-id="package-function-code-an-analogy">Package, Function, Code: An Analogy</h4>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist">
@@ -307,47 +283,84 @@ Tip
 </div>
 </section><section id="step-2.1-how-to-use-packages" class="level3"><h3 class="anchored" data-anchor-id="step-2.1-how-to-use-packages">Step 2.1: How to use packages</h3>
 <ul>
-<li>Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using <code>library(package you want to load/activate)</code>
+<li>Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using <code>library(package you want to load)</code>
 </li>
 </ul></section><section id="step-2.2-moving-rstudio-panels" class="level3"><h3 class="anchored" data-anchor-id="step-2.2-moving-rstudio-panels">Step 2.2: Moving Rstudio Panels</h3>
 <ul>
-<li>Move console pane to the <a href="https://okanbulut.github.io/edpy507/learning-r.html">right</a><br>
+<li>Move console pane to the <a href="https://okanbulut.github.io/edpy507/learning-r.html">right</a>
 </li>
-<li>Do this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right” <img src="hpics/panel_screenshot.PNG" class="img-fluid">
+<li>Do this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”</li>
+</ul>
+<p><img src="hpics/panel_screenshot.PNG" class="img-fluid"></p>
+</section></section><section id="step-3-creating-a-project-folder" class="level2"><h2 class="anchored" data-anchor-id="step-3-creating-a-project-folder">Step 3: Creating a Project Folder</h2>
+<p><img src="hpics/r.qmd pic5.jpg" class="img-fluid" style="width:35.0%"></p>
+<p><a href="https://alexd106.github.io/intro2R/project_setup.html">Why it is important</a></p>
+<ul>
+<li>Having clear project organisation simplifies understanding of information for both you and your collaborators<br>
 </li>
-</ul></section></section><section id="step-3-fastr-lesson" class="level2"><h2 class="anchored" data-anchor-id="step-3-fastr-lesson">Step 3: fastR lesson</h2>
+<li>A consistent and logical structure allows you to access and work with codes and data conveniently, avoiding situations where you have “missing” codes or data files<br>
+</li>
+<li>A well organised project reduces the risk of introducing bugs or errors into your workflow and even if they do occur, it is easier to track down the errors and deal with them efficiently</li>
+</ul>
+<ol type="1">
+<li>Open R studio</li>
+<li>Click File- New Project- New Directory- New Project- enter Project name- Create folder in preferred location (e.g.&nbsp;in Desktop)- Create Project</li>
+</ol>
+<p><img src="hpics/r.qmd pic1.png" class="img-fluid" style="width:50.0%"></p>
+<ol start="3" type="1">
+<li>Click the white icon with green + sign on the top left corner to create new R script and save it</li>
+</ol>
+<p><img src="hpics/r.qmd pic2.jpg" class="img-fluid" style="width:40.0%"></p>
+<ol start="4" type="1">
+<li>Add data files into the project file as necessary</li>
+<li>As desired, open the project folder ① and click on the R project file ② . Should you have followed the above steps, you will be able to access the R script ③ and relevant data files ④ from within the project folder to work on. This is highly recommended for your convenience.</li>
+</ol>
+<p><img src="hpics/r.qmd pic3.png" class="img-fluid" style="width:60.0%"></p>
+<p>Alternatively, you can watch <a href="https://www.youtube.com/watch?v=WyrJmJWgPiU">this</a> video for more detailed instructions</p>
+<p>Tips:</p>
+<ul>
+<li>Use <code>here</code> package after installing it in Step 2. It helps you locate your files if you start working in R without first opening a project folder, learn more <a href="https://github.com/jennybc/here_here">here</a>
+</li>
+</ul>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://here.r-lib.org/">here</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://here.r-lib.org//reference/here.html">here</a></span><span class="op">(</span><span class="st">"Wombat"</span>, <span class="st">"WBS data files"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="step-4-fastr-lesson" class="level2"><h2 class="anchored" data-anchor-id="step-4-fastr-lesson">Step 4: fastR lesson</h2>
 <ul>
 <li>Write and run some codes on the <code>source</code> panel<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>
 </li>
 </ul>
-<ul>
+<!-- --><ul>
 <li>Go through lessons <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a>
 </li>
-</ul></section><section id="step-4-learning-important-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-4-learning-important-verbs">Step 4: Learning important verbs</h2>
+</ul></section><section id="step-5-learning-important-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-5-learning-important-verbs">Step 5: Learning important verbs</h2>
 <ul>
 <li>Try searching up verbs in the <code>tidyverse</code> package</li>
-<li>based on the built-in <code>mtcars</code>, learn how to use the pipe (%&gt;%) operator + the following <code>dplyr</code><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> verbs: <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>count</code>, <code>rename</code>, <code>case_when</code>, <code>mutate</code>
+<li>Based on the built-in <code>mtcars</code>, learn how to use the pipe (%&gt;%) operator + the following <code>dplyr</code><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> verbs: <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>count</code>, <code>rename</code>, <code>case_when</code>, <code>mutate</code>
 </li>
 <li>When searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package</li>
-<li><a href="https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/">nice tutorial</a></li>
+<li><a href="https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/">Basic tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=yZ0bV2Afkjc">Data analysis intro vid</a></li>
 <li>
 <a href="https://evalsp23.classes.andrewheiss.com/resource/style.html">Andrew Heiss website</a><br>
 </li>
+<li><a href="https://bookdown.org/pdr_higgins/rmrwr/a-tasting-menu-of-r.html">Peter D.R. Higgins e-book</a></li>
 <li>
 <code>recode()</code> and <code>relevel</code> factor levels using the <code><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">forcats::fct_relevel()</a></code>
 </li>
-</ul></section><section id="step-5-read-excel-files" class="level2"><h2 class="anchored" data-anchor-id="step-5-read-excel-files">Step 5: Read excel files</h2>
+</ul></section><section id="step-6-read-excel-files" class="level2"><h2 class="anchored" data-anchor-id="step-6-read-excel-files">Step 6: Read excel files</h2>
 <ul>
-<li>Read an external file: use <code>here()</code> package to manage file-path</li>
-<li>Create a <code>Rstudio</code> project. You may follow this <a href="https://www.youtube.com/watch?v=WyrJmJWgPiU">tutorial</a>.</li>
-<li>Read a file using <code>readxl</code> + <code>here()</code>
+<li>Read an external file: use <code><a href="https://here.r-lib.org//reference/here.html">here()</a></code> package to manage file-path</li>
+<li>Create a <code>Rstudio</code> project</li>
+<li>Read a file using <code>readxl</code> + <code><a href="https://here.r-lib.org//reference/here.html">here()</a></code>
 </li>
 </ul>
-<section id="step-5.1-alternative-method-to-read-excel-files" class="level3"><h3 class="anchored" data-anchor-id="step-5.1-alternative-method-to-read-excel-files">Step 5.1: Alternative method to read excel files</h3>
-<p>If you plan to use R studios for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files</p>
+<section id="step-6.1-alternative-method-to-read-excel-files" class="level3"><h3 class="anchored" data-anchor-id="step-6.1-alternative-method-to-read-excel-files">Step 6.1: Alternative method to read excel files</h3>
+<p>If you plan to use Rstudio for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files</p>
 <ul>
 <li>Add the excel file you want to analyze in this folder</li>
-<li>On <code>Rstudio</code>, create a new project (refer to step 5) and shift this file into the same file with the excel sheet</li>
+<li>On <code>Rstudio</code>, create a new project (refer to step 3) and shift this file into the same file with the excel sheet</li>
 <li>After this, using the <code><a href="https://rdrr.io/r/base/list.files.html">list.files()</a></code><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> function should bring up the other files in the same folder of this project, including the excel sheet</li>
 <li>You can isolate the file you want to open by using <code>list.files()[Assigned number of target file]</code>
 </li>
@@ -366,25 +379,28 @@ Tip
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># list.files() in action!</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>()</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"panel_screenshot.png"</span> <span class="st">"R.html"</span>               <span class="st">"R.qmd"</span>               </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>] <span class="st">"R.rmarkdown"</span>          <span class="st">"R_files"</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># list.files() in action!</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"panel_screenshot.png"</span> <span class="st">"R.html"</span>               <span class="st">"R.qmd"</span>               </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">4</span>] <span class="st">"R.rmarkdown"</span>          <span class="st">"R_files"</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section></section><section id="step-6-data-cleaning" class="level2"><h2 class="anchored" data-anchor-id="step-6-data-cleaning">Step 6: Data Cleaning</h2>
+</section></section><section id="step-7-data-cleaning" class="level2"><h2 class="anchored" data-anchor-id="step-7-data-cleaning">Step 7: Data Cleaning</h2>
 <ul>
 <li>Go through the <a href="https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html">Janitor vignette</a>
 </li>
-</ul></section><section id="step-7-additional-lessons-and-more-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-7-additional-lessons-and-more-verbs">Step 7: Additional lessons and more verbs</h2>
+</ul></section><section id="step-8-additional-lessons-and-more-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-8-additional-lessons-and-more-verbs">Step 8: Additional lessons and more verbs</h2>
 <ul>
-<li>Learn more <code>dplyr</code> verbs and base R functions<br>
+<li>Learn more <a href="https://tidyselect.r-lib.org/reference/starts_with.html">variable selection operators</a> : <code>starts_with()</code>, <code>ends_with()</code>, <code>contains()</code>, <code>matches()</code><br>
 </li>
-<li>
-<code>joining</code> (left_join), <code>group_by</code>, <code>summarise</code><br>
-</li>
+<li>Learn more <code>dplyr</code> verbs and base R functions, <a href="https://dplyr.tidyverse.org/">this</a> is a cheat sheet for you</li>
 <li>Go through lessons <span class="math inline">\(9\)</span> to <span class="math inline">\(13\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>
 </li>
+</ul></section><section id="step-9-tidy-your-r-script" class="level2"><h2 class="anchored" data-anchor-id="step-9-tidy-your-r-script">Step 9: Tidy your R script</h2>
+<ul>
+<li>Ctrl + Shift + R to create sections between codes</li>
+<li>Alt + L to fold (compress) a highlighted chunk of code</li>
+<li>Use # for commenting/ labeling your codes as R does not read it</li>
 </ul></section><section id="resources-to-learn-r" class="level2"><h2 class="anchored" data-anchor-id="resources-to-learn-r">Resources to learn R</h2>
 <p><a href="https://hbiostat.org/rflow/">Harrell’s R workflow</a></p>
 <p><a href="https://rweekly.org/">R Weekly newsletter</a>: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.</p>

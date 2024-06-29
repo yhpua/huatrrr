@@ -20,7 +20,7 @@ format:
 ## Step 1: Installing RStudio
 
 Install `RStudio` and `R` (and know the difference between them)  
-- You can install both using [this link](https://posit.co/download/rstudio-desktop/) - `R` is both a software and programming language\
+- You can install both using [this link](https://posit.co/download/rstudio-desktop/) - `R` is both a software and programming language  
 - `Rstudio` provides a (nice) environment to run `R`  
 - This website provides a nice [explanation of key concepts](https://okanbulut.github.io/edpy507/learning-r.html)
 

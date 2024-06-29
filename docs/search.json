@@ -4,14 +4,14 @@
     "href": "R.html",
     "title": "R",
     "section": "",
-    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)"
+    "text": "Several colleagues/PhD students (2021-2023)\nLer Vin See (Jan 2024)\nSarah Lim (July 2024)"
   },
   {
     "objectID": "R.html#learning-r",
     "href": "R.html#learning-r",
     "title": "R",
     "section": "",
-    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)"
+    "text": "Several colleagues/PhD students (2021-2023)\nLer Vin See (Jan 2024)\nSarah Lim (July 2024)"
   },
   {
     "objectID": "R.html#steps-to-follow",
@@ -25,14 +25,14 @@
     "href": "R.html#step-1-installing-rstudio",
     "title": "R",
     "section": "Step 1: Installing RStudio",
-    "text": "Step 1: Installing RStudio\n\nInstall RStudio and R (and know the difference between them)\n\n\n\nYou can install both using this link\n\n\nR is both a software and programming language\n\n\nRstudio provides a (nice) environment to run R\n\nThis website provides a nice explanation of key concepts"
+    "text": "Step 1: Installing RStudio\nInstall RStudio and R (and know the difference between them)\n- You can install both using this link - R is both a software and programming language\n- Rstudio provides a (nice) environment to run R\n- This website provides a nice explanation of key concepts"
   },
   {
     "objectID": "R.html#step-2-installing-r-packages",
     "href": "R.html#step-2-installing-r-packages",
     "title": "R",
     "section": "Step 2: Installing R Packages",
-    "text": "Step 2: Installing R Packages\n\nIn Rstudio, perform these 2 basic chores:\n\n\nInstall R packages1\n\n\n\n\nreadxl\n\n\ntidyverse2\n\n\nhere\n\n\njanitor\n\nrms\n\nPackage, Function, Code: An Analogy\n\n\nPackage\nFunction\nCodes\n\n\n\nA package with its many functions can be seen as a book containing many pages. Just like how every page of a book tells a story, every R function in a package is based on accomplishing a task (e.g. tidying workspace or reading excel sheets)\n\n\nA function can be seen as a page contained within a book (the package). This is the most important part of the 3 components mentioned here, as these functions are the ones you’ll be using when coding in RStudio. Functions will perform tasks for you so you don’t have to code something from scratch.\n\n\n\n\n\n\nNote\n\n\n\nTo access the available functions, you first have to “activate” the package that the function is found in. You can do this by using the library() function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\n\n\nCodes can be seen as the letters found on a page (function). Each page has a different number of letters, which is similar to how some functions are more complicated than others, and as such contain more lines of code.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen you try downloading R packages, RStudio may prompt you to install Rtools . You can do so on this website\n\n\n\n\n\n\n\n\nTip\n\n\n\nTo learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\nStep 2.1: How to use packages\n\nMany functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using library(package you want to load/activate)\n\nStep 2.2: Moving Rstudio Panels\n\nMove console pane to the right\n\nDo this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”"
+    "text": "Step 2: Installing R Packages\nIn Rstudio, perform these 2 basic chores:\n- Install R packages1\ni. readxl\nii. tidyverse2\niii. here\niv. janitor\nv. rms\nPackage, Function, Code: An Analogy\n\n\nPackage\nFunction\nCodes\n\n\n\nA package with its many functions can be seen as a book containing many pages. Just like how every page of a book tells a story, every R function in a package is based on accomplishing a task (e.g. tidying workspace or reading excel sheets)\n\n\nA function can be seen as a page contained within a book (the package). This is the most important part of the 3 components mentioned here, as these functions are the ones you’ll be using when coding in RStudio. Functions will perform tasks for you so you don’t have to code something from scratch.\n\n\n\n\n\n\nNote\n\n\n\nTo access the available functions, you first have to “activate” the package that the function is found in. You can do this by using the library() function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\n\n\nCodes can be seen as the letters found on a page (function). Each page has a different number of letters, which is similar to how some functions are more complicated than others, and as such contain more lines of code.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen you try downloading R packages, RStudio may prompt you to install Rtools . You can do so on this website\n\n\n\n\n\n\n\n\nTip\n\n\n\nTo learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\nStep 2.1: How to use packages\n\nMany functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using library(package you want to load)\n\nStep 2.2: Moving Rstudio Panels\n\nMove console pane to the right\n\nDo this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”"
   },
   {
     "objectID": "R.html#step-3-fastr-lesson",
@@ -390,5 +390,54 @@
     "title": "Scientific Writing",
     "section": "Footnotes",
     "text": "Footnotes\n\nBe thick-skinned and don’t be Paiseh↩︎"
+  },
+  {
+    "objectID": "R.html#step-3-creating-a-project-folder",
+    "href": "R.html#step-3-creating-a-project-folder",
+    "title": "R",
+    "section": "Step 3: Creating a Project Folder",
+    "text": "Step 3: Creating a Project Folder\n\nWhy it is important\n\nHaving clear project organisation simplifies understanding of information for both you and your collaborators\n\nA consistent and logical structure allows you to access and work with codes and data conveniently, avoiding situations where you have “missing” codes or data files\n\nA well organised project reduces the risk of introducing bugs or errors into your workflow and even if they do occur, it is easier to track down the errors and deal with them efficiently\n\n\nOpen R studio\nClick File- New Project- New Directory- New Project- enter Project name- Create folder in preferred location (e.g. in Desktop)- Create Project\n\n\n\nClick the white icon with green + sign on the top left corner to create new R script and save it\n\n\n\nAdd data files into the project file as necessary\nAs desired, open the project folder ① and click on the R project file ② . Should you have followed the above steps, you will be able to access the R script ③ and relevant data files ④ from within the project folder to work on. This is highly recommended for your convenience.\n\n\nAlternatively, you can watch this video for more detailed instructions\nTips:\n\nUse here package after installing it in Step 2. It helps you locate your files if you start working in R without first opening a project folder, learn more here\n\n\n\nlibrary(here)\nhere(\"Wombat\", \"WBS data files\")"
+  },
+  {
+    "objectID": "R.html#step-4-fastr-lesson",
+    "href": "R.html#step-4-fastr-lesson",
+    "title": "R",
+    "section": "Step 4: fastR lesson",
+    "text": "Step 4: fastR lesson\n\nWrite and run some codes on the source panel3\n\n\n\nGo through lessons \\(1\\) to \\(8\\) of fastR"
+  },
+  {
+    "objectID": "R.html#step-5-learning-important-verbs",
+    "href": "R.html#step-5-learning-important-verbs",
+    "title": "R",
+    "section": "Step 5: Learning important verbs",
+    "text": "Step 5: Learning important verbs\n\nTry searching up verbs in the tidyverse package\nBased on the built-in mtcars, learn how to use the pipe (%&gt;%) operator + the following dplyr4 verbs: filter, select, arrange, count, rename, case_when, mutate\n\nWhen searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package\nBasic tutorial\nData analysis intro vid\n\nAndrew Heiss website\n\nPeter D.R. Higgins e-book\n\nrecode() and relevel factor levels using the forcats::fct_relevel()"
+  },
+  {
+    "objectID": "R.html#step-6-read-excel-files",
+    "href": "R.html#step-6-read-excel-files",
+    "title": "R",
+    "section": "Step 6: Read excel files",
+    "text": "Step 6: Read excel files\n\nRead an external file: use here() package to manage file-path\nCreate a Rstudio project\nRead a file using readxl + here()\n\n\nStep 6.1: Alternative method to read excel files\nIf you plan to use Rstudio for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files\n\nAdd the excel file you want to analyze in this folder\nOn Rstudio, create a new project (refer to step 3) and shift this file into the same file with the excel sheet\nAfter this, using the list.files()5 function should bring up the other files in the same folder of this project, including the excel sheet\nYou can isolate the file you want to open by using list.files()[Assigned number of target file]\n\n\n\n\n\n\n\n\nTip\n\n\n\nCreating a project is useful, as it allows you to access and manage your own files more conveniently using list.files() (more on this later)\n\n\n\n# list.files() in action!\nlist.files()\n\n[1] \"panel_screenshot.png\" \"R.html\"               \"R.qmd\"               \n[4] \"R.rmarkdown\"          \"R_files\""
+  },
+  {
+    "objectID": "R.html#step-7-data-cleaning",
+    "href": "R.html#step-7-data-cleaning",
+    "title": "R",
+    "section": "Step 7: Data Cleaning",
+    "text": "Step 7: Data Cleaning\n\nGo through the Janitor vignette"
+  },
+  {
+    "objectID": "R.html#step-8-additional-lessons-and-more-verbs",
+    "href": "R.html#step-8-additional-lessons-and-more-verbs",
+    "title": "R",
+    "section": "Step 8: Additional lessons and more verbs",
+    "text": "Step 8: Additional lessons and more verbs\n\nLearn more variable selection operators : starts_with(), ends_with(), contains(), matches()\n\nLearn more dplyr verbs and base R functions, this is a cheat sheet for you\nGo through lessons \\(9\\) to \\(13\\) of fastR6"
+  },
+  {
+    "objectID": "R.html#step-9-tidy-your-r-script",
+    "href": "R.html#step-9-tidy-your-r-script",
+    "title": "R",
+    "section": "Step 9: Tidy your R script",
+    "text": "Step 9: Tidy your R script\n\nCtrl + Shift + R to create sections between codes\nAlt + L to fold (compress) a highlighted chunk of code\nUse # for commenting/ labeling your codes as R does not read it"
   }
 ]
