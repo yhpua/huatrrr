@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="SGH PT Dept">
+<meta name="dcterms.date" content="2020-07-14">
+<meta name="description" content="Definitions of key terms commonly used in biomedical research">
+<title>HUAT-RRR - General Overview</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P47K0XF3SM"></script><script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">HUAT-RRR</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../../ebp.html" rel="" target="">
+ <span class="menu-text">Workshop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../jclub.html" rel="" target="">
+ <span class="menu-text">Journal Club</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../R.html" rel="" target="">
+ <span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html" rel="" target="">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Articles</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">
+<li>
+    <a class="dropdown-item" href="../../articles/jospt_paper.pdf" rel="" target="">
+ <span class="dropdown-text">JOSPT RTD</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../articles/knee_paper.pdf" rel="" target="">
+ <span class="dropdown-text">Knee Isokinetic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../articles/ptj_steptest.pdf" rel="" target="">
+ <span class="dropdown-text">PTJ Step Test</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#types-of-measurement" id="toc-types-of-measurement" class="nav-link active" data-scroll-target="#types-of-measurement">Types of Measurement</a></li>
+  <li><a href="#mean-sd" id="toc-mean-sd" class="nav-link" data-scroll-target="#mean-sd">Mean &amp; SD</a></li>
+  <li><a href="#median-iqr" id="toc-median-iqr" class="nav-link" data-scroll-target="#median-iqr">Median &amp; IQR</a></li>
+  <li><a href="#p-value" id="toc-p-value" class="nav-link" data-scroll-target="#p-value"><em>P</em>-value</a></li>
+  <li><a href="#confidence-interval" id="toc-confidence-interval" class="nav-link" data-scroll-target="#confidence-interval">Confidence Interval</a></li>
+  <li><a href="#interpreting-p-values-and-95ci." id="toc-interpreting-p-values-and-95ci." class="nav-link" data-scroll-target="#interpreting-p-values-and-95ci.">Interpreting <em>P</em>-values and 95%CI.</a></li>
+  <li><a href="#p-value-point-estimate-95-ci" id="toc-p-value-point-estimate-95-ci" class="nav-link" data-scroll-target="#p-value-point-estimate-95-ci"><em>P-value</em>, Point Estimate, 95% CI</a></li>
+  <li>
+<a href="#bayesian-statistics" id="toc-bayesian-statistics" class="nav-link" data-scroll-target="#bayesian-statistics">Bayesian Statistics</a>
+  <ul class="collapse">
+<li><a href="#comparing-the-2-schools-of-thought" id="toc-comparing-the-2-schools-of-thought" class="nav-link" data-scroll-target="#comparing-the-2-schools-of-thought">Comparing the 2 schools of thought</a></li>
+  <li><a href="#bayes-theorem" id="toc-bayes-theorem" class="nav-link" data-scroll-target="#bayes-theorem">Bayes Theorem</a></li>
+  <li><a href="#consideration" id="toc-consideration" class="nav-link" data-scroll-target="#consideration">Consideration</a></li>
+  </ul>
+</li>
+  
+  </ul></nav>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">General Overview</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">p-values</div>
+    <div class="quarto-category">confidence interval</div>
+    <div class="quarto-category">measurement type</div>
+    <div class="quarto-category">Bayesian inference</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Definitions of key terms commonly used in biomedical research</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>SGH PT Dept </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 14, 2020</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header><div class="cell">
+
+</div>
+<section id="types-of-measurement" class="level2"><h2 class="anchored" data-anchor-id="types-of-measurement">Types of Measurement</h2>
+<p>Binary: Two-level variables, e.g., yes/no, present/absent, gender</p>
+<p>Nominal: Non-ordered categorical variables, e.g., race, profession</p>
+<p>Ordinal: Ordered categorical variables, e.g., pain severity, radiographical osteoarthritis (OA) severity ratings (no/mild/moderate/severe OA)</p>
+<p>Count: Discrete variable with integer values, e.g., Length of Stay, number of falls</p>
+<p>Continuous: Numerical variable which takes a whole range of values, e.g., age, height, BMI</p>
+</section><section id="mean-sd" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="mean-sd">Mean &amp; SD</h2>
+<p>Mean: Arithmetic average</p>
+<p>SD: Measure of spread</p>
+<ul>
+<li><p>Mathematically, <span class="math inline">\(\surd\)</span> of averaged squared difference of an observation from the mean</p></li>
+<li><p>Can be used to estimate the dispersion of a normally distributed <em>population</em></p></li>
+<li><p>An estimate of the variability of the population from which the sample was drawn <span class="citation" data-cites="altman2005statistics">(<a href="#ref-altman2005statistics" role="doc-biblioref">Altman and Bland 2005</a>)</span></p></li>
+<li><p>About 95% of observations of any distribution usually fall within the 2 standard deviation limits</p></li>
+</ul>
+<p>Asymmetric data: SD<span class="math inline">\(\times\)</span> 2 &gt; Mean</p>
+<aside>
+Use this rule-of-thumb when you don’t have access to the raw data <span class="citation" data-cites="altman1996detecting">(<a href="#ref-altman1996detecting" role="doc-biblioref">Altman and Bland 1996</a>)</span>
+</aside><p>SE: Standard error is the SD of the sampling distribution of a statistic.</p>
+<ul>
+<li>SE is used to infer about the range of plausible values for the <em>true</em> (population) statistic.</li>
+</ul></section><section id="median-iqr" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="median-iqr">Median &amp; IQR</h2>
+<p>Median: Middle sorted value</p>
+<ul>
+<li>Value such that around <span class="math inline">\(\frac{1}{2}\)</span> of the values are below it and above it</li>
+</ul>
+<aside>
+This holds for truly continuous data
+</aside><ul>
+<li><p>May not divide sample into <span class="math inline">\(\frac{1}{2}\)</span> for “clumped” data</p></li>
+<li><p>Mean is better than the median when the distribution (i) contains heavy ties, (ii) is limited or well-behaved</p></li>
+</ul>
+<p>IQR: Measure of spread</p>
+<ul>
+<li><p>Defined by Quartile<span class="math inline">\(_{1}\)</span> (<span class="math inline">\(Q_1\)</span>) and Quartile<span class="math inline">\(_{3}\)</span> (<span class="math inline">\(Q_3\)</span>)</p></li>
+<li><p>Interval containing the middle <span class="math inline">\(\frac{1}{2}\)</span> of the sample</p></li>
+</ul></section><section id="p-value" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="p-value">
+<em>P</em>-value</h2>
+<ul>
+<li><p><em>P</em>-value = Probability value</p></li>
+<li><p>Assuming that <em>H</em><span class="math inline">\(_{0}\)</span> were true, what is the probability of obtaining a result (statistic) as or more extreme than our observed result?</p></li>
+<li><p>If the probability is low (often set at <em>P</em>&lt;0.05), we have sufficient evidence to reject <em>H</em><span class="math inline">\(_{0}\)</span> and accept <em>H</em><span class="math inline">\(_{1}\)</span></p></li>
+<li><p>If the probability is low, we fail to reject <em>H</em><span class="math inline">\(_{0}\)</span> but we do not speak of accepting <em>H</em><span class="math inline">\(_{0}\)</span>. The <em>P</em>-value provides evidence against a <em>null</em> hypothesis, <strong>never</strong> evidence for something.</p></li>
+<li><p>The <em>P</em>-value is influenced by sample size and effect size. Classical statistical testing does not consider clinical significance: Clinical relevance cannot be concluded from small <em>P</em>-values.</p></li>
+</ul>
+<aside>
+Use this <a href="https://www.youtube.com/embed/vemZtEM63GY">link</a> if the video doesn’t play
+</aside><iframe width="560" height="315" src="https://www.youtube.com/embed/vemZtEM63GY" frameborder="0" allowfullscreen="">
+</iframe>
+<aside>
+If you have understood the concept of P-values, please give credit to Josh Starmer - not me!
+</aside></section><section id="confidence-interval" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="confidence-interval">Confidence Interval</h2>
+<ul>
+<li>Range of values within which that the “true” (population) summary statistic (e.g., mean, correlation coefficient, or difference score) would plausibly lie.</li>
+</ul>
+<p>To interpret a 95% confidence interval,</p>
+<ul>
+<li><p>The wrong way: There is a 95% chance that the unknown true value lies within the interval</p></li>
+<li><p>The rough way: We are 95% confident that the unknown true value lies within the interval</p></li>
+<li><p>The exact way: If we were to repeat experiment many times and to compute, in each experiment, a confidence interval for the summary statistic, 95% of these CIs would contain the true (population) value. Or, this confidence interval is computed by an algorithm that has a 95% probability of including the true value in repeated sampling.</p></li>
+</ul>
+<aside>
+Use this <a href="https://www.youtube.com/embed/TqOeMYtOc1w">link</a> if the video doesn’t play
+</aside><iframe width="560" height="315" src="https://www.youtube.com/embed/TqOeMYtOc1w" frameborder="0" allowfullscreen="">
+</iframe>
+<aside>
+If you have understood the concept of confidence interval, please give credit to <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw">Josh Starmer</a> - not me!
+</aside></section><section id="interpreting-p-values-and-95ci." class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="interpreting-p-values-and-95ci.">Interpreting <em>P</em>-values and 95%CI.</h2>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
+</style>
+<div class="blue">
+<p>In general, the only way that a large P -value can be interpreted is for example “The study did not provide sufficient evidence for an effect.” One cannot say “Because <em>P</em> = 0.70, we conclude the drug has no effect”. Only when the corresponding confidence interval excludes both clinically significant benefit and harm can one make such a conclusion. A large <em>P</em>-value by itself merely means that a higher sample size is required to allow conclusions to be drawn</p>
+</div>
+<aside>
+Go to Frank Harrell’s <a href="https://discourse.datamethods.org/t/author-checklist/3407">DataMethods</a> for more details
+</aside><p><br></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PPD8lER8ju4" frameborder="0" allowfullscreen="">
+</iframe>
+<aside>
+Adriene Hill from <a href="https://thecrashcourse.com/courses/statistics">Crash Course</a> explains how to interpret “large” P-values
+</aside></section><section id="p-value-point-estimate-95-ci" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="p-value-point-estimate-95-ci">
+<em>P-value</em>, Point Estimate, 95% CI</h2>
+<p>The <em>P</em>-value<br>
+This quantifies the evidence for a non-zero between-group difference. A large <em>P</em>-value, by itself, only suggests that we have insufficient evidence for a between-group difference.</p>
+<aside>
+Remember: absence of evidence may not represent evidence of absence.
+</aside><p>The observed mean difference<br>
+Appraise this estimate against the MCID value.<br><em>What we do know</em>: An individual-level MCID is almost always <a href="https://rapm.bmj.com/content/early/2022/03/31/rapm-2021-103331"><strong>greater</strong> than a group-level MCID</a><br><em>What we do not know</em>: how much greater is <strong>greater</strong>?</p>
+<aside>
+In the absence of data, Yonghao suggests 0.5*individual-level MCID. But how much we can trust this estimate?
+</aside><p>The 95% CI<br>
+(Very) Loosely speaking, this represents the range of plausible values for the true between-group differences.<br>
+Wide CI: there is great uncertainty about the true between-group differences<br>
+Narrow CI: there is little uncertainty about the true between-group differences. When there is little uncertainty, the finding is almost always clinically relevant.</p>
+<aside>
+Hence, it is possible to have a finding that is statistically non-significant but highly clinically relevant.
+</aside><p>Example<br>
+Findings<br>
+We observed a between-group difference of 6 points on the ODI, with a corresponding <em>P</em>-value of 0.01 and a 95%CI of 1 to 12 points</p>
+<p>Appraisal<br>
+The <em>P</em>-value: We have evidence of a non-zero between-group difference<br>
+The Point estimate: If we are willing to assume a group-level MCID of 6 points, the observed between-group difference is probably clinically meaningful<br>
+The 95% CI: The wide 95%CI includes clinically trivial values; hence, there is uncertainty about the true between-group difference</p>
+<aside>
+We need to consider whether the 95%CI includes/excludes clinically trivial results.
+</aside><p>Inference<br>
+Whilst we have evidence that two groups are different on the ODI and the observed between-group difference appeared to be clinically meaningful, there is still uncertainty about the true between-group differences.</p>
+<div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead><tr class="header">
+<th>Findings</th>
+<th>Interpretation</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>P&lt;0.05</td>
+<td>Evidence of a (non-zero) treatment difference/effect</td>
+</tr>
+<tr class="even">
+<td>P&gt;0.05</td>
+<td>Insufficient/No evidence of association (≠ evidence of no treatment difference)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+</td>
+</tr>
+<tr class="odd">
+<td>(1) P&lt;0.05; 95% CIs exclude trivial effects</td>
+<td>Evidence of a clinically meaningful treatment difference</td>
+</tr>
+<tr class="even">
+<td>(2) P&lt;0.05; 95% CIs exclude meaningful effects</td>
+<td>Evidence of a treatment diff; however, this difference is not clinically meaningful</td>
+</tr>
+<tr class="odd">
+<td>(3) P&lt;0.05; 95% CIs include trivial + meaningful effects</td>
+<td>Cannot exclude non-clinically meaningful treatment difference</td>
+</tr>
+<tr class="even">
+<td>(4) P&gt;0.05; 95% CIs exclude meaningful effects</td>
+<td>(Possibly) Evidence of no treatment difference</td>
+</tr>
+<tr class="odd">
+<td>(5) P&gt;0.05; 95% CI limits include meaningful effects</td>
+<td>CI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)</td>
+</tr>
+<tr class="even">
+<td>(6) P&gt;0.05; 95% CI limits include trivial + meaningful effects</td>
+<td>No evidence of treatment difference, however, we cannot exclude clinically important difference</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Hawkins and Samuels <a href="https://jamanetwork.com/journals/jama/article-abstract/2786522">JAMA article</a> describes how to use 95%CIs to appraise non-significant results <br><img src="ci_ns.jpg" class="img-fluid" width="500" alt="ci_ns"></p>
+<p>Interestingly, the authors wrote:</p>
+<blockquote class="blockquote">
+<p>Although CIs can be used to enhance the interpretation of a study, they have a number of limitations. For example, a 95%CI does not have a 95% probability of containing the true value of interest (eg, the true treatment effect), <strong>even though it is commonly described that way</strong>. Creating an interval that does have a specified probability of containing the true value requires a Bayesian analysis</p>
+<footer>
+— Hawkins and Samuels
+</footer>
+</blockquote>
+</section><section id="bayesian-statistics" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="bayesian-statistics">Bayesian Statistics</h2>
+<ul>
+<li><p>A branch of statistics that (i) uses Bayes Theorem and (ii) doesn’t use P-values and generally does not test hypotheses.</p></li>
+<li><p>Bayesian Statistics requires one to formally specify a probability distribution encapsulating the prior knowledge about, say, a treatment effect.</p></li>
+</ul>
+<aside>
+This section is taken from Frank Harrell’s <a href="http://hbiostat.org/glossary/">glossary</a>
+</aside><ul>
+<li>The state of prior knowledge can be specified as <span class="math inline">\(no\)</span> knowledge” by using a flat distribution, although this can lead to wild and nonsensical estimates.</li>
+<li>Once the prior distribution is specified, the data are used to modify the prior state of knowledge to obtain the post-experiment state of knowledge.</li>
+<li>Final probabilities computed in the Bayesian framework are probabilities of various treatment effects.</li>
+</ul>
+<section id="comparing-the-2-schools-of-thought" class="level3"><h3 class="anchored" data-anchor-id="comparing-the-2-schools-of-thought">Comparing the 2 schools of thought</h3>
+<div class="l-body">
+<table class="table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead><tr class="header">
+<th>Bayesian</th>
+<th>Frequentist</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Bayesian statistics aims to uncover the unknown treatment effect by providing evidence for all its possible values</td>
+<td>Frequentist statistics aims to uncover the unknown treatment effect by providing evidence that it is not the null value</td>
+</tr>
+<tr class="even">
+<td>In Bayesian statistics, one specifies the prior distribution for the unknown treatment effect and uses a data generation process to estimate the conditional data likelihood. For a given (single) data-set, Bayesian statistics provides probabilities for all possible values of the treatment effect</td>
+<td>In Frequentist statistics, one specifies a null hypothesis/value about the unknown treatment effect and uses a data generation process to make infinite replications of the data. For a given null hypothesis, Frequentist statistics provides probabilities of getting studies/datasets with more extreme results than the ones that we observe. In other words, conditional on there being no treatment efficacy and no harm, the P-value is the proportion of studies with results more extreme than the ones we have</td>
+</tr>
+</tbody>
+</table>
+</div>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 0px; padding: 0px;}
+</style>
+<div class="blue">
+<p>Prof Frank Harrell has provided a more detailed side-by-side <a href="https://hbiostat.org/proj/covid19/statdesign.html#bftable">comparison</a></p>
+</div>
+</section><section id="bayes-theorem" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="bayes-theorem">Bayes Theorem</h3>
+<p>In my opinion, <a href="https://www.3blue1brown.com/">3Blue1Brown</a> explains this the best</p>
+<p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/HZGCoVF3YvM" frameborder="0" allowfullscreen=""> </iframe></p>
+<p><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/lG4VkPoG3ko" frameborder="0" allowfullscreen=""> </iframe></p>
+<aside>
+Go to <a href="https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/">Better Explained</a> for more details
+</aside></section><section id="consideration" class="level3"><h3 class="anchored" data-anchor-id="consideration">Consideration</h3>
+<ul>
+<li><p>Bayesian methods provide direct, simply-stated probabilities of various treatment effects.</p></li>
+<li><p>The price of being able to compute probabilities of various treatment effects is the necessity of specifying a prior distribution to anchor the calculations.</p></li>
+<li>
+<p>Tutorials for healthcare professionals</p>
+<ul>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/28081861/">Baldwin and Larson 2017</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/34040821/">Heino et al 2018</a></li>
+<li>Frank Harrell’s incredibly useful <a href="https://hbiostat.org/bayes/">hbiostat pages</a>
+</li>
+</ul>
+</li>
+</ul></section></section><div id="quarto-appendix" class="default"><section id="to-note" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">To Note</h2><div class="quarto-appendix-contents">
+<p>A comprehensive glossary of terms can be found <a href="http://hbiostat.org/glossary/">here</a></p>
+<p>Statistical problems to avoid when reading an article can be found <a href="https://discourse.datamethods.org/t/author-checklist/3407">here</a></p>
+
+
+
+</div></section><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-altman1996detecting" class="csl-entry" role="listitem">
+Altman, Douglas G, and J Martin Bland. 1996. <span>“Detecting Skewness from Summary Information.”</span> <em>BMJ: British Medical Journal</em> 313 (7066): 1200.
+</div>
+<div id="ref-altman2005statistics" class="csl-entry" role="listitem">
+———. 2005. <span>“Statistics Notes: Standard Deviations and Standard Errors.”</span> <em>BMJ: British Medical Journal</em> 331 (7521): 903.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<ol>
+<li id="fn1"><p>Beware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">Last Updated 23 Jan 2023</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Website is built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+</body></html>
