@@ -4,7 +4,7 @@ title: "HUAT-RRR"
 
 ## Description
 
-`HUAT-RRR` (**h**appy **u**sing **a**nd **t**eaching `RRR`)[^1] directs one to materials and resources for learning `Regression` analysis, `Research` methods, and `R` programming. To access this [website](https://yhpua.github.io/huatrrr/) offline, download the whole website from its [`r fontawesome::fa("github")` repository](https://github.com/yhpua/huatrrr).
+`HUAT-RRR` (**h**appy **u**sing **a**nd **t**eaching `RRR`)[^1] directs one to materials and resources for learning `Regression` analysis, `Research` methods, and `R` programming. To access this [website](https://yhpua.github.io/huatrrr/) offline, download the whole website from its {{< fa brands github size=1x  >}} [repository](https://github.com/yhpua/huatrrr).
 
  
 
