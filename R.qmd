@@ -12,22 +12,22 @@ format:
 
 ### Contributors  
 - Several colleagues/PhD students (2021-2023)  
-- Ler Vin See (Jan 2024)    
-
+- Ler Vin See (Jan 2024)   
+- Sarah Lim (July 2024)
 
 
  
 ## Steps to follow    
 
 ## Step 1: Installing RStudio
-1.	Install `RStudio` and `R` (and know the difference between them)   
+Install `RStudio` and `R` (and know the difference between them)   
 -  You can install both using [this link](https://posit.co/download/rstudio-desktop/) 
 - `R` is both a software and programming language   
 - `Rstudio` provides a (nice) environment to run `R`   
-- This website provides a nice [explanation of key concepts](https://okanbulut.github.io/edpy507/learning-r.html)      
+- This website provides a nice [explanation of key concepts](https://okanbulut.github.io/edpy507/learning-r.html)   
 
 ## Step 2: Installing R Packages
-2.	In `Rstudio`, perform these 2 basic chores: 
+In `Rstudio`, perform these 2 basic chores: 
 - Install `R` packages[^1]   
 i.	`readxl`  
 ii.	`tidyverse`[^2]  
@@ -73,50 +73,91 @@ To learn about the functions available in a `package`, click on the “packages�
 :::
 
 
-
 ### Step 2.1: How to use packages
 
-- Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using `library(package you want to load/activate)`
-
+- Many functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using `library(package you want to load)`
 
 
 
 ### Step 2.2: Moving Rstudio Panels
 - Move console pane to the [right](https://okanbulut.github.io/edpy507/learning-r.html)  
 - Do this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”
+
 ![](hpics/panel_screenshot.PNG)
 
-## Step 3: fastR lesson
+
+## Step 3: Creating a Project Folder
+![](hpics/r.qmd pic4.jpg){width=35%}
+
+Why it is [important](https://alexd106.github.io/intro2R/project_setup.html)
+
+-  Having clear project organisation simplifies understanding of information for both you and your collaborators
+-  A consistent and logical structure allows you to access and work with codes and data conveniently, avoiding situations where you have "missing" codes or  data files
+-  A well organised project reduces the risk of introducing bugs or errors into your workflow and even if they do occur, it is easier to track down the errors and deal with them efficiently
+
+1.  Open R studio
+2.	Click File- New Project- New Directory- New Project- enter Project name- Create folder in preferred location (e.g. in Desktop)- Create Project
+   
+![](hpics/r.qmd pic1.png){width=50%} 
+
+3.	Click the white icon with green + sign on the top left corner to create new R script and save it   
+
+![](hpics/r.qmd pic2.jpg){width=40%}
+
+4.	Add data files into the project file as necessary. 
+5.	As desired, open the project folder ① and click on the R project file ② . Should you have followed the above steps, you will be able to access the R script ③ and relevant data files ④ from within the project folder to work on. This is highly recommended for your convenience. 
+
+![](hpics/r.qmd pic3.png){width=60%}
+
+Alternatively, you can watch [this](https://www.youtube.com/watch?v=WyrJmJWgPiU) video for more detailed instructions
+
+Tip: 
+
+-  Use `here` package after installing it in Step 2. It helps you locate your files if you start working in R without first opening a project folder, learn more [here](https://github.com/jennybc/here_here)
+``` {r}
+#| echo: TRUE
+#| eval: FALSE
+library(here)
+here("Wombat", "WBS data files")
+```
+
+
+## Step 4: fastR lesson
 - Write and run some codes on the `source` panel[^3]   
+- Go through lessons $1$ to $8$ of [fastR](https://github.com/matloff/fasteR)
 
-[^3]: Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.    
+[^3]: Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session. 
 
-- Go through lessons $1$ to $8$ of [fastR](https://github.com/matloff/fasteR)  
-
-## Step 4: Learning important verbs
+## Step 5: Learning important verbs
 -  Try searching up verbs in the `tidyverse` package 
--  based on the built-in `mtcars`, learn how to use the pipe (%>%) operator + the following `dplyr`[^4] verbs: `filter`, `select`, `arrange`, `count`, `rename`, `case_when`, `mutate`
+-  Based on the built-in `mtcars`, learn how to use the pipe (%>%) operator + the following `dplyr` verbs[^4] : `filter`, `select`, `arrange`, `count`, `rename`, `case_when`, `mutate`
 -  When searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package
--  [nice tutorial](https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/)
+-  [Basic tutorial](https://craig.rbind.io/post/2019-12-30-asgr-2-1-data-transformation-part-1/)
+-  [Data analysis intro vid](https://www.youtube.com/watch?v=yZ0bV2Afkjc)
 -  [Andrew Heiss website](https://evalsp23.classes.andrewheiss.com/resource/style.html)     
--  `recode()` and `relevel` factor levels using the `forcats::fct_relevel()`   
-
-
-## Step 5: Read excel files
--  Read an external file: use `here()` package to manage file-path
--  Create a `Rstudio` project. You may follow this [tutorial](https://www.youtube.com/watch?v=WyrJmJWgPiU). 
--  Read a file using `readxl` + `here()`    
-
-### Step 5.1: Alternative method to read excel files
-If you plan to use R studios for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files
-
-- Add the excel file you want to analyze in this folder
--  On `Rstudio`, create a new project (refer to step 5) and shift this file into the same file with the excel sheet
--  After this, using the `list.files()`[^6] function should bring up the other files in the same folder of this project, including the excel sheet
--  You can isolate the file you want to open by using `list.files()[Assigned number of target file]`
+-  [Peter D.R. Higgins e-book](https://bookdown.org/pdr_higgins/rmrwr/a-tasting-menu-of-r.html)
+-  `recode()` and `relevel` factor levels using the `forcats::fct_relevel()`
 
 [^4]: `dplyr` is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a `package` contained within `tidyverse`. You can get more details from [this link](https://dplyr.tidyverse.org/)
 
+
+## Step 6: Reading files
+-  If you plan to use Rstudio for data analysis and plan to import excel sheets, create a folder to store all the relevant files you’ll be using for analysis
+-  Read an external file: use `here()` package to manage file-path
+   
+
+### Step 6.1: Read excel files
+- `readxl` package is part of the tidyverse, with read_excel() as the main function that reads excel files (.xlsx) into R
+- This function can handle multiple sheets and retains data types and formatting from excel
+
+1. On `Rstudio`, create a new project (refer to step 3) and shift this file into the same file with the excel sheet
+2. In the R script, load necessary libraries
+3. List all files[^5] in the current project directory
+4. Filter the list to find the specific excel file
+
+[^5]:list.files() will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need (e.g. excel spreadsheets) in the same folder
+
+More on readxl [here](https://readxl.tidyverse.org/)
 
 
 ::: {.callout-tip}
@@ -127,34 +168,64 @@ Creating a project is useful, as it allows you to access and manage your own fil
 ``` {r}
 #| echo: TRUE
 #| eval: FALSE
-# list.files() in action!
-list.files()
+# Load necessary libraries
+library(readxl)
+library(stringr)
 
-[1] "panel_screenshot.png" "R.html"               "R.qmd"               
-[4] "R.rmarkdown"          "R_files"  
-     
+# List all files in the current project directory
+files <- list.files()
+
+# Filter the list to find the specific Excel file
+file_to_read <- str_subset(files, "excel_file_1")
 ```
 
 
+### Step 6.2: Read csv files
+- `readr` package is also part of the tidyverse, with read_csv() as the main function that reads csv files (.csv) into R
+- This function is faster and more memory-efficient for large datasets compared excel files, and universally supports format for tabular data
 
+1. On `Rstudio`, create a new project and shift this file containing relevant csv files
+2. In the R script, load necessary libraries
+3. List the csv files
+4. Access your desired data
 
+More on readr [here](https://readr.tidyverse.org/)
+``` {r}
+#| echo: TRUE
+#| eval: FALSE
+# Load necessary libraries
+library(readr)
 
+# List csv files
+csv_files <- list.files(pattern = "*.csv")
 
-## Step 6: Data Cleaning
+# Read all csv files into a list of data frames
+csv_data <- lapply(csv_files, read_csv)
 
--   Go through the [Janitor vignette](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) 
+# Access specific data frames (e.g., first and second files)
+csv_data[[1]] #Accesses the first csv data frame
+csv_data[[2]] #Accesses the second csv data frame
+```
 
-## Step 7: Additional lessons and more verbs
--  Learn more `dplyr` verbs and base R functions   
--	`joining` (left_join), `group_by`, `summarise`    
--  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR)[^7]     
+## Step 7: Data Cleaning
 
-[^7]: How does `tapply()` compare with `group_by` + `summarise` ?   
+-  Go through the [Janitor vignette](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) 
+-  Key functions like `clean_names(), remove_empty(c("rows", "cols")), adorn_rounding()` tidy your data, while `tabyl()` can tabulate and summarise them 
 
+## Step 8: Additional lessons and more verbs
+-  Learn more [variable selection operators](https://tidyselect.r-lib.org/reference/starts_with.html) : `starts_with(), ends_with(), contains(), matches()` 
+-  Learn more `dplyr` verbs and base R functions, [this](https://dplyr.tidyverse.org/) contains a comprehensive cheat sheet  
+-  Go through lessons $9$ to $13$ of [fastR](https://github.com/matloff/fasteR)[^6]     
 
+[^6]: How does `tapply()` compare with `group_by` + `summarise` ?   
 
+## Step 9: Neaten your R script
+-  Ctrl + Shift + R to create sections between codes 
+-  Use # to label your codes/ comment as R does not read it
+-  Alt + L to compress a highlighted chunk of code 
  
 
+ 
 
 ## Resources to learn R
 [Harrell's R workflow](https://hbiostat.org/rflow/)   
@@ -175,9 +246,7 @@ list.files()
 
 [**Data Cleaning**](https://www.geeksforgeeks.org/data-cleaning-in-r/): A few simple examples that go through the basics of cleaning data
 
-
-
-[^6]: `list.files()` will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need(e.g. excel spreadsheets) in the same folder
+[Code smart with ChatGPT](https://rstudiodatalab.medium.com/how-to-use-chatgpt-for-data-analysis-in-r-891372af842): How you can use ChatGPT to write codes and identify errors 
 
 
 

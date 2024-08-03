@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://.com/R.html</loc>
-    <lastmod>2024-04-17T07:58:15.804Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/ebp.html</loc>
-    <lastmod>2024-03-25T14:42:13.008Z</lastmod>
+    <loc>https://.com/resources.html</loc>
+    <lastmod>2024-08-03T11:21:36.288Z</lastmod>
   </url>
   <url>
     <loc>https://.com/jclub.html</loc>
-    <lastmod>2024-04-17T10:11:46.087Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/jclub/journalclub/journalclub.html</loc>
-    <lastmod>2024-03-25T14:42:09.666Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/ebp/regression/regression.html</loc>
-    <lastmod>2024-03-25T14:42:06.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/ebp/confounding/confounding.html</loc>
-    <lastmod>2024-03-25T14:42:02.034Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/about.html</loc>
-    <lastmod>2024-03-25T14:42:00.123Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/ebp/overview/overview.html</loc>
-    <lastmod>2024-03-25T14:42:04.017Z</lastmod>
-  </url>
-  <url>
-    <loc>https://.com/jclub/articles2023/articles_2023.html</loc>
-    <lastmod>2024-03-25T14:42:07.906Z</lastmod>
+    <lastmod>2024-08-03T11:21:27.958Z</lastmod>
   </url>
   <url>
     <loc>https://.com/jclub/rx_eval/rx_eval.html</loc>
-    <lastmod>2024-03-25T14:42:10.342Z</lastmod>
+    <lastmod>2024-08-03T11:21:22.026Z</lastmod>
   </url>
   <url>
-    <loc>https://.com/resources.html</loc>
-    <lastmod>2024-03-25T14:42:12.076Z</lastmod>
+    <loc>https://.com/jclub/articles2023/articles_2023.html</loc>
+    <lastmod>2024-08-03T11:21:17.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/ebp.html</loc>
+    <lastmod>2024-08-03T11:21:11.117Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/ebp/overview/overview.html</loc>
+    <lastmod>2024-08-03T11:21:03.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/about.html</loc>
+    <lastmod>2024-08-03T11:20:53.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/ebp/confounding/confounding.html</loc>
+    <lastmod>2024-08-03T11:20:58.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/ebp/regression/regression.html</loc>
+    <lastmod>2024-08-03T11:21:08.203Z</lastmod>
   </url>
   <url>
     <loc>https://.com/index.html</loc>
-    <lastmod>2024-04-17T07:58:19.386Z</lastmod>
+    <lastmod>2024-08-03T11:21:12.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/jclub/journalclub/journalclub.html</loc>
+    <lastmod>2024-08-03T11:21:20.480Z</lastmod>
   </url>
   <url>
     <loc>https://.com/jclub/writing_2024/writing_2024.html</loc>
-    <lastmod>2024-04-17T10:12:09.611Z</lastmod>
+    <lastmod>2024-08-03T11:21:25.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://.com/R.html</loc>
+    <lastmod>2024-08-03T11:25:22.175Z</lastmod>
   </url>
 </urlset>

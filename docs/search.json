@@ -1,94 +1,10 @@
 [
   {
-    "objectID": "R.html",
-    "href": "R.html",
-    "title": "R",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)"
-  },
-  {
-    "objectID": "R.html#learning-r",
-    "href": "R.html#learning-r",
-    "title": "R",
-    "section": "",
-    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)"
-  },
-  {
-    "objectID": "R.html#steps-to-follow",
-    "href": "R.html#steps-to-follow",
-    "title": "R",
-    "section": "Steps to follow",
-    "text": "Steps to follow"
-  },
-  {
-    "objectID": "R.html#step-1-installing-rstudio",
-    "href": "R.html#step-1-installing-rstudio",
-    "title": "R",
-    "section": "Step 1: Installing RStudio",
-    "text": "Step 1: Installing RStudio\n\nInstall RStudio and R (and know the difference between them)\n\n\n\nYou can install both using this link\n\n\nR is both a software and programming language\n\n\nRstudio provides a (nice) environment to run R\n\nThis website provides a nice explanation of key concepts"
-  },
-  {
-    "objectID": "R.html#step-2-installing-r-packages",
-    "href": "R.html#step-2-installing-r-packages",
-    "title": "R",
-    "section": "Step 2: Installing R Packages",
-    "text": "Step 2: Installing R Packages\n\nIn Rstudio, perform these 2 basic chores:\n\n\nInstall R packages1\n\n\n\n\nreadxl\n\n\ntidyverse2\n\n\nhere\n\n\njanitor\n\nrms\n\nPackage, Function, Code: An Analogy\n\n\nPackage\nFunction\nCodes\n\n\n\nA package with its many functions can be seen as a book containing many pages. Just like how every page of a book tells a story, every R function in a package is based on accomplishing a task (e.g. tidying workspace or reading excel sheets)\n\n\nA function can be seen as a page contained within a book (the package). This is the most important part of the 3 components mentioned here, as these functions are the ones you’ll be using when coding in RStudio. Functions will perform tasks for you so you don’t have to code something from scratch.\n\n\n\n\n\n\nNote\n\n\n\nTo access the available functions, you first have to “activate” the package that the function is found in. You can do this by using the library() function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\n\n\nCodes can be seen as the letters found on a page (function). Each page has a different number of letters, which is similar to how some functions are more complicated than others, and as such contain more lines of code.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen you try downloading R packages, RStudio may prompt you to install Rtools . You can do so on this website\n\n\n\n\n\n\n\n\nTip\n\n\n\nTo learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\nStep 2.1: How to use packages\n\nMany functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using library(package you want to load/activate)\n\nStep 2.2: Moving Rstudio Panels\n\nMove console pane to the right\n\nDo this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”"
-  },
-  {
-    "objectID": "R.html#step-3-fastr-lesson",
-    "href": "R.html#step-3-fastr-lesson",
-    "title": "R",
-    "section": "Step 3: fastR lesson",
-    "text": "Step 3: fastR lesson\n\nWrite and run some codes on the source panel3\n\n\n\nGo through lessons \\(1\\) to \\(8\\) of fastR"
-  },
-  {
-    "objectID": "R.html#step-4-learning-important-verbs",
-    "href": "R.html#step-4-learning-important-verbs",
-    "title": "R",
-    "section": "Step 4: Learning important verbs",
-    "text": "Step 4: Learning important verbs\n\nTry searching up verbs in the tidyverse package\nbased on the built-in mtcars, learn how to use the pipe (%&gt;%) operator + the following dplyr4 verbs: filter, select, arrange, count, rename, case_when, mutate\n\nWhen searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package\nnice tutorial\n\nAndrew Heiss website\n\n\nrecode() and relevel factor levels using the forcats::fct_relevel()"
-  },
-  {
-    "objectID": "R.html#step-5-read-excel-files",
-    "href": "R.html#step-5-read-excel-files",
-    "title": "R",
-    "section": "Step 5: Read excel files",
-    "text": "Step 5: Read excel files\n\nRead an external file: use here() package to manage file-path\nCreate a Rstudio project. You may follow this tutorial.\nRead a file using readxl + here()\n\n\nStep 5.1: Alternative method to read excel files\nIf you plan to use R studios for data analysis and plan to import a data table, create a folder where you can store all the files you’ll be using to analyze the files\n\nAdd the excel file you want to analyze in this folder\nOn Rstudio, create a new project (refer to step 5) and shift this file into the same file with the excel sheet\nAfter this, using the list.files()5 function should bring up the other files in the same folder of this project, including the excel sheet\nYou can isolate the file you want to open by using list.files()[Assigned number of target file]\n\n\n\n\n\n\n\n\nTip\n\n\n\nCreating a project is useful, as it allows you to access and manage your own files more conveniently using list.files() (more on this later)\n\n\n\n# list.files() in action!\nlist.files()\n\n[1] \"panel_screenshot.png\" \"R.html\"               \"R.qmd\"               \n[4] \"R.rmarkdown\"          \"R_files\""
-  },
-  {
-    "objectID": "R.html#step-6-data-cleaning",
-    "href": "R.html#step-6-data-cleaning",
-    "title": "R",
-    "section": "Step 6: Data Cleaning",
-    "text": "Step 6: Data Cleaning\n\nGo through the Janitor vignette"
-  },
-  {
-    "objectID": "R.html#step-7-additional-lessons-and-more-verbs",
-    "href": "R.html#step-7-additional-lessons-and-more-verbs",
-    "title": "R",
-    "section": "Step 7: Additional lessons and more verbs",
-    "text": "Step 7: Additional lessons and more verbs\n\nLearn more dplyr verbs and base R functions\n\n\njoining (left_join), group_by, summarise\n\nGo through lessons \\(9\\) to \\(13\\) of fastR6"
-  },
-  {
-    "objectID": "R.html#resources-to-learn-r",
-    "href": "R.html#resources-to-learn-r",
-    "title": "R",
-    "section": "Resources to learn R",
-    "text": "Resources to learn R\nHarrell’s R workflow\nR Weekly newsletter: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.\n#rstats: For twitter users\nStackOverflow: Q&A site with answers to all sorts of programming questions\nRStudio Community a forum for Rstudio users\nR for Data Science: A free online book for learning the basics of R and the tidyverse.\nR and RStudio cheat sheets: A large collection of simple cheat sheets for RStudio, ggplot2, and other R-related things.\nCSE 631: Principles & Practice of Data Visualization:\nData Cleaning: A few simple examples that go through the basics of cleaning data"
-  },
-  {
-    "objectID": "R.html#footnotes",
-    "href": "R.html#footnotes",
-    "title": "R",
-    "section": "Footnotes",
-    "text": "Footnotes\n\nPackages that are downloaded contain many functions that can be used to accomplishes some tasks. Each R function is a set of statements organized together to perform a specific task.↩︎\ntidyverse is different from the other packages, as it is a package that contains other packages. You can view the packages contained in tidyverse using this link. Note, however, that it is still crucial to learn base R!↩︎\nGotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.↩︎\ndplyr is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a package contained within tidyverse. You can get more details from this link↩︎\nlist.files() will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need(e.g. excel spreadsheets) in the same folder↩︎\nHow does tapply() compare with group_by + summarise ?↩︎"
-  },
-  {
-    "objectID": "ebp.html",
-    "href": "ebp.html",
-    "title": "EBP Physiotherapy Workshop",
-    "section": "",
-    "text": "EBP Physiotherapy Workshop\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nRegression\n\n\n\n\n\n\n\nregression\n\n\nodds ratio\n\n\nbeta\n\n\n\n\nRegression analysis is a statistical method that describes the relationship between a given predictor and outcome. In the case of multivariable regression, it describes that relationship after “controlling” for other variables. At the end of the session, you should be able to interpret the results from simple or multivariable regression (linear or logistic) analyses.\n\n\n\n\n\n\n16-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\n  \n\n\n\n\nConfounding\n\n\n\n\n\n\n\nconfounder\n\n\nregression\n\n\n\n\nConcepts of Confounding and Methods to control it. At the end of the session, you should be to explain (i) what confounding is, (ii) why confounding should be accounted for, and (iii) how confounding can be minimized or controlled for.\n\n\n\n\n\n\n15-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\n  \n\n\n\n\nGeneral Overview\n\n\n\n\n\n\n\np-values\n\n\nconfidence interval\n\n\nmeasurement type\n\n\nBayesian inference\n\n\n\n\nDefinitions of key terms commonly used in biomedical research\n\n\n\n\n\n\n14-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\nNo matching items"
+    "text": "I did not so much create as assemble the materials for this website.\n\nAny errors in this website, however, are mine.\n\nWhen preparing the workshop materials,\n\nI pilfered (and benefitted greatly) from Prof Frank Harrell’s excellent Biostatistics for Biomedical Research.\nJosh Starmer’s Statquest is a also “must go to website” for people interested in gaining a working understanding of biostatistics.\nZ Statistics is an excellent educational resource for University students and analysts of any stripe.\nI belatedly discovered Crash Course and I think it is a fantastic website."
   },
   {
     "objectID": "jclub.html",
@@ -98,130 +14,67 @@
     "text": "Journal Club, Inservice Presentation\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nScientific Writing\n\n\n\nresearch\n\n\nwriting\n\n\n\nScientific Writing: Focussing on the “tricks”\n\n\n\nSGH PT Dept\n\n\n18-04-2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJournal Club\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\n\nEach journal club session comprises the discussion of a publication and this chapter provides pointers to assist readers in interpreting the study design and results.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntervention Evaluation\n\n\n\nconfounder\n\n\nregression\n\n\nBayesian\n\n\npropensity score\n\n\n\nThis article describes intervention evaluation using (i) propensity score adjustment and (ii) Bayesian analyses. At the end of the session, you should be able to appreciate…\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArticles 2023\n\n\n\np-values\n\n\nconfidence interval\n\n\nRCT\n\n\nconfounding\n\n\nresearch design\n\n\n\nA discussion of the Articles provided by participants of the 2023 EBP workshop.\n\n\n\nSGH PT Dept\n\n\n15-07-2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html",
-    "href": "jclub/journalclub/journalclub.html",
-    "title": "Journal Club",
+    "objectID": "jclub/rx_eval/rx_eval.html",
+    "href": "jclub/rx_eval/rx_eval.html",
+    "title": "Intervention Evaluation",
     "section": "",
-    "text": "Messier et al Effect of High-Intensity Strength Training on Knee Pain and Knee Joint Compressive Forces Among Adults With Knee Osteoarthritis The START Randomized Clinical Trial. JAMA 2021 Feb 16;325(7):646-657\n\nRead the abstract"
+    "text": "Confounding by treatment indication\nRegression analyses and covariate adjustment\nP-values and CI interpretation\n\n\nDon’t freak out if you don’t understand them well. Get more information from the Workshop section"
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html#session-31-aug-2021",
-    "href": "jclub/journalclub/journalclub.html#session-31-aug-2021",
-    "title": "Journal Club",
+    "objectID": "jclub/rx_eval/rx_eval.html#background-knowledge",
+    "href": "jclub/rx_eval/rx_eval.html#background-knowledge",
+    "title": "Intervention Evaluation",
     "section": "",
-    "text": "Messier et al Effect of High-Intensity Strength Training on Knee Pain and Knee Joint Compressive Forces Among Adults With Knee Osteoarthritis The START Randomized Clinical Trial. JAMA 2021 Feb 16;325(7):646-657\n\nRead the abstract"
+    "text": "Confounding by treatment indication\nRegression analyses and covariate adjustment\nP-values and CI interpretation\n\n\nDon’t freak out if you don’t understand them well. Get more information from the Workshop section"
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html#questions",
-    "href": "jclub/journalclub/journalclub.html#questions",
-    "title": "Journal Club",
-    "section": "Questions",
-    "text": "Questions\n\nIs this a well-conducted study in terms of study design? (refer to Pointers)\nWould you conclude that there is no difference between high vs low-intensity strength training? (refer to Pointers)\n\nin terms of self-reported knee pain\nin terms of knee extensor strength\nin terms of hip abductor strength\nin terms of 6-minute walking distance\n\n\nWhat are the mechanism of effects of high and low-intensity strength training? (read Schoenfeld et al)\nWhat are the implications for clinical practice?\nHow would you have done the study differently? (Open Question)"
+    "objectID": "jclub/rx_eval/rx_eval.html#propensity-score-adjustment",
+    "href": "jclub/rx_eval/rx_eval.html#propensity-score-adjustment",
+    "title": "Intervention Evaluation",
+    "section": "Propensity Score Adjustment",
+    "text": "Propensity Score Adjustment\n\n\nExcellent tutorial (with helpful audio narration!) by Prof Frank Harrell can be found here\n\n\nHigh-level summary\n\nPropensity score (PS) analysis is a regression-based method that adjusts the treatment effects for many (known) confounders\nPS analysis is used when (i) you need to aggressively adjust the treatment effects for multiple confounders and (ii) the outcome model does not allow multiple variables to be reliably fitted. Thus, PS analysis allows aggressive confounder adjustment without increasing the risk of model overfitting\nTo summarize the confounding information into a single number, a propensity model is created by regressing the treatment status on all the confounders. In that model, the PS is the estimated (conditional) probability of getting treatment B vs. treatment A given a set of (observed/measured) confounding variables.\nResearchers would often use the PS to assess whether they could achieve balance between the treatment groups on the confounders.\nAfter computing the PS, a multivariable outcome model is fitted to estimate the treatment effects. In the outcome model, the PS is simply treated as a covariate. PS adjustment “works” when all relevant variables (important prognostic factors) are included in the propensity model.\n\n\n\nExample\nGornet et al JNS 2015\n\nTo adjust for any possible effects of demographic characteristics or preoperative measures on clinical outcomes, the propensity score technique was used. The propensity score was calculated based on a logistic regression model with the following covariates: age, height, weight, sex, race, marital status, education level, work status, workers’ compensation, spinal litigation, tobacco use, alcohol use, nonnarcotic pain medication use, weak narcotic pain medication use, strong narcotic pain medication use, muscle relaxant medication use, time to onset of symptoms, and previous neck surgery, as well as treatment level and preoperative scores for NDI, 36-Item Short Form Health Survey (SF-36) Physical Component Summary (PCS), SF-36 Mental Component Summary (MCS), neck pain, arm pain, gait, foraminal compression test reaction, and neurological status (motor function, sensory, and reflex). Where an observation was missing for a given demographic/pre-operative variable in a particular patient, the mean value of the corresponding treatment group was imputed for the missing data point. Covariate balance after propensity score adjustment was examined using ANCOVA or logistic regression."
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html#designlink",
-    "href": "jclub/journalclub/journalclub.html#designlink",
-    "title": "Journal Club",
-    "section": "Study Design",
-    "text": "Study Design\nMethods/procedures used by the researchers to reduce/minimize study bias\nRecruitment\nParticipants were not aware of the hypotheses tested. What are the implications?\nRandomization\nHow does randomization reduce confounding? (Confounding Chapter)\nWhy was randomization stratified by sex and baseline BMI?(Confounding Chapter)\nAnalysis\nParticipants were analyzed according to their assigned randomization group even if they were nonadherent to their assigned intervention (Confounding Chapter)\nAnalysis were adjusted for sex, baseline BMI, and baseline outcome values (Regression Chapter on ANCOVA)"
+    "objectID": "jclub/rx_eval/rx_eval.html#bayesian-inference",
+    "href": "jclub/rx_eval/rx_eval.html#bayesian-inference",
+    "title": "Intervention Evaluation",
+    "section": "Bayesian Inference",
+    "text": "Bayesian Inference\n\nGo to “Overview” chapter (Workshop section)\n\n\nExample\nGornet et al JNS 2015\n\nIn the Frequentist approach, evidence for efficacy is generally thought to be provided by p ≤ 0.05. This is the probability of observing, over repetitions of the same experiment, a test statistic as impressive as or more impressive than the observed statistic for comparing 2 groups if the null hypothesis is true. Bayesian results are “positive,” by comparison, when, for example, the posterior probability of efficacy is ≥ 0.95. For assessing evidence, the Bayesian posterior probability of a statement such as “Treatment 1 tends to be better than Treatment 2” is the probability that the statement is true. In addition, the 95% Bayesian credible intervals are provided for parameters of interest. The primary objective in this study was to show that the overall success rate in the investigational group was statistically noninferior to the rate in the historical control group."
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html#findingslink",
-    "href": "jclub/journalclub/journalclub.html#findingslink",
-    "title": "Journal Club",
-    "section": "Findings",
-    "text": "Findings\nInterpret the RCT findings by quantifying the evidence for/against a treatment effect Association = Treatment Effect = Treatment Difference\n\n\n\n\n\n\n\nFindings\nInterpretation\n\n\n\nP&lt;0.05\nEvidence of a (non-zero) treatment difference/effect\n\n\nP&gt;0.05\nInsufficient/No evidence of association (≠ evidence of no treatment difference)1\n\n\n\n(1) P&lt;0.05; 95% CIs exclude trivial effects\nEvidence of a clinically meaningful treatment difference\n\n\n(2) P&lt;0.05; 95% CIs exclude meaningful effects\nEvidence of a treatment diff; however, this difference is not clinically meaningful\n\n\n(3) P&lt;0.05; 95% CIs include trivial + meaningful effects\nCannot exclude non-clinically meaningful treatment difference\n\n\n(4) P&gt;0.05; 95% CIs exclude meaningful effects\n(Possibly) Evidence of no treatment difference\n\n\n(5) P&gt;0.05; 95% CI limits include meaningful effects\nCI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)\n\n\n(6) P&gt;0.05; 95% CI limits include trivial + meaningful effects\nNo evidence of treatment difference, however, we cannot exclude clinically important difference\n\n\n\n\nWe are assuming that the 95%CI represent the range of plausible values for the true (hidden) treatment effects. This is, strictly speaking, untrue2 (General Overview Chapter)."
+    "objectID": "jclub/articles2023/articles_2023.html",
+    "href": "jclub/articles2023/articles_2023.html",
+    "title": "Articles 2023",
+    "section": "",
+    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
   },
   {
-    "objectID": "jclub/journalclub/journalclub.html#footnotes",
-    "href": "jclub/journalclub/journalclub.html#footnotes",
-    "title": "Journal Club",
+    "objectID": "jclub/articles2023/articles_2023.html#group-rct",
+    "href": "jclub/articles2023/articles_2023.html#group-rct",
+    "title": "Articles 2023",
+    "section": "",
+    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#cohort-study",
+    "href": "jclub/articles2023/articles_2023.html#cohort-study",
+    "title": "Articles 2023",
+    "section": "Cohort Study",
+    "text": "Cohort Study\nCR 2020 Grimley et al\nPlus Points\n\nClear Writing and Description; Large Sample size\n\nA prior definition of key confounders\nMinus Points\n\nWhy get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek’s papers that used (longitudinal) ordinal regression\n\nUnivariable Screening: Although a less stringent \\(P\\)-value criterion was used, I am unclear about the goal/rationale of the analysis2\n\n\n\n\n\n\nflowchart LR\nA[Goals of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] & I[Interpretation&lt;br&gt;Effects Estimation] & Pred[Prediction]\nPred --&gt; V[Validation]\nI --&gt; festimat[Point and interval&lt;br&gt;estimation of one&lt;br&gt;predictor's effect]\ntest --&gt; ftest[Formal tests]\n\n\n\nModified from rmsc book\n\n\n\n\nThe perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed\n\nPre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.\nInteresting\n\nMany ORs to interpret = Practice time"
+  },
+  {
+    "objectID": "jclub/articles2023/articles_2023.html#footnotes",
+    "href": "jclub/articles2023/articles_2023.html#footnotes",
+    "title": "Articles 2023",
     "section": "Footnotes",
-    "text": "Footnotes\n\nBeware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy↩︎\nMore accurately, but less comprehensibly, the 95%CI is the range of values computed using a method such that over multiple study replications with a 95% CI computed in each replication, 95% of the intervals would contain the true treatment effect.↩︎"
+    "text": "Footnotes\n\nCertainly a forgivable sin given the limited availability of software to handle more complex models in 2007↩︎\nI prefer pre-specifying as many confounders as the sample size would support↩︎"
   },
   {
-    "objectID": "ebp/regression/regression.html",
-    "href": "ebp/regression/regression.html",
-    "title": "Regression",
+    "objectID": "ebp.html",
+    "href": "ebp.html",
+    "title": "EBP Physiotherapy Workshop",
     "section": "",
-    "text": "linear regression model: This is also called ordinary least squares (OLS) and refers to regression for a continuous dependent variable, and usually to the case where the residuals are assumed to be Gaussian.\nmultivariable model: A model relating multiple predictor variables (risk factors, treatments, etc.) to a single response or dependent variable.\nmultivariate model: A model that simultaneously predicts more than one dependent variable, e.g. a model to predict systolic and diastolic blood pressure or a model to predict systolic blood pressure 5 min. and 60 min. after drug administration.\n\nTaken from Frank Harrell’s glossary"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#definitions",
-    "href": "ebp/regression/regression.html#definitions",
-    "title": "Regression",
-    "section": "",
-    "text": "linear regression model: This is also called ordinary least squares (OLS) and refers to regression for a continuous dependent variable, and usually to the case where the residuals are assumed to be Gaussian.\nmultivariable model: A model relating multiple predictor variables (risk factors, treatments, etc.) to a single response or dependent variable.\nmultivariate model: A model that simultaneously predicts more than one dependent variable, e.g. a model to predict systolic and diastolic blood pressure or a model to predict systolic blood pressure 5 min. and 60 min. after drug administration.\n\nTaken from Frank Harrell’s glossary"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#regression-model",
-    "href": "ebp/regression/regression.html#regression-model",
-    "title": "Regression",
-    "section": "Regression Model",
-    "text": "Regression Model\nThe choice of regression model depends on the nature of the outcome or dependent variable.\n\nContinuous outcome: linear regression model\nBinary outcome: binary logistic regression model\nOrdinal outcome: ordinal regression model\nTime to event outcome: Cox proportional hazards model1\n\nRegression models are used for\n\nhypothesis testing\nestimation (with confounder adjustment to get adjusted estimates of effects)\nprediction\n\n\n\n\n\nflowchart LR\nA[Goal of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] & I[Interpretation&lt;br&gt;Effects Estimation] & Pred[Prediction]\nPred --&gt; V[Validation]\nI --&gt; festimat[Point and interval&lt;br&gt;estimation of &lt;br&gt;predictor's effect]\ntest --&gt; ftest[Formal tests]\n\n\n\nModified from Prof Harrell’s rmsc book\n\n\n\nNotation\n\\(E(y|x) = \\alpha + \\beta x\\) (simple regression)\n\\(E(y|x) = \\alpha + \\beta_1x_1 + \\beta_2x_2\\) (multiple regression)\n\\(y\\): Response, dependent, or outcome variable\n\\(x\\): Predictor or independent variable\n\\(E(y|x)\\) : Expected value of \\(y\\) conditioned on the value of \\(x\\)\n\\(\\beta\\): Slope of \\(y\\) on \\(x\\) (\\(\\frac{\\Delta{y}}{\\Delta{x}}\\))\n\n\nJune says I have maxed out my quota for equations and symbols\nWatch this video which explains the notation of simple linear regression\n\nUse this link if the video doesn’t play\n\n\nInterpretating \\(x\\)\n\n\nGenerally speaking, \\(x\\) is the predictor or independent variable - a variable that is associated with the outcome (\\(y\\))\nDepending on the study design, \\(x\\) can also represent the explanatory variable, risk factor, confounder, covariate, or covariable. With multiple \\(x\\)’s, they can be (i) multiple risk factors, (ii) treatment variable plus baseline outcomes plus patient descriptors (age, gender), or (iii) different levels of a nominal (categorical) variable (e.g., race)\nInterpretating \\(\\beta\\)\n\n\nslope\nregression coefficient\neffect size of a given predictor\neffect of increasing \\(x\\) by one unit on the change in the mean of \\(y\\), holding all other \\(x\\)’s constant\nwith multiple \\(x\\)’s, the \\(\\beta\\)s represent the partial effects of \\(x\\)s\n\n\\(E(y|x) = \\alpha + \\beta_1x_1 + \\beta_2x_2 + \\beta_3x_3\\)\n\nNote: By holding all other \\(x\\)’s (confounders) constant, we are minimizing the risk of confounding!\n\\(\\beta_1\\) interpretation: Holding \\(x_2\\) and \\(x_3\\) constant, how much does mean \\(y\\) change when \\(x_1\\) changes by 1 unit?\n\\(\\beta_2\\) interpretation: Holding \\(x_1\\) and \\(x_3\\) constant, how much does mean \\(y\\) change when \\(x_2\\) changes by 1 unit?\n\\(\\beta_3\\) interpretation: Holding \\(x_1\\) and \\(x_2\\) constant, how much does mean \\(y\\) change when \\(x_3\\) changes by 1 unit?\nIQR-\\(\\beta\\) = change in the mean of \\(y\\) per one IQR increase in \\(x\\)\nWatch this video which explains the interpretation of \\(\\beta\\) from a simple linear regression model. Please note that \\(\\beta_0\\) in the video refers to \\(\\alpha\\) using our notation.\n\nUse this link if the video doesn’t play\n\n\nWatch this video which explains the interpretation of \\(\\beta\\) from a multivariable linear regression model. Please note that \\(\\beta_0\\) in the video refers to \\(\\alpha\\) using our notation. To jump straight into \\(\\beta\\) interpretation, start from minute \\(14\\) of the video.\nLogistic regression = exponentiating \\(\\beta\\) = Odds Ratio\nCox proportional hazards regression = exponentiating \\(\\beta\\) = Hazard Ratio (HR)"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#linear-regression",
-    "href": "ebp/regression/regression.html#linear-regression",
-    "title": "Regression",
-    "section": "Linear Regression",
-    "text": "Linear Regression\nExample 1\nExpected post-Rx disability = \\(24\\) + \\(0.71\\times\\)baseline score + \\(12.7\\times\\)acupuncture\n\nInterpretation: 12.7 represents the difference between groups on mean change scores. Outcome score improved by an estimated 12.7 points more on average in the acupuncture group than in the placebo group.\n\n\nIn a research paper, the authors will report the \\(\\beta\\) for the acupuncture (12.7) term\n\nAn analysis of covariance (ANCOVA) adjusts each patient’s follow up score for his or her baseline score(Vickers and Altman 2001)\n\n\n\n\n\n\nThe estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al (Vickers and Altman 2001)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. As mentioned, the most important result is 12.7 - the \\(\\beta\\) for acupuncture\n\n\nANCOVA: Analysis of covariance is just multiple regression (i.e., a linear model ) where one variable is of major interest and is categorical (e.g., treatment group). In classic ANCOVA there is a treatment variable and a continuous covariate used to reduce unexplained variation in the dependent variable, thereby increasing power.\n\n\nTaken from Frank Harrell’s glossary\nExample 2\nTable 2, taken from our JoSPT paper(Pua et al. 2017), describes how to interpret the output from a linear and (ordinal) logistic regression model.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nWhat is the study aim?\n\n\n2\nWhat are the predictor(s)-of-interest and outcomes?\n\n\n3\nWhat are the confounders - and why?\n\n\n4\nWhy did the authors use both linear and ordinal regression analyses?\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper can be found in Articles section.\nExample 32\n\nIndependent t-test is a special cases of simple linear regression\n\\(E(y|x) = \\alpha + \\beta x\\)\n\\(x\\): Single binary predictor\n\\(\\beta\\): the slope of a binary predictor (\\(x\\)) is equivalent to the difference in mean \\(y\\) between 2 groups\nWhen you replace the binary predictor (\\(x\\)) by a multi-group/categorical predictor, linear regression and multi-group ANOVA are identical. Hence, multi-group ANOVA is a special case of linear regression\n\nBecause regression analysis generalizes many special tests (e.g., t-test, ANOVA, Wilcoxon Mann Whitney U test, Kruskal-Wallis test), this explains our focus on regression analysis"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#lrm",
-    "href": "ebp/regression/regression.html#lrm",
-    "title": "Regression",
-    "section": "Logistic Regression",
-    "text": "Logistic Regression\nThe Challenge\n\nLogistic regression is a regression technique that is used to analyse binary outcome.\nOur response/outcome variable takes on 2 values, 0 or 1, and we convert them into the probability of a “one” response, given a set of predictors.\nWe cannot use linear regression to predict probabilities because it may predict probabilities &gt;1 or &lt;0\nThe Workaround\n\n\nFor the curious who wants to know why the exponentiated \\(\\beta\\) is an OR. But don’t freak out if you don’t understand this!\n\\[\n\\begin{array}{ccc}\n\\text{Probabilty } &=&\\pi \\in [0,1] \\\\\n\\text{Odds} &=&  \\frac{\\text{prob}}{1 - \\text{prob}} &=& \\frac {\\pi}{(1-\\pi)} \\in [0, +\\infty) \\\\\n\\text{log (odds)}  &=& \\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right) &=& \\text{log}\\left(\\frac {\\pi}{(1-\\pi)}\\right) \\in [-\\infty, +\\infty) \\\\\n\\log(\\text{odds}) &=& \\log\\left(\\frac{\\pi}{1-\\pi}\\right) &=& \\beta_0 + \\beta_1 X_1 + \\cdots + \\beta_p X_p \\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) \\\\\ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nInterpreting \\(\\beta\\)\n\nFocusing on the simple logistic regression model (1 predictor) \\[\n\\log{\\left( \\frac{prob}{1-prob} \\right)} = \\beta_0 + \\beta_1 X  \\\\\n\\]\nThe left-hand side of the logistic regression equation \\(\\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right)\\) is the natural logarithm of the odds, also known as the “log-odds” or “logit”\nWhat is similar?\n\nRecall that in linear regression, \\(\\beta\\) is the difference in the outcome associated with a 1-unit difference in the predictor (X)\n\n\nSimilarly, in logistic regression, \\(\\beta\\) is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)\n\n\nAdapted from Ramzi W. Nahhas’s online book\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& Y_{x+1} - Y_x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\text{linear regression}\\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) ~~~~~~~~\\text{logistic regression}\\\\\n\\end{array}\n\\]\nWhat is different and potentially confusing?\n\nBecause the logistic regression model is on the logged scale, when X is a continuous predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals who differ in that predictor by one unit\n\nBecause the logistic regression model is on the logged scale, when X is a categorical predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.\n\nBecause \\(\\beta\\) is the log of the odds ratio, we exponentiate \\(\\beta\\) to compute an odds ratio (OR) for X\n\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) &=& \\log{\\left(\\frac{\\text{odds}_{x+1}}{\\text{odds}_x}\\right)} &=& \\log(OR) \\\\  \ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nOdds\n\nOdds = Probability that an event or outcome will occur divided by the probability that it will not occur\nIf there probability of disability is 75% (\\(\\frac{3}{4}\\)), the odds of disability is \\(\\frac{3/4}{1-3/4} = 3\\)\nIf the odds of disability is 3, the probability of disability is \\(\\frac{3}{1 + 3} = 0.75 \\text{ or } 75\\%\\)\n\n\\[\n\\begin{array}{ccc}\n\\text{Odds = } \\frac{\\text{prob}}{1 - \\text{prob}} \\\\\n\\text{Prob = } \\frac{\\text{odds}}{1 + \\text{odds}}  \\\\\n\\end{array}\n\\]\n\n\n\nI strongly recommend that you watch the Statquest videos to gain a good basic understanding of biostatistics.\nOdds Ratio\nBecause OR is a ratio of odds of the outcome\n\nAn OR of 1 implies no association between the predictor and the outcome.\nAn OR &gt; 1 implies a positive association between the predictor and the outcome.\nAn OR &lt; 1 implies a negative association between the predictor and the outcome.\n\nExample\nIf patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be \\(\\frac{2.0}{0.5}\\) = 4\n\nPatients with knee pain have 4 times the odds of disability compared with patients without knee pain.\nWhen we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have \\(\\frac{1}{4}\\) or 0.25 times the odds of disability compared with patients with knee pain\nNote: Odds is the ratio of probabilities whilst Odds Ratio is the ratio of the odds. Watch the first 5 minutes of this video \nExample 1\nTable 2, taken from our Knee paper(Pua et al. 2017), describes how to interpret the output from an ordinal logistic regression model.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nWhat is the study aim?\n\n\n2\nWhat are the predictor(s)-of-interest and outcomes?\n\n\n3\nWhat are the confounders - and why?\n\n\n4\nWhy did the authors use both linear and ordinal regression analyses?\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper can be found in Articles section.\nExample 2\nConsider Assoc Prof. Shamala Thilarajah’s PTJ paper\n\nPaper can be found in Articles section.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nTable 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?\n\n\n2\nTable 2: Interpret all the statistics\n\n\n3\nTable 3: Interpret all the statistics\n\n\n4\nTable 3: Why did the authors use both linear and ordinal regression analyses?"
-  },
-  {
-    "objectID": "ebp/regression/regression.html#for-the-eager",
-    "href": "ebp/regression/regression.html#for-the-eager",
-    "title": "Regression",
-    "section": "For the Eager",
-    "text": "For the Eager\nEwen Harrison, consultant surgeon and data-scientist, has a nice online chapter on linear regression for healthcare professionals\n\nCheck out his nice example of the association of systolic blood pressure with smoking status and coffee consumption\nOur team has also gone Bayesian in our analyses. See here, here, and here for examples."
-  },
-  {
-    "objectID": "ebp/regression/regression.html#footnotes",
-    "href": "ebp/regression/regression.html#footnotes",
-    "title": "Regression",
-    "section": "Footnotes",
-    "text": "Footnotes\n\nNot covered in this workshop↩︎\nBonus Example. Don’t freak out if you don’t understand this↩︎"
-  },
-  {
-    "objectID": "ebp/confounding/confounding.html",
-    "href": "ebp/confounding/confounding.html",
-    "title": "Confounding",
-    "section": "",
-    "text": "Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects\nConfounding is caused by a variable (“confounder”) that is related to both predictor and outcome. However, a confounder is not caused by the predictor\n\n\n\n\n\n\n\n\nUse this link if the video doesn’t play\n\n\nUse this link if the video doesn’t play\n\n\n\nIf you have understood the concepts of confounding, please give credit to this speaker - not me!\n\n\nPatients with greater disease severity (the confounder) are likely to receive more intensive therapy\nPatients with greater disease severity are likely to have poor clinical outcomes\nThus, we may observe that intensive therapy is associated with poorer clinical outcomes. In other words, disease severity has distorted or confounded the estimation of the true therapy effects\n\n\nConfounding caused by variables related to both treatment decision and outcomes\nIn clinical practice, a therapist gives Patient A Treatment A and Patient B Treatment B\nWe may be tempted to compare Treatment A and Treatment B by comparing the outcomes of Patient A and Patient B. Unfortunately, this comparison of treatment effects is prone to confounding (by indication)\nPotential dangers of ignoring confounding by severity/treatment indication are highlighted here"
-  },
-  {
-    "objectID": "ebp/confounding/confounding.html#definition",
-    "href": "ebp/confounding/confounding.html#definition",
-    "title": "Confounding",
-    "section": "",
-    "text": "Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects\nConfounding is caused by a variable (“confounder”) that is related to both predictor and outcome. However, a confounder is not caused by the predictor\n\n\n\n\n\n\n\n\nUse this link if the video doesn’t play\n\n\nUse this link if the video doesn’t play\n\n\n\nIf you have understood the concepts of confounding, please give credit to this speaker - not me!\n\n\nPatients with greater disease severity (the confounder) are likely to receive more intensive therapy\nPatients with greater disease severity are likely to have poor clinical outcomes\nThus, we may observe that intensive therapy is associated with poorer clinical outcomes. In other words, disease severity has distorted or confounded the estimation of the true therapy effects\n\n\nConfounding caused by variables related to both treatment decision and outcomes\nIn clinical practice, a therapist gives Patient A Treatment A and Patient B Treatment B\nWe may be tempted to compare Treatment A and Treatment B by comparing the outcomes of Patient A and Patient B. Unfortunately, this comparison of treatment effects is prone to confounding (by indication)\nPotential dangers of ignoring confounding by severity/treatment indication are highlighted here"
-  },
-  {
-    "objectID": "ebp/confounding/confounding.html#controlling-for-confounding",
-    "href": "ebp/confounding/confounding.html#controlling-for-confounding",
-    "title": "Confounding",
-    "section": "Controlling for confounding",
-    "text": "Controlling for confounding\n\nThis involves breaking or removing the connection between treatment group variable and the confounder\n\n\n\n\n\n\nStudy Design Method: Randomization\n\nLarge randomized trials ensure that treatment and control groups are balanced with respect to factors associated with outcomes (eg., age, sex, disease severity, and comorbidity) and they thus provide the optimal approach to address questions about treatment effects\nIn an RCT, an intention to treat analysis (ITT) is a method/strategy of data analysis that compares patients in the groups to which they are originally randomly allocated.\nITT ensures that the treatment groups remain similar in baseline characteristics; hence, ITT minimizes confounding\nRCTs often do not mimic clinical practice because patients enrolled in an RCT can be quite different from patients in clinical practice. This may be necessary as it allows an RCT to control for confounding when estimating the true treatment effects.\n\n\n\n\n\nRCT controls confounding. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\nStatistical Method: Regression\n\nRegression methods condition on confounders when estimating the “true” treatment effects\nConceptually, we are averaging the treatment effects across the levels/strata of the confounder\nConditioning = Holding values (of the confounder) constant. Because the confounder is held constant at each stratum, regression analyses attempt to “level the playing field” for treatment groups\nConditioning can be done using stratification analyses or multivariable regression analyses\nWe adjusted or controlled for age…: Assessing the effect of one variable while accounting for the effect of another (confounding) variable. In a non-randomized study comparing the effects of treatments A and B on blood pressure reduction, the patients’ ages may have been used to select the treatment. It would be advisable in that case to control for the effect of age before estimating the treatment effect. This can be done using a regression model with blood pressure as the dependent variable and treatment and age as the independent variables (controlling for age using subtraction) or crudely and approximately (with some residual confounding) by stratifying by deciles of age and averaging the treatment effects estimated within the deciles. Adjustment results in adjusted odds ratios, adjusted hazard ratios, adjusted slopes, etc.\n\n\nTaken from Frank Harrell’s glossary\n\n\n\n\nStatistical adjustment for Age. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. It is nice but not necessary to understand this\nComparison\n\nLarge randomized trials ensure that treatment and control groups are balanced with respect to (known and unknown) factors associated with outcomes (typically age, sex, disease severity, and comorbidity — “prognostic factors”) and thus provide the optimal approach to address questions about the benefits and harms of interventions.\nObservational treatment comparisons = No treatment group randomization = More “real world” (reflective of clinical practice) = Greater risk of (known and unknown) confounding when estimating therapy effects\nIn observational treatment comparisons, we could use regression methods to adjust for known confounding. Hence, we are constantly haunted by the possibility that residual confounding may creep into our results. Residual confounding is the bias that remains even after statistical adjustment and it is caused by imperfectly measured confounders and unknown confounders.\n\n\n\n\n\nConfounding in observational study. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. It is nice but not necessary to understand this"
-  },
-  {
-    "objectID": "ebp/confounding/confounding.html#short-quiz",
-    "href": "ebp/confounding/confounding.html#short-quiz",
-    "title": "Confounding",
-    "section": "Short Quiz",
-    "text": "Short Quiz\n\nQuiz questions from Christina Saunders (I could not locate the link where she has posted these questions)\nQuestion 1: Is the drug beneficial?\n\n\n\n\n\n\n\n\nQuestion 2: Is the drug beneficial?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "EBP Physiotherapy Workshop\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nRegression\n\n\n\n\n\n\n\nregression\n\n\nodds ratio\n\n\nbeta\n\n\n\n\nRegression analysis is a statistical method that describes the relationship between a given predictor and outcome. In the case of multivariable regression, it describes that relationship after “controlling” for other variables. At the end of the session, you should be able to interpret the results from simple or multivariable regression (linear or logistic) analyses.\n\n\n\n\n\n\n16-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\n  \n\n\n\n\nConfounding\n\n\n\n\n\n\n\nconfounder\n\n\nregression\n\n\n\n\nConcepts of Confounding and Methods to control it. At the end of the session, you should be to explain (i) what confounding is, (ii) why confounding should be accounted for, and (iii) how confounding can be minimized or controlled for.\n\n\n\n\n\n\n15-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\n  \n\n\n\n\nGeneral Overview\n\n\n\n\n\n\n\np-values\n\n\nconfidence interval\n\n\nmeasurement type\n\n\nBayesian inference\n\n\n\n\nDefinitions of key terms commonly used in biomedical research\n\n\n\n\n\n\n14-07-2020\n\n\nSGH PT Dept\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ebp/overview/overview.html#types-of-measurement",
@@ -294,67 +147,88 @@
     "text": "Footnotes\n\nBeware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy↩︎"
   },
   {
-    "objectID": "jclub/articles2023/articles_2023.html",
-    "href": "jclub/articles2023/articles_2023.html",
-    "title": "Articles 2023",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "jclub/articles2023/articles_2023.html#group-rct",
-    "href": "jclub/articles2023/articles_2023.html#group-rct",
-    "title": "Articles 2023",
+    "objectID": "ebp/confounding/confounding.html",
+    "href": "ebp/confounding/confounding.html",
+    "title": "Confounding",
     "section": "",
-    "text": "JNNP 2007 Asburn et al\n\n\nThe authors adjusted for baseline SAS and previous history of falls (to “level the playing field” for both groups)\n\n\nTable 3: It is shame that readers are only given P-values to guide their interpretation of the regression results. Also, notice that unadjusted difference in proportions are given. Hence, it is possible to observe an unadjusted 95%CI that includes 0 but a P-value that is &lt;0.05\n\nSeparate regression analysis done at each timepoint: bias from non-random missing observations may creep into results 1\n\n\n\nTable 4: The authors sensibly provided adjusted difference. Try interpreting them.\n\n\nIf we have the time and energy, we could compute ORs by hand (or software)"
+    "text": "Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects\nConfounding is caused by a variable (“confounder”) that is related to both predictor and outcome. However, a confounder is not caused by the predictor\n\n\n\n\n\n\n\n\nUse this link if the video doesn’t play\n\n\nUse this link if the video doesn’t play\n\n\n\nIf you have understood the concepts of confounding, please give credit to this speaker - not me!\n\n\nPatients with greater disease severity (the confounder) are likely to receive more intensive therapy\nPatients with greater disease severity are likely to have poor clinical outcomes\nThus, we may observe that intensive therapy is associated with poorer clinical outcomes. In other words, disease severity has distorted or confounded the estimation of the true therapy effects\n\n\nConfounding caused by variables related to both treatment decision and outcomes\nIn clinical practice, a therapist gives Patient A Treatment A and Patient B Treatment B\nWe may be tempted to compare Treatment A and Treatment B by comparing the outcomes of Patient A and Patient B. Unfortunately, this comparison of treatment effects is prone to confounding (by indication)\nPotential dangers of ignoring confounding by severity/treatment indication are highlighted here"
   },
   {
-    "objectID": "jclub/articles2023/articles_2023.html#cohort-study",
-    "href": "jclub/articles2023/articles_2023.html#cohort-study",
-    "title": "Articles 2023",
-    "section": "Cohort Study",
-    "text": "Cohort Study\nCR 2020 Grimley et al\nPlus Points\n\nClear Writing and Description; Large Sample size\n\nA prior definition of key confounders\nMinus Points\n\nWhy get the difference in ordinal ratings? Do we not care about the final mRS score? Huge loss of information with dichotomization. See June Quek’s papers that used (longitudinal) ordinal regression\n\nUnivariable Screening: Although a less stringent \\(P\\)-value criterion was used, I am unclear about the goal/rationale of the analysis2\n\n\n\n\n\n\nflowchart LR\nA[Goals of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] & I[Interpretation&lt;br&gt;Effects Estimation] & Pred[Prediction]\nPred --&gt; V[Validation]\nI --&gt; festimat[Point and interval&lt;br&gt;estimation of one&lt;br&gt;predictor's effect]\ntest --&gt; ftest[Formal tests]\n\n\n\nModified from rmsc book\n\n\n\n\nThe perils of non-RCTs: Treatment selection bias (confounding by indication) was not explicitly discussed\n\nPre-specifying confounders, restricting comparisons to patients on common support, aggressively adjusting for confounders, should lead to more valid and precise estimates.\nInteresting\n\nMany ORs to interpret = Practice time"
+    "objectID": "ebp/confounding/confounding.html#definition",
+    "href": "ebp/confounding/confounding.html#definition",
+    "title": "Confounding",
+    "section": "",
+    "text": "Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects\nConfounding is caused by a variable (“confounder”) that is related to both predictor and outcome. However, a confounder is not caused by the predictor\n\n\n\n\n\n\n\n\nUse this link if the video doesn’t play\n\n\nUse this link if the video doesn’t play\n\n\n\nIf you have understood the concepts of confounding, please give credit to this speaker - not me!\n\n\nPatients with greater disease severity (the confounder) are likely to receive more intensive therapy\nPatients with greater disease severity are likely to have poor clinical outcomes\nThus, we may observe that intensive therapy is associated with poorer clinical outcomes. In other words, disease severity has distorted or confounded the estimation of the true therapy effects\n\n\nConfounding caused by variables related to both treatment decision and outcomes\nIn clinical practice, a therapist gives Patient A Treatment A and Patient B Treatment B\nWe may be tempted to compare Treatment A and Treatment B by comparing the outcomes of Patient A and Patient B. Unfortunately, this comparison of treatment effects is prone to confounding (by indication)\nPotential dangers of ignoring confounding by severity/treatment indication are highlighted here"
   },
   {
-    "objectID": "jclub/articles2023/articles_2023.html#footnotes",
-    "href": "jclub/articles2023/articles_2023.html#footnotes",
-    "title": "Articles 2023",
+    "objectID": "ebp/confounding/confounding.html#controlling-for-confounding",
+    "href": "ebp/confounding/confounding.html#controlling-for-confounding",
+    "title": "Confounding",
+    "section": "Controlling for confounding",
+    "text": "Controlling for confounding\n\nThis involves breaking or removing the connection between treatment group variable and the confounder\n\n\n\n\n\n\nStudy Design Method: Randomization\n\nLarge randomized trials ensure that treatment and control groups are balanced with respect to factors associated with outcomes (eg., age, sex, disease severity, and comorbidity) and they thus provide the optimal approach to address questions about treatment effects\nIn an RCT, an intention to treat analysis (ITT) is a method/strategy of data analysis that compares patients in the groups to which they are originally randomly allocated.\nITT ensures that the treatment groups remain similar in baseline characteristics; hence, ITT minimizes confounding\nRCTs often do not mimic clinical practice because patients enrolled in an RCT can be quite different from patients in clinical practice. This may be necessary as it allows an RCT to control for confounding when estimating the true treatment effects.\n\n\n\n\n\nRCT controls confounding. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\nStatistical Method: Regression\n\nRegression methods condition on confounders when estimating the “true” treatment effects\nConceptually, we are averaging the treatment effects across the levels/strata of the confounder\nConditioning = Holding values (of the confounder) constant. Because the confounder is held constant at each stratum, regression analyses attempt to “level the playing field” for treatment groups\nConditioning can be done using stratification analyses or multivariable regression analyses\nWe adjusted or controlled for age…: Assessing the effect of one variable while accounting for the effect of another (confounding) variable. In a non-randomized study comparing the effects of treatments A and B on blood pressure reduction, the patients’ ages may have been used to select the treatment. It would be advisable in that case to control for the effect of age before estimating the treatment effect. This can be done using a regression model with blood pressure as the dependent variable and treatment and age as the independent variables (controlling for age using subtraction) or crudely and approximately (with some residual confounding) by stratifying by deciles of age and averaging the treatment effects estimated within the deciles. Adjustment results in adjusted odds ratios, adjusted hazard ratios, adjusted slopes, etc.\n\n\nTaken from Frank Harrell’s glossary\n\n\n\n\nStatistical adjustment for Age. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. It is nice but not necessary to understand this\nComparison\n\nLarge randomized trials ensure that treatment and control groups are balanced with respect to (known and unknown) factors associated with outcomes (typically age, sex, disease severity, and comorbidity — “prognostic factors”) and thus provide the optimal approach to address questions about the benefits and harms of interventions.\nObservational treatment comparisons = No treatment group randomization = More “real world” (reflective of clinical practice) = Greater risk of (known and unknown) confounding when estimating therapy effects\nIn observational treatment comparisons, we could use regression methods to adjust for known confounding. Hence, we are constantly haunted by the possibility that residual confounding may creep into our results. Residual confounding is the bias that remains even after statistical adjustment and it is caused by imperfectly measured confounders and unknown confounders.\n\n\n\n\n\nConfounding in observational study. Figure taken from Agoritsas et al (Agoritsas et al. 2017)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. It is nice but not necessary to understand this"
+  },
+  {
+    "objectID": "ebp/confounding/confounding.html#short-quiz",
+    "href": "ebp/confounding/confounding.html#short-quiz",
+    "title": "Confounding",
+    "section": "Short Quiz",
+    "text": "Short Quiz\n\nQuiz questions from Christina Saunders (I could not locate the link where she has posted these questions)\nQuestion 1: Is the drug beneficial?\n\n\n\n\n\n\n\n\nQuestion 2: Is the drug beneficial?"
+  },
+  {
+    "objectID": "ebp/regression/regression.html",
+    "href": "ebp/regression/regression.html",
+    "title": "Regression",
+    "section": "",
+    "text": "linear regression model: This is also called ordinary least squares (OLS) and refers to regression for a continuous dependent variable, and usually to the case where the residuals are assumed to be Gaussian.\nmultivariable model: A model relating multiple predictor variables (risk factors, treatments, etc.) to a single response or dependent variable.\nmultivariate model: A model that simultaneously predicts more than one dependent variable, e.g. a model to predict systolic and diastolic blood pressure or a model to predict systolic blood pressure 5 min. and 60 min. after drug administration.\n\nTaken from Frank Harrell’s glossary"
+  },
+  {
+    "objectID": "ebp/regression/regression.html#definitions",
+    "href": "ebp/regression/regression.html#definitions",
+    "title": "Regression",
+    "section": "",
+    "text": "linear regression model: This is also called ordinary least squares (OLS) and refers to regression for a continuous dependent variable, and usually to the case where the residuals are assumed to be Gaussian.\nmultivariable model: A model relating multiple predictor variables (risk factors, treatments, etc.) to a single response or dependent variable.\nmultivariate model: A model that simultaneously predicts more than one dependent variable, e.g. a model to predict systolic and diastolic blood pressure or a model to predict systolic blood pressure 5 min. and 60 min. after drug administration.\n\nTaken from Frank Harrell’s glossary"
+  },
+  {
+    "objectID": "ebp/regression/regression.html#regression-model",
+    "href": "ebp/regression/regression.html#regression-model",
+    "title": "Regression",
+    "section": "Regression Model",
+    "text": "Regression Model\nThe choice of regression model depends on the nature of the outcome or dependent variable.\n\nContinuous outcome: linear regression model\nBinary outcome: binary logistic regression model\nOrdinal outcome: ordinal regression model\nTime to event outcome: Cox proportional hazards model1\n\nRegression models are used for\n\nhypothesis testing\nestimation (with confounder adjustment to get adjusted estimates of effects)\nprediction\n\n\n\n\n\nflowchart LR\nA[Goal of &lt;br&gt;Analysis] --&gt; test[Hypothesis testing] & I[Interpretation&lt;br&gt;Effects Estimation] & Pred[Prediction]\nPred --&gt; V[Validation]\nI --&gt; festimat[Point and interval&lt;br&gt;estimation of &lt;br&gt;predictor's effect]\ntest --&gt; ftest[Formal tests]\n\n\n\nModified from Prof Harrell’s rmsc book\n\n\n\nNotation\n\\(E(y|x) = \\alpha + \\beta x\\) (simple regression)\n\\(E(y|x) = \\alpha + \\beta_1x_1 + \\beta_2x_2\\) (multiple regression)\n\\(y\\): Response, dependent, or outcome variable\n\\(x\\): Predictor or independent variable\n\\(E(y|x)\\) : Expected value of \\(y\\) conditioned on the value of \\(x\\)\n\\(\\beta\\): Slope of \\(y\\) on \\(x\\) (\\(\\frac{\\Delta{y}}{\\Delta{x}}\\))\n\n\nJune says I have maxed out my quota for equations and symbols\nWatch this video which explains the notation of simple linear regression\n\nUse this link if the video doesn’t play\n\n\nInterpretating \\(x\\)\n\n\nGenerally speaking, \\(x\\) is the predictor or independent variable - a variable that is associated with the outcome (\\(y\\))\nDepending on the study design, \\(x\\) can also represent the explanatory variable, risk factor, confounder, covariate, or covariable. With multiple \\(x\\)’s, they can be (i) multiple risk factors, (ii) treatment variable plus baseline outcomes plus patient descriptors (age, gender), or (iii) different levels of a nominal (categorical) variable (e.g., race)\nInterpretating \\(\\beta\\)\n\n\nslope\nregression coefficient\neffect size of a given predictor\neffect of increasing \\(x\\) by one unit on the change in the mean of \\(y\\), holding all other \\(x\\)’s constant\nwith multiple \\(x\\)’s, the \\(\\beta\\)s represent the partial effects of \\(x\\)s\n\n\\(E(y|x) = \\alpha + \\beta_1x_1 + \\beta_2x_2 + \\beta_3x_3\\)\n\nNote: By holding all other \\(x\\)’s (confounders) constant, we are minimizing the risk of confounding!\n\\(\\beta_1\\) interpretation: Holding \\(x_2\\) and \\(x_3\\) constant, how much does mean \\(y\\) change when \\(x_1\\) changes by 1 unit?\n\\(\\beta_2\\) interpretation: Holding \\(x_1\\) and \\(x_3\\) constant, how much does mean \\(y\\) change when \\(x_2\\) changes by 1 unit?\n\\(\\beta_3\\) interpretation: Holding \\(x_1\\) and \\(x_2\\) constant, how much does mean \\(y\\) change when \\(x_3\\) changes by 1 unit?\nIQR-\\(\\beta\\) = change in the mean of \\(y\\) per one IQR increase in \\(x\\)\nWatch this video which explains the interpretation of \\(\\beta\\) from a simple linear regression model. Please note that \\(\\beta_0\\) in the video refers to \\(\\alpha\\) using our notation.\n\nUse this link if the video doesn’t play\n\n\nWatch this video which explains the interpretation of \\(\\beta\\) from a multivariable linear regression model. Please note that \\(\\beta_0\\) in the video refers to \\(\\alpha\\) using our notation. To jump straight into \\(\\beta\\) interpretation, start from minute \\(14\\) of the video.\nLogistic regression = exponentiating \\(\\beta\\) = Odds Ratio\nCox proportional hazards regression = exponentiating \\(\\beta\\) = Hazard Ratio (HR)"
+  },
+  {
+    "objectID": "ebp/regression/regression.html#linear-regression",
+    "href": "ebp/regression/regression.html#linear-regression",
+    "title": "Regression",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nExample 1\nExpected post-Rx disability = \\(24\\) + \\(0.71\\times\\)baseline score + \\(12.7\\times\\)acupuncture\n\nInterpretation: 12.7 represents the difference between groups on mean change scores. Outcome score improved by an estimated 12.7 points more on average in the acupuncture group than in the placebo group.\n\n\nIn a research paper, the authors will report the \\(\\beta\\) for the acupuncture (12.7) term\n\nAn analysis of covariance (ANCOVA) adjusts each patient’s follow up score for his or her baseline score(Vickers and Altman 2001)\n\n\n\n\n\n\nThe estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al (Vickers and Altman 2001)\n\n\n\n\nDisclaimer: Don’t freak out if you don’t understand this. As mentioned, the most important result is 12.7 - the \\(\\beta\\) for acupuncture\n\n\nANCOVA: Analysis of covariance is just multiple regression (i.e., a linear model ) where one variable is of major interest and is categorical (e.g., treatment group). In classic ANCOVA there is a treatment variable and a continuous covariate used to reduce unexplained variation in the dependent variable, thereby increasing power.\n\n\nTaken from Frank Harrell’s glossary\nExample 2\nTable 2, taken from our JoSPT paper(Pua et al. 2017), describes how to interpret the output from a linear and (ordinal) logistic regression model.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nWhat is the study aim?\n\n\n2\nWhat are the predictor(s)-of-interest and outcomes?\n\n\n3\nWhat are the confounders - and why?\n\n\n4\nWhy did the authors use both linear and ordinal regression analyses?\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper can be found in Articles section.\nExample 32\n\nIndependent t-test is a special cases of simple linear regression\n\\(E(y|x) = \\alpha + \\beta x\\)\n\\(x\\): Single binary predictor\n\\(\\beta\\): the slope of a binary predictor (\\(x\\)) is equivalent to the difference in mean \\(y\\) between 2 groups\nWhen you replace the binary predictor (\\(x\\)) by a multi-group/categorical predictor, linear regression and multi-group ANOVA are identical. Hence, multi-group ANOVA is a special case of linear regression\n\nBecause regression analysis generalizes many special tests (e.g., t-test, ANOVA, Wilcoxon Mann Whitney U test, Kruskal-Wallis test), this explains our focus on regression analysis"
+  },
+  {
+    "objectID": "ebp/regression/regression.html#lrm",
+    "href": "ebp/regression/regression.html#lrm",
+    "title": "Regression",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\nThe Challenge\n\nLogistic regression is a regression technique that is used to analyse binary outcome.\nOur response/outcome variable takes on 2 values, 0 or 1, and we convert them into the probability of a “one” response, given a set of predictors.\nWe cannot use linear regression to predict probabilities because it may predict probabilities &gt;1 or &lt;0\nThe Workaround\n\n\nFor the curious who wants to know why the exponentiated \\(\\beta\\) is an OR. But don’t freak out if you don’t understand this!\n\\[\n\\begin{array}{ccc}\n\\text{Probabilty } &=&\\pi \\in [0,1] \\\\\n\\text{Odds} &=&  \\frac{\\text{prob}}{1 - \\text{prob}} &=& \\frac {\\pi}{(1-\\pi)} \\in [0, +\\infty) \\\\\n\\text{log (odds)}  &=& \\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right) &=& \\text{log}\\left(\\frac {\\pi}{(1-\\pi)}\\right) \\in [-\\infty, +\\infty) \\\\\n\\log(\\text{odds}) &=& \\log\\left(\\frac{\\pi}{1-\\pi}\\right) &=& \\beta_0 + \\beta_1 X_1 + \\cdots + \\beta_p X_p \\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) \\\\\ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nInterpreting \\(\\beta\\)\n\nFocusing on the simple logistic regression model (1 predictor) \\[\n\\log{\\left( \\frac{prob}{1-prob} \\right)} = \\beta_0 + \\beta_1 X  \\\\\n\\]\nThe left-hand side of the logistic regression equation \\(\\text{log}\\left(\\frac{\\text{prob}}{1 - \\text{prob}}\\right)\\) is the natural logarithm of the odds, also known as the “log-odds” or “logit”\nWhat is similar?\n\nRecall that in linear regression, \\(\\beta\\) is the difference in the outcome associated with a 1-unit difference in the predictor (X)\n\n\nSimilarly, in logistic regression, \\(\\beta\\) is the difference in the log-odds of the outcome associated with a 1-unit difference in the predictor (X)\n\n\nAdapted from Ramzi W. Nahhas’s online book\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& Y_{x+1} - Y_x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\text{linear regression}\\\\\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) ~~~~~~~~\\text{logistic regression}\\\\\n\\end{array}\n\\]\nWhat is different and potentially confusing?\n\nBecause the logistic regression model is on the logged scale, when X is a continuous predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals who differ in that predictor by one unit\n\nBecause the logistic regression model is on the logged scale, when X is a categorical predictor, \\(\\beta\\) is the log of the odds ratio comparing individuals at a given categorical level of the predictor to those at the reference level.\n\nBecause \\(\\beta\\) is the log of the odds ratio, we exponentiate \\(\\beta\\) to compute an odds ratio (OR) for X\n\n\\[\n\\begin{array}{ccc}\n\\beta_1 &=& \\log(\\text{odds}_{x+1}) - \\log(\\text{odds}_x) &=& \\log{\\left(\\frac{\\text{odds}_{x+1}}{\\text{odds}_x}\\right)} &=& \\log(OR) \\\\  \ne^{\\beta_1} &=& \\frac{\\text{odds}_{x+1}}{\\text{odds}_x} &=& \\text{odds ratio [OR]}\n\\end{array}\n\\]\nOdds\n\nOdds = Probability that an event or outcome will occur divided by the probability that it will not occur\nIf there probability of disability is 75% (\\(\\frac{3}{4}\\)), the odds of disability is \\(\\frac{3/4}{1-3/4} = 3\\)\nIf the odds of disability is 3, the probability of disability is \\(\\frac{3}{1 + 3} = 0.75 \\text{ or } 75\\%\\)\n\n\\[\n\\begin{array}{ccc}\n\\text{Odds = } \\frac{\\text{prob}}{1 - \\text{prob}} \\\\\n\\text{Prob = } \\frac{\\text{odds}}{1 + \\text{odds}}  \\\\\n\\end{array}\n\\]\n\n\n\nI strongly recommend that you watch the Statquest videos to gain a good basic understanding of biostatistics.\nOdds Ratio\nBecause OR is a ratio of odds of the outcome\n\nAn OR of 1 implies no association between the predictor and the outcome.\nAn OR &gt; 1 implies a positive association between the predictor and the outcome.\nAn OR &lt; 1 implies a negative association between the predictor and the outcome.\n\nExample\nIf patients with knee pain have an odds of disability of 2.0 and patients without knee pain have an odds of disability of 0.5, then the OR associated with the presence of knee pain would be \\(\\frac{2.0}{0.5}\\) = 4\n\nPatients with knee pain have 4 times the odds of disability compared with patients without knee pain.\nWhen we reverse the order of the groups being compared, the OR will be inverted. So, patients without knee pain have \\(\\frac{1}{4}\\) or 0.25 times the odds of disability compared with patients with knee pain\nNote: Odds is the ratio of probabilities whilst Odds Ratio is the ratio of the odds. Watch the first 5 minutes of this video \nExample 1\nTable 2, taken from our Knee paper(Pua et al. 2017), describes how to interpret the output from an ordinal logistic regression model.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nWhat is the study aim?\n\n\n2\nWhat are the predictor(s)-of-interest and outcomes?\n\n\n3\nWhat are the confounders - and why?\n\n\n4\nWhy did the authors use both linear and ordinal regression analyses?\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaper can be found in Articles section.\nExample 2\nConsider Assoc Prof. Shamala Thilarajah’s PTJ paper\n\nPaper can be found in Articles section.\n\n\n\n\n\n\n\nNumber\nQuestion\n\n\n\n1\nTable 1: Based on the median, IQR, mean, and SD, What can you conclude about the distributions of the variables?\n\n\n2\nTable 2: Interpret all the statistics\n\n\n3\nTable 3: Interpret all the statistics\n\n\n4\nTable 3: Why did the authors use both linear and ordinal regression analyses?"
+  },
+  {
+    "objectID": "ebp/regression/regression.html#for-the-eager",
+    "href": "ebp/regression/regression.html#for-the-eager",
+    "title": "Regression",
+    "section": "For the Eager",
+    "text": "For the Eager\nEwen Harrison, consultant surgeon and data-scientist, has a nice online chapter on linear regression for healthcare professionals\n\nCheck out his nice example of the association of systolic blood pressure with smoking status and coffee consumption\nOur team has also gone Bayesian in our analyses. See here, here, and here for examples."
+  },
+  {
+    "objectID": "ebp/regression/regression.html#footnotes",
+    "href": "ebp/regression/regression.html#footnotes",
+    "title": "Regression",
     "section": "Footnotes",
-    "text": "Footnotes\n\nCertainly a forgivable sin given the limited availability of software to handle more complex models in 2007↩︎\nI prefer pre-specifying as many confounders as the sample size would support↩︎"
-  },
-  {
-    "objectID": "jclub/rx_eval/rx_eval.html",
-    "href": "jclub/rx_eval/rx_eval.html",
-    "title": "Intervention Evaluation",
-    "section": "",
-    "text": "Confounding by treatment indication\nRegression analyses and covariate adjustment\nP-values and CI interpretation\n\n\nDon’t freak out if you don’t understand them well. Get more information from the Workshop section"
-  },
-  {
-    "objectID": "jclub/rx_eval/rx_eval.html#background-knowledge",
-    "href": "jclub/rx_eval/rx_eval.html#background-knowledge",
-    "title": "Intervention Evaluation",
-    "section": "",
-    "text": "Confounding by treatment indication\nRegression analyses and covariate adjustment\nP-values and CI interpretation\n\n\nDon’t freak out if you don’t understand them well. Get more information from the Workshop section"
-  },
-  {
-    "objectID": "jclub/rx_eval/rx_eval.html#propensity-score-adjustment",
-    "href": "jclub/rx_eval/rx_eval.html#propensity-score-adjustment",
-    "title": "Intervention Evaluation",
-    "section": "Propensity Score Adjustment",
-    "text": "Propensity Score Adjustment\n\n\nExcellent tutorial (with helpful audio narration!) by Prof Frank Harrell can be found here\n\n\nHigh-level summary\n\nPropensity score (PS) analysis is a regression-based method that adjusts the treatment effects for many (known) confounders\nPS analysis is used when (i) you need to aggressively adjust the treatment effects for multiple confounders and (ii) the outcome model does not allow multiple variables to be reliably fitted. Thus, PS analysis allows aggressive confounder adjustment without increasing the risk of model overfitting\nTo summarize the confounding information into a single number, a propensity model is created by regressing the treatment status on all the confounders. In that model, the PS is the estimated (conditional) probability of getting treatment B vs. treatment A given a set of (observed/measured) confounding variables.\nResearchers would often use the PS to assess whether they could achieve balance between the treatment groups on the confounders.\nAfter computing the PS, a multivariable outcome model is fitted to estimate the treatment effects. In the outcome model, the PS is simply treated as a covariate. PS adjustment “works” when all relevant variables (important prognostic factors) are included in the propensity model.\n\n\n\nExample\nGornet et al JNS 2015\n\nTo adjust for any possible effects of demographic characteristics or preoperative measures on clinical outcomes, the propensity score technique was used. The propensity score was calculated based on a logistic regression model with the following covariates: age, height, weight, sex, race, marital status, education level, work status, workers’ compensation, spinal litigation, tobacco use, alcohol use, nonnarcotic pain medication use, weak narcotic pain medication use, strong narcotic pain medication use, muscle relaxant medication use, time to onset of symptoms, and previous neck surgery, as well as treatment level and preoperative scores for NDI, 36-Item Short Form Health Survey (SF-36) Physical Component Summary (PCS), SF-36 Mental Component Summary (MCS), neck pain, arm pain, gait, foraminal compression test reaction, and neurological status (motor function, sensory, and reflex). Where an observation was missing for a given demographic/pre-operative variable in a particular patient, the mean value of the corresponding treatment group was imputed for the missing data point. Covariate balance after propensity score adjustment was examined using ANCOVA or logistic regression."
-  },
-  {
-    "objectID": "jclub/rx_eval/rx_eval.html#bayesian-inference",
-    "href": "jclub/rx_eval/rx_eval.html#bayesian-inference",
-    "title": "Intervention Evaluation",
-    "section": "Bayesian Inference",
-    "text": "Bayesian Inference\n\nGo to “Overview” chapter (Workshop section)\n\n\nExample\nGornet et al JNS 2015\n\nIn the Frequentist approach, evidence for efficacy is generally thought to be provided by p ≤ 0.05. This is the probability of observing, over repetitions of the same experiment, a test statistic as impressive as or more impressive than the observed statistic for comparing 2 groups if the null hypothesis is true. Bayesian results are “positive,” by comparison, when, for example, the posterior probability of efficacy is ≥ 0.95. For assessing evidence, the Bayesian posterior probability of a statement such as “Treatment 1 tends to be better than Treatment 2” is the probability that the statement is true. In addition, the 95% Bayesian credible intervals are provided for parameters of interest. The primary objective in this study was to show that the overall success rate in the investigational group was statistically noninferior to the rate in the historical control group."
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "I did not so much create as assemble the materials for this website.\n\nAny errors in this website, however, are mine.\n\nWhen preparing the workshop materials,\n\nI pilfered (and benefitted greatly) from Prof Frank Harrell’s excellent Biostatistics for Biomedical Research.\nJosh Starmer’s Statquest is a also “must go to website” for people interested in gaining a working understanding of biostatistics.\nZ Statistics is an excellent educational resource for University students and analysts of any stripe.\nI belatedly discovered Crash Course and I think it is a fantastic website."
+    "text": "Footnotes\n\nNot covered in this workshop↩︎\nBonus Example. Don’t freak out if you don’t understand this↩︎"
   },
   {
     "objectID": "index.html",
@@ -378,6 +252,48 @@
     "text": "Footnotes\n\n\nhuatRRR https://en.wiktionary.org/wiki/huat_ah↩︎"
   },
   {
+    "objectID": "jclub/journalclub/journalclub.html",
+    "href": "jclub/journalclub/journalclub.html",
+    "title": "Journal Club",
+    "section": "",
+    "text": "Messier et al Effect of High-Intensity Strength Training on Knee Pain and Knee Joint Compressive Forces Among Adults With Knee Osteoarthritis The START Randomized Clinical Trial. JAMA 2021 Feb 16;325(7):646-657\n\nRead the abstract"
+  },
+  {
+    "objectID": "jclub/journalclub/journalclub.html#session-31-aug-2021",
+    "href": "jclub/journalclub/journalclub.html#session-31-aug-2021",
+    "title": "Journal Club",
+    "section": "",
+    "text": "Messier et al Effect of High-Intensity Strength Training on Knee Pain and Knee Joint Compressive Forces Among Adults With Knee Osteoarthritis The START Randomized Clinical Trial. JAMA 2021 Feb 16;325(7):646-657\n\nRead the abstract"
+  },
+  {
+    "objectID": "jclub/journalclub/journalclub.html#questions",
+    "href": "jclub/journalclub/journalclub.html#questions",
+    "title": "Journal Club",
+    "section": "Questions",
+    "text": "Questions\n\nIs this a well-conducted study in terms of study design? (refer to Pointers)\nWould you conclude that there is no difference between high vs low-intensity strength training? (refer to Pointers)\n\nin terms of self-reported knee pain\nin terms of knee extensor strength\nin terms of hip abductor strength\nin terms of 6-minute walking distance\n\n\nWhat are the mechanism of effects of high and low-intensity strength training? (read Schoenfeld et al)\nWhat are the implications for clinical practice?\nHow would you have done the study differently? (Open Question)"
+  },
+  {
+    "objectID": "jclub/journalclub/journalclub.html#designlink",
+    "href": "jclub/journalclub/journalclub.html#designlink",
+    "title": "Journal Club",
+    "section": "Study Design",
+    "text": "Study Design\nMethods/procedures used by the researchers to reduce/minimize study bias\nRecruitment\nParticipants were not aware of the hypotheses tested. What are the implications?\nRandomization\nHow does randomization reduce confounding? (Confounding Chapter)\nWhy was randomization stratified by sex and baseline BMI?(Confounding Chapter)\nAnalysis\nParticipants were analyzed according to their assigned randomization group even if they were nonadherent to their assigned intervention (Confounding Chapter)\nAnalysis were adjusted for sex, baseline BMI, and baseline outcome values (Regression Chapter on ANCOVA)"
+  },
+  {
+    "objectID": "jclub/journalclub/journalclub.html#findingslink",
+    "href": "jclub/journalclub/journalclub.html#findingslink",
+    "title": "Journal Club",
+    "section": "Findings",
+    "text": "Findings\nInterpret the RCT findings by quantifying the evidence for/against a treatment effect Association = Treatment Effect = Treatment Difference\n\n\n\n\n\n\n\nFindings\nInterpretation\n\n\n\nP&lt;0.05\nEvidence of a (non-zero) treatment difference/effect\n\n\nP&gt;0.05\nInsufficient/No evidence of association (≠ evidence of no treatment difference)1\n\n\n\n(1) P&lt;0.05; 95% CIs exclude trivial effects\nEvidence of a clinically meaningful treatment difference\n\n\n(2) P&lt;0.05; 95% CIs exclude meaningful effects\nEvidence of a treatment diff; however, this difference is not clinically meaningful\n\n\n(3) P&lt;0.05; 95% CIs include trivial + meaningful effects\nCannot exclude non-clinically meaningful treatment difference\n\n\n(4) P&gt;0.05; 95% CIs exclude meaningful effects\n(Possibly) Evidence of no treatment difference\n\n\n(5) P&gt;0.05; 95% CI limits include meaningful effects\nCI indicates a wide range of plausible true treatment differences (inconclusive finding as all scenarios are possible)\n\n\n(6) P&gt;0.05; 95% CI limits include trivial + meaningful effects\nNo evidence of treatment difference, however, we cannot exclude clinically important difference\n\n\n\n\nWe are assuming that the 95%CI represent the range of plausible values for the true (hidden) treatment effects. This is, strictly speaking, untrue2 (General Overview Chapter)."
+  },
+  {
+    "objectID": "jclub/journalclub/journalclub.html#footnotes",
+    "href": "jclub/journalclub/journalclub.html#footnotes",
+    "title": "Journal Club",
+    "section": "Footnotes",
+    "text": "Footnotes\n\nBeware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy↩︎\nMore accurately, but less comprehensibly, the 95%CI is the range of values computed using a method such that over multiple study replications with a 95% CI computed in each replication, 95% of the intervals would contain the true treatment effect.↩︎"
+  },
+  {
     "objectID": "jclub/writing_2024/writing_2024.html",
     "href": "jclub/writing_2024/writing_2024.html",
     "title": "Scientific Writing",
@@ -390,5 +306,103 @@
     "title": "Scientific Writing",
     "section": "Footnotes",
     "text": "Footnotes\n\nBe thick-skinned and don’t be Paiseh↩︎"
+  },
+  {
+    "objectID": "R.html",
+    "href": "R.html",
+    "title": "R",
+    "section": "",
+    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)\n\nSarah Lim (July 2024)"
+  },
+  {
+    "objectID": "R.html#learning-r",
+    "href": "R.html#learning-r",
+    "title": "R",
+    "section": "",
+    "text": "Several colleagues/PhD students (2021-2023)\n\nLer Vin See (Jan 2024)\n\nSarah Lim (July 2024)"
+  },
+  {
+    "objectID": "R.html#steps-to-follow",
+    "href": "R.html#steps-to-follow",
+    "title": "R",
+    "section": "Steps to follow",
+    "text": "Steps to follow"
+  },
+  {
+    "objectID": "R.html#step-1-installing-rstudio",
+    "href": "R.html#step-1-installing-rstudio",
+    "title": "R",
+    "section": "Step 1: Installing RStudio",
+    "text": "Step 1: Installing RStudio\nInstall RStudio and R (and know the difference between them)\n- You can install both using this link - R is both a software and programming language\n- Rstudio provides a (nice) environment to run R\n- This website provides a nice explanation of key concepts"
+  },
+  {
+    "objectID": "R.html#step-2-installing-r-packages",
+    "href": "R.html#step-2-installing-r-packages",
+    "title": "R",
+    "section": "Step 2: Installing R Packages",
+    "text": "Step 2: Installing R Packages\nIn Rstudio, perform these 2 basic chores: - Install R packages1\ni. readxl\nii. tidyverse2\niii. here\niv. janitor\nv. rms\nPackage, Function, Code: An Analogy\n\n\nPackage\nFunction\nCodes\n\n\n\nA package with its many functions can be seen as a book containing many pages. Just like how every page of a book tells a story, every R function in a package is based on accomplishing a task (e.g. tidying workspace or reading excel sheets)\n\n\nA function can be seen as a page contained within a book (the package). This is the most important part of the 3 components mentioned here, as these functions are the ones you’ll be using when coding in RStudio. Functions will perform tasks for you so you don’t have to code something from scratch.\n\n\n\n\n\n\nNote\n\n\n\nTo access the available functions, you first have to “activate” the package that the function is found in. You can do this by using the library() function (add the name of the package between the brackets). To learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\n\n\nCodes can be seen as the letters found on a page (function). Each page has a different number of letters, which is similar to how some functions are more complicated than others, and as such contain more lines of code.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen you try downloading R packages, RStudio may prompt you to install Rtools . You can do so on this website\n\n\n\n\n\n\n\n\nTip\n\n\n\nTo learn about the functions available in a package, click on the “packages” button at the bottom right panel, and it will display a list of functions as well as what they will do\n\n\nStep 2.1: How to use packages\n\nMany functions that can aid in data analysis are found within packages that you have downloaded earlier. To access these functions, you first have to load or “activate” the package that the function is found in. You can do this by using library(package you want to load)\n\nStep 2.2: Moving Rstudio Panels\n\nMove console pane to the right\n\nDo this by clicking on the icon that looks like for squares on the left of “Addins”, where you will select the option “Console on right”"
+  },
+  {
+    "objectID": "R.html#step-3-creating-a-project-folder",
+    "href": "R.html#step-3-creating-a-project-folder",
+    "title": "R",
+    "section": "Step 3: Creating a Project Folder",
+    "text": "Step 3: Creating a Project Folder\n\nWhy it is important\n\nHaving clear project organisation simplifies understanding of information for both you and your collaborators\nA consistent and logical structure allows you to access and work with codes and data conveniently, avoiding situations where you have “missing” codes or data files\nA well organised project reduces the risk of introducing bugs or errors into your workflow and even if they do occur, it is easier to track down the errors and deal with them efficiently\n\n\nOpen R studio\nClick File- New Project- New Directory- New Project- enter Project name- Create folder in preferred location (e.g. in Desktop)- Create Project\n\n\n\nClick the white icon with green + sign on the top left corner to create new R script and save it\n\n\n\nAdd data files into the project file as necessary.\nAs desired, open the project folder ① and click on the R project file ② . Should you have followed the above steps, you will be able to access the R script ③ and relevant data files ④ from within the project folder to work on. This is highly recommended for your convenience.\n\n\nAlternatively, you can watch this video for more detailed instructions\nTip:\n\nUse here package after installing it in Step 2. It helps you locate your files if you start working in R without first opening a project folder, learn more here\n\n\n\nlibrary(here)\nhere(\"Wombat\", \"WBS data files\")"
+  },
+  {
+    "objectID": "R.html#step-4-fastr-lesson",
+    "href": "R.html#step-4-fastr-lesson",
+    "title": "R",
+    "section": "Step 4: fastR lesson",
+    "text": "Step 4: fastR lesson\n\nWrite and run some codes on the source panel3\n\nGo through lessons \\(1\\) to \\(8\\) of fastR"
+  },
+  {
+    "objectID": "R.html#step-5-learning-important-verbs",
+    "href": "R.html#step-5-learning-important-verbs",
+    "title": "R",
+    "section": "Step 5: Learning important verbs",
+    "text": "Step 5: Learning important verbs\n\nTry searching up verbs in the tidyverse package\nBased on the built-in mtcars, learn how to use the pipe (%&gt;%) operator + the following dplyr verbs4 : filter, select, arrange, count, rename, case_when, mutate\n\nWhen searching for info on how to perform some actions using R, try adding the package name in the prompt, or use ?(package name) to see the functions available in a specific package\nBasic tutorial\nData analysis intro vid\n\nAndrew Heiss website\n\nPeter D.R. Higgins e-book\n\nrecode() and relevel factor levels using the forcats::fct_relevel()"
+  },
+  {
+    "objectID": "R.html#step-6-reading-files",
+    "href": "R.html#step-6-reading-files",
+    "title": "R",
+    "section": "Step 6: Reading files",
+    "text": "Step 6: Reading files\n\nIf you plan to use Rstudio for data analysis and plan to import excel sheets, create a folder to store all the relevant files you’ll be using for analysis\nRead an external file: use here() package to manage file-path\n\nStep 6.1: Read excel files\n\n\nreadxl package is part of the tidyverse, with read_excel() as the main function that reads excel files (.xlsx) into R\nThis function can handle multiple sheets and retains data types and formatting from excel\n\n\nOn Rstudio, create a new project (refer to step 3) and shift this file into the same file with the excel sheet\nIn the R script, load necessary libraries\nList all files5 in the current project directory\nFilter the list to find the specific excel file\n\nMore on readxl here\n\n\n\n\n\n\nTip\n\n\n\nCreating a project is useful, as it allows you to access and manage your own files more conveniently using list.files() (more on this later)\n\n\n\n# Load necessary libraries\nlibrary(readxl)\nlibrary(stringr)\n\n# List all files in the current project directory\nfiles &lt;- list.files()\n\n# Filter the list to find the specific Excel file\nfile_to_read &lt;- str_subset(files, \"excel_file_1\")\n\nStep 6.2: Read csv files\n\n\nreadr package is also part of the tidyverse, with read_csv() as the main function that reads csv files (.csv) into R\nThis function is faster and more memory-efficient for large datasets compared excel files, and universally supports format for tabular data\n\n\nOn Rstudio, create a new project and shift this file containing relevant csv files\nIn the R script, load necessary libraries\nList the csv files\nAccess your desired data\n\nMore on readr here\n\n# Load necessary libraries\nlibrary(readr)\n\n# List csv files\ncsv_files &lt;- list.files(pattern = \"*.csv\")\n\n# Read all csv files into a list of data frames\ncsv_data &lt;- lapply(csv_files, read_csv)\n\n# Access specific data frames (e.g., first and second files)\ncsv_data[[1]] #Accesses the first csv data frame\ncsv_data[[2]] #Accesses the second csv data frame"
+  },
+  {
+    "objectID": "R.html#step-7-data-cleaning",
+    "href": "R.html#step-7-data-cleaning",
+    "title": "R",
+    "section": "Step 7: Data Cleaning",
+    "text": "Step 7: Data Cleaning\n\nGo through the Janitor vignette\n\nKey functions like clean_names(), remove_empty(c(\"rows\", \"cols\")), adorn_rounding() tidy your data, while tabyl() can tabulate and summarise them"
+  },
+  {
+    "objectID": "R.html#step-8-additional-lessons-and-more-verbs",
+    "href": "R.html#step-8-additional-lessons-and-more-verbs",
+    "title": "R",
+    "section": "Step 8: Additional lessons and more verbs",
+    "text": "Step 8: Additional lessons and more verbs\n\nLearn more variable selection operators : starts_with(), ends_with(), contains(), matches()\n\nLearn more dplyr verbs and base R functions, this contains a comprehensive cheat sheet\n\nGo through lessons \\(9\\) to \\(13\\) of fastR6"
+  },
+  {
+    "objectID": "R.html#step-9-neaten-your-r-script",
+    "href": "R.html#step-9-neaten-your-r-script",
+    "title": "R",
+    "section": "Step 9: Neaten your R script",
+    "text": "Step 9: Neaten your R script\n\nCtrl + Shift + R to create sections between codes\nUse # to label your codes/ comment as R does not read it\nAlt + L to compress a highlighted chunk of code"
+  },
+  {
+    "objectID": "R.html#resources-to-learn-r",
+    "href": "R.html#resources-to-learn-r",
+    "title": "R",
+    "section": "Resources to learn R",
+    "text": "Resources to learn R\nHarrell’s R workflow\nR Weekly newsletter: e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.\n#rstats: For twitter users\nStackOverflow: Q&A site with answers to all sorts of programming questions\nRStudio Community a forum for Rstudio users\nR for Data Science: A free online book for learning the basics of R and the tidyverse.\nR and RStudio cheat sheets: A large collection of simple cheat sheets for RStudio, ggplot2, and other R-related things.\nCSE 631: Principles & Practice of Data Visualization:\nData Cleaning: A few simple examples that go through the basics of cleaning data\nCode smart with ChatGPT: How you can use ChatGPT to write codes and identify errors"
+  },
+  {
+    "objectID": "R.html#footnotes",
+    "href": "R.html#footnotes",
+    "title": "R",
+    "section": "Footnotes",
+    "text": "Footnotes\n\nPackages that are downloaded contain many functions that can be used to accomplishes some tasks. Each R function is a set of statements organized together to perform a specific task.↩︎\ntidyverse is different from the other packages, as it is a package that contains other packages. You can view the packages contained in tidyverse using this link. Note, however, that it is still crucial to learn base R!↩︎\nGotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.↩︎\ndplyr is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a package contained within tidyverse. You can get more details from this link↩︎\nlist.files() will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need (e.g. excel spreadsheets) in the same folder↩︎\nHow does tapply() compare with group_by + summarise ?↩︎"
   }
 ]
