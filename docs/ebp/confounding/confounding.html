@@ -83,7 +83,7 @@ gtag('js', new Date());
 gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </script><link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="floating nav-fixed slimcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
@@ -140,7 +140,9 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
 <li>
@@ -162,9 +164,6 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </li>
   <li><a href="#short-quiz" id="toc-short-quiz" class="nav-link" data-scroll-target="#short-quiz">Short Quiz</a></li>
   </ul></nav>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -207,9 +206,6 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 <li><p>Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects</p></li>
 <li><p>Confounding is caused by a variable (“confounder”) that is related to <em>both</em> predictor and outcome. However, a confounder is <em>not</em> caused by the predictor</p></li>
 </ul>
-<div class="cell">
-
-</div>
 <section id="comprehensive-overview-provided-by-z-statistics" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="comprehensive-overview-provided-by-z-statistics">Comprehensive overview provided by <a href="http://www.zstatistics.com/">Z Statistics</a>
 </h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SjIbrNYAd5Y" frameborder="0" allowfullscreen="">
@@ -243,18 +239,18 @@ If you have understood the concepts of confounding, please give credit to this s
 <p><img src="images/confound_break.png" class="img-fluid" width="424"></p>
 </div>
 </div>
-<section id="study-design-method-randomization" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="study-design-method-randomization">Study Design Method: Randomization</h3>
+<section id="study-design-method-randomization" class="level3"><h3 class="anchored" data-anchor-id="study-design-method-randomization">Study Design Method: Randomization</h3>
 <ul>
 <li><p>Large randomized trials ensure that treatment and control groups are balanced with respect to factors associated with outcomes (eg., age, sex, disease severity, and comorbidity) and they thus provide the optimal approach to address questions about treatment effects</p></li>
 <li><p>In an RCT, an intention to treat analysis (ITT) is a method/strategy of data analysis that compares patients in the groups to which they are originally randomly allocated.</p></li>
 <li><p>ITT ensures that the treatment groups remain similar in baseline characteristics; hence, ITT minimizes confounding</p></li>
 <li><p>RCTs often do not mimic clinical practice because patients enrolled in an RCT can be quite different from patients in clinical practice. This may be <strong>necessary</strong> as it allows an RCT to control for <strong>confounding</strong> when estimating the <strong>true</strong> treatment effects.</p></li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="images/confoundrct.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption margin-caption">RCT controls confounding. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/confoundrct.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">RCT controls confounding. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -268,11 +264,11 @@ If you have understood the concepts of confounding, please give credit to this s
 </ul>
 <aside>
 Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glossary</a>
-</aside><div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="images/stratify.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption margin-caption">Statistical adjustment for Age. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
+</aside><div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/stratify.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Statistical adjustment for Age. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -284,11 +280,11 @@ Disclaimer: Don’t freak out if you don’t understand this. It is nice but not
 <li><p>Observational treatment comparisons = No treatment group randomization = More “real world” (reflective of clinical practice) = Greater risk of (known and <strong>unknown</strong>) confounding when estimating therapy effects</p></li>
 <li><p>In observational treatment comparisons, we could use regression methods to adjust for <strong>known</strong> confounding. Hence, we are constantly haunted by the possibility that residual confounding may creep into our results. Residual confounding is the bias that remains even after statistical adjustment and it is caused by imperfectly measured confounders and unknown confounders.</p></li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="images/confoundobs.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption margin-caption">Confounding in observational study. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/confoundobs.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Confounding in observational study. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(<a href="#ref-agoritsas2017" role="doc-biblioref">Agoritsas et al. 2017</a>)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -557,7 +553,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Last Updated 23 Jan 2023</div>   
+    <div class="nav-footer-left">Last Updated 01 Jan 2025</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

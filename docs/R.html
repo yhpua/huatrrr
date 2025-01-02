@@ -95,7 +95,7 @@ gtag('js', new Date());
 gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="styles.css">
 </head>
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
@@ -152,7 +152,9 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
 <li>
@@ -185,12 +187,9 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
   <li><a href="#step-9-neaten-your-r-script" id="toc-step-9-neaten-your-r-script" class="nav-link" data-scroll-target="#step-9-neaten-your-r-script">Step 9: Neaten your R script</a></li>
   <li><a href="#resources-to-learn-r" id="toc-resources-to-learn-r" class="nav-link" data-scroll-target="#resources-to-learn-r">Resources to learn R</a></li>
   </ul></nav>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">R</h1>
 </div>
 
@@ -218,13 +217,13 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 - You can install both using <a href="https://posit.co/download/rstudio-desktop/">this link</a> - <code>R</code> is both a software and programming language<br>
 - <code>Rstudio</code> provides a (nice) environment to run <code>R</code><br>
 - This website provides a nice <a href="https://okanbulut.github.io/edpy507/learning-r.html">explanation of key concepts</a></p>
-</section><section id="step-2-installing-r-packages" class="level2"><h2 class="anchored" data-anchor-id="step-2-installing-r-packages">Step 2: Installing R Packages</h2>
-<p>In <code>Rstudio</code>, perform these 2 basic chores: - Install <code>R</code> packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+</section><section id="step-2-installing-r-packages" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="step-2-installing-r-packages">Step 2: Installing R Packages</h2>
+<div class="page-columns page-full"><p>In <code>Rstudio</code>, perform these 2 basic chores: - Install <code>R</code> packages<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
 i. <code>readxl</code><br>
 ii. <code>tidyverse</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><br>
 iii. <code>here</code><br>
 iv. <code>janitor</code><br>
-v. <code>rms</code></p>
+v. <code>rms</code></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Packages that are downloaded contain many functions that can be used to accomplishes some tasks. Each <code>R</code> function is a set of statements organized together to perform a specific task.</p></li><li id="fn2"><p><sup>2</sup>&nbsp;<code>tidyverse</code> is different from the other packages, as it is a package that contains other packages. You can view the packages contained in <code>tidyverse</code> using <a href="https://www.tidyverse.org/">this link</a>. Note, however, that it is still crucial to learn base <code>R</code>!</p></li></div></div>
 <section id="package-function-code-an-analogy" class="level4"><h4 class="anchored" data-anchor-id="package-function-code-an-analogy">Package, Function, Code: An Analogy</h4>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist">
@@ -326,13 +325,13 @@ Tip
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://here.r-lib.org/">here</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://here.r-lib.org//reference/here.html">here</a></span><span class="op">(</span><span class="st">"Wombat"</span>, <span class="st">"WBS data files"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="step-4-fastr-lesson" class="level2"><h2 class="anchored" data-anchor-id="step-4-fastr-lesson">Step 4: fastR lesson</h2>
+</section><section id="step-4-fastr-lesson" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="step-4-fastr-lesson">Step 4: fastR lesson</h2>
 <ul>
 <li>Write and run some codes on the <code>source</code> panel<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><br>
 </li>
 <li>Go through lessons <span class="math inline">\(1\)</span> to <span class="math inline">\(8\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a>
 </li>
-</ul></section><section id="step-5-learning-important-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-5-learning-important-verbs">Step 5: Learning important verbs</h2>
+</ul><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.</p></li></div></section><section id="step-5-learning-important-verbs" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="step-5-learning-important-verbs">Step 5: Learning important verbs</h2>
 <ul>
 <li>Try searching up verbs in the <code>tidyverse</code> package</li>
 <li>Based on the built-in <code>mtcars</code>, learn how to use the pipe (%&gt;%) operator + the following <code>dplyr</code> verbs<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> : <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>count</code>, <code>rename</code>, <code>case_when</code>, <code>mutate</code>
@@ -347,12 +346,12 @@ Tip
 <li>
 <code>recode()</code> and <code>relevel</code> factor levels using the <code><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">forcats::fct_relevel()</a></code>
 </li>
-</ul></section><section id="step-6-reading-files" class="level2"><h2 class="anchored" data-anchor-id="step-6-reading-files">Step 6: Reading files</h2>
+</ul><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;<code>dplyr</code> is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a <code>package</code> contained within <code>tidyverse</code>. You can get more details from <a href="https://dplyr.tidyverse.org/">this link</a></p></li></div></section><section id="step-6-reading-files" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="step-6-reading-files">Step 6: Reading files</h2>
 <ul>
 <li>If you plan to use Rstudio for data analysis and plan to import excel sheets, create a folder to store all the relevant files you’ll be using for analysis</li>
 <li>Read an external file: use <code><a href="https://here.r-lib.org//reference/here.html">here()</a></code> package to manage file-path</li>
 </ul>
-<section id="step-6.1-read-excel-files" class="level3"><h3 class="anchored" data-anchor-id="step-6.1-read-excel-files">Step 6.1: Read excel files</h3>
+<section id="step-6.1-read-excel-files" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="step-6.1-read-excel-files">Step 6.1: Read excel files</h3>
 <ul>
 <li>
 <code>readxl</code> package is part of the tidyverse, with read_excel() as the main function that reads excel files (.xlsx) into R</li>
@@ -364,7 +363,7 @@ Tip
 <li>List all files<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> in the current project directory</li>
 <li>Filter the list to find the specific excel file</li>
 </ol>
-<p>More on readxl <a href="https://readxl.tidyverse.org/">here</a></p>
+<div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;list.files() will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need (e.g.&nbsp;excel spreadsheets) in the same folder</p></li></div><p>More on readxl <a href="https://readxl.tidyverse.org/">here</a></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -421,7 +420,7 @@ Tip
 <li>Go through the <a href="https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html">Janitor vignette</a>
 </li>
 <li>Key functions like <code>clean_names(), remove_empty(c("rows", "cols")), adorn_rounding()</code> tidy your data, while <code>tabyl()</code> can tabulate and summarise them</li>
-</ul></section><section id="step-8-additional-lessons-and-more-verbs" class="level2"><h2 class="anchored" data-anchor-id="step-8-additional-lessons-and-more-verbs">Step 8: Additional lessons and more verbs</h2>
+</ul></section><section id="step-8-additional-lessons-and-more-verbs" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="step-8-additional-lessons-and-more-verbs">Step 8: Additional lessons and more verbs</h2>
 <ul>
 <li>Learn more <a href="https://tidyselect.r-lib.org/reference/starts_with.html">variable selection operators</a> : <code>starts_with(), ends_with(), contains(), matches()</code>
 </li>
@@ -429,7 +428,7 @@ Tip
 </li>
 <li>Go through lessons <span class="math inline">\(9\)</span> to <span class="math inline">\(13\)</span> of <a href="https://github.com/matloff/fasteR">fastR</a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>
 </li>
-</ul></section><section id="step-9-neaten-your-r-script" class="level2"><h2 class="anchored" data-anchor-id="step-9-neaten-your-r-script">Step 9: Neaten your R script</h2>
+</ul><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;How does <code><a href="https://rdrr.io/r/base/tapply.html">tapply()</a></code> compare with <code>group_by</code> + <code>summarise</code> ?</p></li></div></section><section id="step-9-neaten-your-r-script" class="level2"><h2 class="anchored" data-anchor-id="step-9-neaten-your-r-script">Step 9: Neaten your R script</h2>
 <ul>
 <li>Ctrl + Shift + R to create sections between codes</li>
 <li>Use # to label your codes/ comment as R does not read it</li>
@@ -447,15 +446,7 @@ Tip
 <p><a href="https://rstudiodatalab.medium.com/how-to-use-chatgpt-for-data-analysis-in-r-891372af842">Code smart with ChatGPT</a>: How you can use ChatGPT to write codes and identify errors</p>
 
 
-</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-<ol>
-<li id="fn1"><p>Packages that are downloaded contain many functions that can be used to accomplishes some tasks. Each <code>R</code> function is a set of statements organized together to perform a specific task.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><code>tidyverse</code> is different from the other packages, as it is a package that contains other packages. You can view the packages contained in <code>tidyverse</code> using <a href="https://www.tidyverse.org/">this link</a>. Note, however, that it is still crucial to learn base <code>R</code>!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Gotcha! User needs to understand that nothing gets saved after each session and all codes in R script need to be re-run during each session.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><code>dplyr</code> is a powerful R package for data manipulation. It provides a consistent set of verbs that help you tackle common data manipulation tasks. It is a <code>package</code> contained within <code>tidyverse</code>. You can get more details from <a href="https://dplyr.tidyverse.org/">this link</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>list.files() will only detect files that are located in the same folder as the project you are working on. Make sure to add everything you need (e.g.&nbsp;excel spreadsheets) in the same folder<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>How does <code><a href="https://rdrr.io/r/base/tapply.html">tapply()</a></code> compare with <code>group_by</code> + <code>summarise</code> ?<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -690,7 +681,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Last Updated 23 Jan 2023</div>   
+    <div class="nav-footer-left">Last Updated 01 Jan 2025</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

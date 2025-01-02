@@ -84,7 +84,7 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </script><script src="../../site_libs/quarto-diagram/mermaid.min.js"></script><script src="../../site_libs/quarto-diagram/mermaid-init.js"></script><link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="floating nav-fixed slimcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
@@ -141,7 +141,9 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
 <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions">Definitions</a></li>
@@ -175,9 +177,6 @@ gtag('config', 'G-P47K0XF3SM', { 'anonymize_ip': true});
 </li>
   <li><a href="#for-the-eager" id="toc-for-the-eager" class="nav-link" data-scroll-target="#for-the-eager">For the Eager</a></li>
   </ul></nav>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -230,7 +229,7 @@ Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glos
 <li><p>Ordinal outcome: ordinal regression model</p></li>
 <li><p>Time to event outcome: Cox proportional hazards model<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
 </ul>
-<p>Regression models are used for</p>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Not covered in this workshop</p></li></div><p>Regression models are used for</p>
 <ul>
 <li><p>hypothesis testing</p></li>
 <li><p>estimation (with confounder adjustment to get adjusted estimates of effects)</p></li>
@@ -308,11 +307,11 @@ In a research paper, the authors will report the <span class="math inline">\(\be
 <li>An analysis of covariance (ANCOVA) adjusts each patient’s follow up score for his or her baseline score<span class="citation" data-cites="vickers2001ancova">(<a href="#ref-vickers2001ancova" role="doc-biblioref">Vickers and Altman 2001</a>)</span>
 </li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="images/ancova.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption margin-caption">The estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al <span class="citation" data-cites="vickers2001ancova">(<a href="#ref-vickers2001ancova" role="doc-biblioref">Vickers and Altman 2001</a>)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/ancova.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">The estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al <span class="citation" data-cites="vickers2001ancova">(<a href="#ref-vickers2001ancova" role="doc-biblioref">Vickers and Altman 2001</a>)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -366,8 +365,8 @@ Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glos
 </div>
 <aside>
 Paper can be found in <code>Articles</code> section.
-</aside></section><section id="example-32" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-32">Example 3<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
-</h3>
+</aside></section><section id="example-32" class="level3 page-columns page-full"><h3 class="anchored page-columns page-full" data-anchor-id="example-32">Example 3<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+<div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Bonus Example. Don’t freak out if you don’t understand this</p></li></div></h3>
 <p>Independent <em>t</em>-test is a special cases of simple linear regression</p>
 <p><span class="math inline">\(E(y|x) = \alpha + \beta x\)</span></p>
 <p><span class="math inline">\(x\)</span>: Single binary predictor</p>
@@ -550,11 +549,7 @@ Pua, Yong-Hao, Benjamin F Mentiplay, Ross A Clark, and Jia-Ying Ho. 2017. <span>
 <div id="ref-vickers2001ancova" class="csl-entry" role="listitem">
 Vickers, Andrew J, and Douglas G Altman. 2001. <span>“Analysing Controlled Trials with Baseline and Follow up Measurements.”</span> <em>BMJ</em> 323 (7321): 1123–24.
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-<ol>
-<li id="fn1"><p>Not covered in this workshop<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Bonus Example. Don’t freak out if you don’t understand this<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -789,7 +784,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Last Updated 23 Jan 2023</div>   
+    <div class="nav-footer-left">Last Updated 01 Jan 2025</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>

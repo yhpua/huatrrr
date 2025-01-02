@@ -29,7 +29,7 @@ Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glos
 <li><p>Ordinal outcome: ordinal regression model</p></li>
 <li><p>Time to event outcome: Cox proportional hazards model<sup>1</sup></p></li>
 </ul>
-<p>Regression models are used for</p>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Not covered in this workshop</p></li></div><p>Regression models are used for</p>
 <ul>
 <li><p>hypothesis testing</p></li>
 <li><p>estimation (with confounder adjustment to get adjusted estimates of effects)</p></li>
@@ -107,11 +107,11 @@ In a research paper, the authors will report the <img src="https://latex.codecog
 <li>An analysis of covariance (ANCOVA) adjusts each patient’s follow up score for his or her baseline score<span class="citation" data-cites="vickers2001ancova">(Vickers and Altman 2001)</span>
 </li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="https://.com/ebp/regression/images/ancova.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption margin-caption">The estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al <span class="citation" data-cites="vickers2001ancova">(Vickers and Altman 2001)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://.com/ebp/regression/images/ancova.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">The estimated difference between the groups from analysis of covariance is the vertical distance between the red and dotted lines. This figure is taken from Vickers et al <span class="citation" data-cites="vickers2001ancova">(Vickers and Altman 2001)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -165,8 +165,8 @@ Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glos
 </div>
 <aside>
 Paper can be found in <code>Articles</code> section.
-</aside></section><section id="example-32" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="example-32">Example 3<sup>2</sup>
-</h3>
+</aside></section><section id="example-32" class="level3 page-columns page-full"><h3 class="anchored page-columns page-full" data-anchor-id="example-32">Example 3<sup>2</sup>
+<div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;Bonus Example. Don’t freak out if you don’t understand this</p></li></div></h3>
 <p>Independent <em>t</em>-test is a special cases of simple linear regression</p>
 <p><img src="https://latex.codecogs.com/png.latex?E(y%7Cx)%20=%20%5Calpha%20+%20%5Cbeta%20x"></p>
 <p><img src="https://latex.codecogs.com/png.latex?x">: Single binary predictor</p>
@@ -323,11 +323,7 @@ Pua, Yong-Hao, Benjamin F Mentiplay, Ross A Clark, and Jia-Ying Ho. 2017. <span>
 <div id="ref-vickers2001ancova" class="csl-entry">
 Vickers, Andrew J, and Douglas G Altman. 2001. <span>“Analysing Controlled Trials with Baseline and Follow up Measurements.”</span> <em>BMJ</em> 323 (7321): 1123–24.
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-<ol>
-<li id="fn1"><p>Not covered in this workshop↩︎</p></li>
-<li id="fn2"><p>Bonus Example. Don’t freak out if you don’t understand this↩︎</p></li>
-</ol></section></div> ]]></description>
+</div></section></div> ]]></description>
   <category>regression</category>
   <category>odds ratio</category>
   <category>beta</category>
@@ -344,9 +340,6 @@ Vickers, Andrew J, and Douglas G Altman. 2001. <span>“Analysing Controlled Tri
 <li><p>Confounding is the bias or systematic error in the estimation of true treatment (predictor) effects</p></li>
 <li><p>Confounding is caused by a variable (“confounder”) that is related to <em>both</em> predictor and outcome. However, a confounder is <em>not</em> caused by the predictor</p></li>
 </ul>
-<div class="cell">
-
-</div>
 <section id="comprehensive-overview-provided-by-z-statistics" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="comprehensive-overview-provided-by-z-statistics">Comprehensive overview provided by <a href="http://www.zstatistics.com/">Z Statistics</a>
 </h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SjIbrNYAd5Y" frameborder="0" allowfullscreen="">
@@ -380,18 +373,18 @@ If you have understood the concepts of confounding, please give credit to this s
 <p><img src="https://.com/ebp/confounding/images/confound_break.png" class="img-fluid" width="424"></p>
 </div>
 </div>
-<section id="study-design-method-randomization" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="study-design-method-randomization">Study Design Method: Randomization</h3>
+<section id="study-design-method-randomization" class="level3"><h3 class="anchored" data-anchor-id="study-design-method-randomization">Study Design Method: Randomization</h3>
 <ul>
 <li><p>Large randomized trials ensure that treatment and control groups are balanced with respect to factors associated with outcomes (eg., age, sex, disease severity, and comorbidity) and they thus provide the optimal approach to address questions about treatment effects</p></li>
 <li><p>In an RCT, an intention to treat analysis (ITT) is a method/strategy of data analysis that compares patients in the groups to which they are originally randomly allocated.</p></li>
 <li><p>ITT ensures that the treatment groups remain similar in baseline characteristics; hence, ITT minimizes confounding</p></li>
 <li><p>RCTs often do not mimic clinical practice because patients enrolled in an RCT can be quite different from patients in clinical practice. This may be <strong>necessary</strong> as it allows an RCT to control for <strong>confounding</strong> when estimating the <strong>true</strong> treatment effects.</p></li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="https://.com/ebp/confounding/images/confoundrct.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption margin-caption">RCT controls confounding. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://.com/ebp/confounding/images/confoundrct.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">RCT controls confounding. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -405,11 +398,11 @@ If you have understood the concepts of confounding, please give credit to this s
 </ul>
 <aside>
 Taken from Frank Harrell’s <a href="http://hbiostat.org/doc/glossary.pdf">glossary</a>
-</aside><div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="https://.com/ebp/confounding/images/stratify.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption margin-caption">Statistical adjustment for Age. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
+</aside><div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://.com/ebp/confounding/images/stratify.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Statistical adjustment for Age. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -421,11 +414,11 @@ Disclaimer: Don’t freak out if you don’t understand this. It is nice but not
 <li><p>Observational treatment comparisons = No treatment group randomization = More “real world” (reflective of clinical practice) = Greater risk of (known and <strong>unknown</strong>) confounding when estimating therapy effects</p></li>
 <li><p>In observational treatment comparisons, we could use regression methods to adjust for <strong>known</strong> confounding. Hence, we are constantly haunted by the possibility that residual confounding may creep into our results. Residual confounding is the bias that remains even after statistical adjustment and it is caused by imperfectly measured confounders and unknown confounders.</p></li>
 </ul>
-<div class="cell page-columns page-full" data-layout-align="center">
-<div class="cell-output-display page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full"><p><img src="https://.com/ebp/confounding/images/confoundobs.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption margin-caption">Confounding in observational study. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://.com/ebp/confounding/images/confoundobs.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Confounding in observational study. Figure taken from Agoritsas et al <span class="citation" data-cites="agoritsas2017">(Agoritsas et al. 2017)</span></figcaption></figure>
 </div>
 </div>
 </div>
@@ -470,10 +463,7 @@ Agoritsas, Thomas, Arnaud Merglen, Nilay D Shah, Martin O’Donnell, and Gordon 
   <title>General Overview</title>
   <dc:creator>SGH PT Dept</dc:creator>
   <link>https://.com/ebp/overview/overview.html</link>
-  <description><![CDATA[ <div class="cell">
-
-</div>
-<section id="types-of-measurement" class="level2"><h2 class="anchored" data-anchor-id="types-of-measurement">Types of Measurement</h2>
+  <description><![CDATA[ <section id="types-of-measurement" class="level2"><h2 class="anchored" data-anchor-id="types-of-measurement">Types of Measurement</h2>
 <p>Binary: Two-level variables, e.g., yes/no, present/absent, gender</p>
 <p>Nominal: Non-ordered categorical variables, e.g., race, profession</p>
 <p>Ordinal: Ordered categorical variables, e.g., pain severity, radiographical osteoarthritis (OA) severity ratings (no/mild/moderate/severe OA)</p>
@@ -581,7 +571,7 @@ The 95% CI: The wide 95%CI includes clinically trivial values; hence, there is u
 We need to consider whether the 95%CI includes/excludes clinically trivial results.
 </aside><p>Inference<br>
 Whilst we have evidence that two groups are different on the ODI and the observed between-group difference appeared to be clinically meaningful, there is still uncertainty about the true between-group differences.</p>
-<div class="l-body">
+<div class="l-body page-columns page-full">
 <table class="table">
 <colgroup>
 <col style="width: 32%">
@@ -627,7 +617,7 @@ Whilst we have evidence that two groups are different on the ODI and the observe
 </tr>
 </tbody>
 </table>
-</div>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Beware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy</p></li></div></div>
 <p>Hawkins and Samuels <a href="https://jamanetwork.com/journals/jama/article-abstract/2786522">JAMA article</a> describes how to use 95%CIs to appraise non-significant results <br><img src="https://.com/ebp/overview/ci_ns.jpg" class="img-fluid" width="500" alt="ci_ns"></p>
 <p>Interestingly, the authors wrote:</p>
 <blockquote class="blockquote">
@@ -709,10 +699,7 @@ Altman, Douglas G, and J Martin Bland. 1996. <span>“Detecting Skewness from Su
 <div id="ref-altman2005statistics" class="csl-entry">
 ———. 2005. <span>“Statistics Notes: Standard Deviations and Standard Errors.”</span> <em>BMJ: British Medical Journal</em> 331 (7521): 903.
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-<ol>
-<li id="fn1"><p>Beware of making the “Absence of Evidence is NOT Evidence of Absence” fallacy↩︎</p></li>
-</ol></section></div> ]]></description>
+</div></section></div> ]]></description>
   <category>p-values</category>
   <category>confidence interval</category>
   <category>measurement type</category>
