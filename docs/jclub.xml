@@ -22,6 +22,7 @@
 <li>
 <p>Comment on the <strong>non-significant</strong> ORs<sup>1</sup> for the <code>Age</code>, <code>Multi-morbidity</code>, <code>Falls within 6 months</code> variables in the multivariable<sup>2</sup> logistic regression analyses</p>
 <ul>
+<li>Consider statistical vs clinical significance</li>
 <li>Consider over-adjustment/over-controlling bias</li>
 </ul>
 </li>

@@ -27,6 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Table 1: Participants may want to try their hands on computing the ORs since the 2x2 table cell values are given   
 
 - Comment on the **non-significant** ORs[^1] for the `Age`, `Multi-morbidity`, `Falls within 6 months` variables in the multivariable[^2] logistic regression analyses
+  - Consider statistical vs clinical significance 
   - Consider over-adjustment/over-controlling bias  
   
 {{< video https://www.youtube.com/watch?v=_qs_1B4ySWY
