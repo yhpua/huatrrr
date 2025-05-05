@@ -1,0 +1,14 @@
+{
+  "hash": "e583472e7e4f5e804e38686bfe4abcce",
+  "result": {
+    "markdown": "---\ntitle: \"Articles 2025\"\ndescription: |\n  Comments on articles from EBP workshop (May 2025)  \ndate: 05-05-2025\nauthor:\n  - name: SGH PT Dept\ncategories:\n - p-values\n - confidence interval\n - RCT\n - confounding\n - research design \nimage: 'a2025.jpg'  \nreference-location: margin\n---\n\n\n\n\n## Cross-sectional study\n[BMC Geriatrics 2022](https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-022-02883-1)    \n\n- Table 1: Participants may want to try their hands on computing the ORs since the 2x2 table cell values are given   \n- Comment on the **non-significant** ORs[^1] for the `Age`, `Multi-morbidity`, `Falls within 6 months` variables in the multivariable[^2] logistic regression analyses     \n\n- Is dichotomizing FoF into `high` vs `low/moderate` levels and computing ORs a good idea? If not, what are the alternatives?    \n\n- Chi-squared test is a special case of logistic regression so the analyses could be greatly simplified/unified   \n \n \n\n[^1]: Table 2: exponentiating the regression coefficients (`Exp(B)`) returns the adjusted odds ratio (ORs)\n\n[^2]: Difference between “multivariate” vs “multivariable” explained [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC3518362/)  \n\n\n\n \n \n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
