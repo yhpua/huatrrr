@@ -25,7 +25,19 @@ knitr::opts_chunk$set(echo = FALSE)
 [BMC Geriatrics 2022](https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-022-02883-1)    
 
 - Table 1: Participants may want to try their hands on computing the ORs since the 2x2 table cell values are given   
-- Comment on the **non-significant** ORs[^1] for the `Age`, `Multi-morbidity`, `Falls within 6 months` variables in the multivariable[^2] logistic regression analyses     
+
+- Comment on the **non-significant** ORs[^1] for the `Age`, `Multi-morbidity`, `Falls within 6 months` variables in the multivariable[^2] logistic regression analyses
+  - Consider over-adjustment/over-controlling bias  
+  
+{{< video https://www.youtube.com/watch?v=_qs_1B4ySWY
+    title="Paths, doors, and adjustment"
+    start="320"
+    stop = "400"
+    aspect-ratio="21x9" 
+>}}
+
+ 
+
 
 - Is dichotomizing FoF into `high` vs `low/moderate` levels and computing ORs a good idea? If not, what are the alternatives?    
 
